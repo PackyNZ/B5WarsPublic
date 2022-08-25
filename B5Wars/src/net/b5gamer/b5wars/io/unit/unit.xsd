@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.b5gamer.net/B5Wars"
+	xmlns="http://www.b5gamer.net/B5Wars">
+
+	<!-- root element -->
+	
+	<xs:element name="unit-definition">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="unit" minOccurs="1" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- common unit elements -->
+
+	<xs:element name="unit">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="specs" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="maneuvering" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="combat-stats" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="service-history" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="traits" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="adaptive-armor" minOccurs="0" maxOccurs="1" />
+				<xs:choice>
+					<xs:element ref="ship-definition" minOccurs="1" maxOccurs="1" />
+					<xs:element ref="fighter-definition" minOccurs="1" maxOccurs="1" />
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required" /> <!-- unit name e.g. EA Hyperion Heavy Cruiser -->
+			<xs:attribute name="model" type="xs:string" use="optional" /> <!-- unit model e.g. Theta Model -->
+			<xs:attribute name="hull" type="xs:string" use="required" /> <!-- base hull the unit is built on e.g. Hyperion -->
+			<xs:attribute name="version" use="required"> <!-- version number e.g. 3 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+  			<xs:attribute name="author" type="xs:string" use="optional" /> <!-- author of the unit e.g. AOG -->
+			<xs:attribute name="source" type="xs:string" use="optional" /> <!-- source of the unit e.g. SF -->
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="specs">
+		<xs:complexType>
+			<xs:attribute name="type" type="xs:string" use="required" /> <!-- unit type e.g. Capital Ship -->
+			<xs:attribute name="pointValue" use="required"> <!-- combat point cost of the unit e.g. 705 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="10000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="rammingFactor" use="required"> <!-- factor for ramming other units e.g. 290 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="10000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="maneuvering">
+		<xs:complexType>
+			<xs:attribute name="turnCost" type="xs:string" use="required" /> <!-- speed based thrust cost to make a turn e.g. 2/3 or 1 -->
+			<xs:attribute name="turnDelay" type="xs:string" use="required" /> <!-- speed based mandatory movement delay between making turns e.g. 1/3 or 1 -->
+			<xs:attribute name="accelDecelCost" use="required"> <!-- thrust required to alter speed e.g. 3 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="pivotCost" type="xs:string" use="optional" /> <!-- thrust required to perform a pivot e.g. 3+3 or 1 -->
+			<xs:attribute name="rollCost" type="xs:string" use="optional" /> <!-- thrust required to perform a roll e.g. 2+2 or 1 -->
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="combat-stats">
+		<xs:complexType>
+			<xs:attribute name="fwdAftDefense" use="required"> <!-- defense when attacked from fore or aft e.g. 14 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="stbPortDefense" use="required"> <!-- defense when attacked from starboard or port e.g. 16 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="initiativeModifier" use="required"> <!-- modifier to initiative e.g. 0 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="-30"/>
+						<xs:maxInclusive value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="service-history">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="period-of-service" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="period-of-service"> <!-- a period-of-service element may contain text relating to any special notes for this period -->
+		<xs:complexType mixed="true">
+			<xs:attribute name="faction" type="xs:string" use="required" /> <!-- name of the faction employing the unit e.g. EA -->
+			<xs:attribute name="inService" type="xs:integer" use="optional" /> <!-- start date for this period of service e.g. 2246 -->
+			<xs:attribute name="endedService" type="xs:integer" use="optional" /> <!-- end date for this period of service e.g. 2265 -->
+			<xs:attribute name="datePrefix" type="xs:string" use="optional" /> <!-- prefix for in service dates e.g. Y -->
+			<xs:attribute name="dateSuffix" type="xs:string" use="optional" /> <!-- suffix for in service dates e.g. ANH -->
+			<xs:attribute name="availability" use="required"> <!-- availability of the base hull or variant during this period -->
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Base" />
+						<xs:enumeration value="Common" />
+						<xs:enumeration value="Uncommon" />
+						<xs:enumeration value="Rare" />
+						<xs:enumeration value="Specialty" />
+						<xs:enumeration value="Unique" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="maxAvailable" use="optional"> <!-- maximum number of this unit that were available during this period e.g. 2 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="deployment" use="optional"> <!-- deployment limitation during this period -->
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Unlimited" />
+						<xs:enumeration value="Limited" />
+						<xs:enumeration value="Restricted" />
+						<xs:enumeration value="Special" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="deploymentPercentage" type="xs:string" use="optional" /> <!-- only use for non-standard deployment percentages (e.g. not 10% or 33%), maximum percentage of combat points that can be spent on this unit e.g. 50% -->
+			<xs:attribute name="onlyOnePer" use="optional"> <!-- limitation of only one unit per the specified amount of combat points available e.g. 5000 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="economicCost" type="xs:string" use="optional" /> <!-- modifier to units economic cost during this period e.g. 4 or 25% -->
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="traits">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="trait" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="trait">
+		<xs:complexType>
+			<xs:attribute name="name" type="xs:string" use="required" /> <!-- name of the trait e.g. Command Bonus -->
+			<xs:attribute name="value" type="xs:string" use="optional" /> <!-- value of the trait (if any) e.g. 2 -->
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="adaptive-armor">
+		<xs:complexType>
+			<xs:attribute name="adaptiveArmor" use="required"> <!-- amount of adaptive armor points available e.g. 6 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="maxPerWeaponType" use="optional"> <!-- maximum points that can be allocated per weapon type e.g. 3 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="pointsPreAssigned" use="optional"> <!-- number of points that can be pre-assigned e.g. 3 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="property">
+		<xs:complexType>
+			<xs:attribute name="name" type="xs:string" use="required" /> <!-- name of the property e.g. systemType -->
+			<xs:attribute name="value" type="xs:string" use="required" /> <!-- value of the property e.g. Thruster -->
+		</xs:complexType>
+	</xs:element>
+
+	<!-- ship specific elements -->
+
+	<xs:element name="ship-definition">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="hit-location-charts" minOccurs="1" maxOccurs="1" />
+				<xs:element ref="sections" minOccurs="1" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="hit-location-charts">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="hit-location-chart" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="hit-location-chart">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="hit-location" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required" /> <!-- name of the hit location chart e.g. FORWARD HITS -->
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="hit-location">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="property" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="hit-location" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="class" type="xs:string" use="required" /> <!-- name of the Java class to use for the hit location e.g SystemHitLocation (see HitLocation class in javadocs) -->
+			<xs:attribute name="from" use="required"> <!-- from value for range e.g. 1 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="to" use="required"> <!-- to value for range e.g. 4 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="sections">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="section" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="generalHitLocationChart" type="xs:string" use="optional" /> <!-- name of the hit location chart to use for general hits e.g. GENERAL HITS (see Trait.SAUCER in javadocs) -->
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="section">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="property" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="systems" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="section" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required" /> <!-- name of the section e.g. PRIMARY -->
+			<xs:attribute name="class" type="xs:string" use="required" /> <!-- name of the Java class to use for the section e.g StructureSection (see Section class in javadocs) -->
+			<xs:attribute name="arc" type="xs:string" use="optional" /> <!-- arc this section covers for incoming fire purposes e.g. F60 or Arc(330, 60) -->
+			<xs:attribute name="hitLocationChart" type="xs:string" use="optional" /> <!-- name of the hit location chart to use for the section e.g. PRIMARY HITS -->
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="systems">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="system" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="weapon" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="system">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="property" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="system-icons" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>
+			<xs:attribute name="class" type="xs:string" use="required" /> <!-- name of the Java class to use for the system e.g Structure (see System class in javadocs) -->
+			<xs:attribute name="damageBoxes" use="optional"> <!-- amount of damage the system can sustain before being destroyed e.g. 54 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="armor" type="xs:string" use="optional" /> <!-- amount of armor protecting the system e.g. 5 -->
+			<xs:attribute name="arc" type="xs:string" use="optional" />
+			<xs:attribute name="name" type="xs:string" use="optional" />
+			<xs:attribute name="power" type="xs:string" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="weapon">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="property" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="weapon-icons" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>
+			<xs:attribute name="type" type="xs:string" use="required" /> <!-- the weapon type e.g Heavy Laser Cannon -->
+			<xs:attribute name="damageBoxes" use="optional"> <!-- amount of damage the weapon can sustain before being destroyed e.g. 4 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="armor" use="required"> <!-- amount of armor protecting the weapon e.g. 4 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="arc" type="xs:string" use="required" /> <!-- arc for incoming fire and field of fire for the weapon e.g. FP60 or Arc(300, 60) -->
+			<xs:attribute name="number" use="optional"> <!-- the weapon number e.g. 1 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="system-icons">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element ref="system-icon" minOccurs="0" maxOccurs="1" />
+					<xs:element ref="structure-icon" minOccurs="0" maxOccurs="1" />
+				</xs:choice>				
+				<xs:element ref="armor-icon" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="power-icon" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="arc-icon" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="weapon-icons">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="weapon-icon" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="armor-icon" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="power-icon" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="arc-icon" minOccurs="0" maxOccurs="1" />
+				<xs:element ref="number-icon" minOccurs="0" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="iconlocationtype">
+		<xs:attribute name="x" use="required"> <!-- x position e.g. 100 -->
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="y" use="required"> <!-- y position e.g. 100 -->
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+	<xs:complexType name="iconsymboltype">
+		<xs:complexContent>
+  			<xs:extension base="iconlocationtype">
+				<xs:attribute name="mirror" type="xs:boolean" use="optional" /> <!-- whether to mirror the icon -->
+				<xs:attribute name="rotation" use="optional"> <!-- number of degrees to rotate the icon e.g. 90 -->
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="-360"/>
+							<xs:maxInclusive value="360"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+  			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+		
+	<xs:element name="system-icon">
+		<xs:complexType>
+  			<xs:complexContent>
+    			<xs:extension base="iconsymboltype">
+					<xs:attribute name="index" use="optional"> <!-- icon number e.g. 2 -->
+						<xs:simpleType>
+							<xs:restriction base="xs:integer">
+								<xs:minInclusive value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+    			</xs:extension>
+  			</xs:complexContent>
+  		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="structure-icon">
+		<xs:complexType>
+  			<xs:complexContent>
+    			<xs:extension base="iconsymboltype">
+					<xs:attribute name="definition" type="xs:string" use="optional" /> <!-- custom icon definition for specific systems such as structure e.g -->
+    			</xs:extension>
+  			</xs:complexContent>
+  		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="weapon-icon" type="iconsymboltype"/>
+
+	<xs:element name="armor-icon" type="iconlocationtype"/>
+
+	<xs:element name="power-icon" type="iconlocationtype"/>
+
+	<xs:element name="arc-icon" type="iconlocationtype"/>
+
+	<xs:element name="number-icon" type="iconlocationtype"/>
+	
+	<!-- fighter specific elements -->
+
+	<xs:element name="fighter-definition">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="fighter-combat-stats" minOccurs="1" maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="fighter-combat-stats">
+		<xs:complexType>
+			<xs:attribute name="freeThrust" use="required"> <!-- available thrust per turn e.g. 12 -->
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="offensiveModifier" type="xs:integer" use="required" /> <!-- attack modifier e.g. 5 -->
+			<xs:attribute name="dropoutModifier" type="xs:integer" use="optional" default="0" />
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

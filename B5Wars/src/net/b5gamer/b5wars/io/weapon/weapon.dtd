@@ -1,0 +1,11 @@
+<!ELEMENT weapons (weapon+)>
+
+<!ELEMENT weapon (fire-control)>
+<!ATTLIST weapon type CDATA #REQUIRED>
+<!ATTLIST weapon damageBoxes CDATA #REQUIRED>
+<!ATTLIST weapon power CDATA #REQUIRED>
+
+<!ELEMENT fire-control EMPTY>
+<!ATTLIST fire-control large CDATA #REQUIRED>
+<!ATTLIST fire-control medium CDATA #REQUIRED>
+<!ATTLIST fire-control small CDATA #REQUIRED>

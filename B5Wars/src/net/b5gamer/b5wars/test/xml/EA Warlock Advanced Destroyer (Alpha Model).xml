@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+
+	<unit name="EA Warlock Advanced Destroyer" model="Alpha Model" hull="Warlock" version="1" author="AOG" source="S3">
+		<specs type="Capital Ship" pointValue="1800" rammingFactor="360" />
+		<maneuvering turnCost="1" turnDelay="1" accelDecelCost="4" pivotCost="3+3" rollCost="2+2" />
+		<combat-stats fwdAftDefense="15" stbPortDefense="19" initiativeModifier="0" />
+		<service-history>
+			<period-of-service faction="EA" inService="2261" availability="Base" deployment="Restricted" />
+		</service-history>
+
+		<ship-definition>
+			<hit-location-charts>
+				<hit-location-chart name="FORWARD HITS">
+					<hit-location class="SystemHitLocation" from="1" to="4">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="5" to="6">
+						<property name="systemType" value="Heavy Particle Cannon" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="7" to="8">
+						<property name="systemType" value="Laser/Pulse Array" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="9" to="10">
+						<property name="systemType" value="Railgun" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="13">
+						<property name="systemType" value="Interceptor Mk-II" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="14" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+
+				<hit-location-chart name="SIDE HITS">
+					<hit-location class="SystemHitLocation" from="1" to="4">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="5" to="6">
+						<property name="systemType" value="Missile Rack (Any)" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="7" to="8">
+						<property name="systemType" value="Laser/Pulse Array" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="9" to="11">
+						<property name="systemType" value="Standard Particle Beam" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="12" to="12">
+						<property name="systemType" value="Interceptor Mk-II" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+
+				<hit-location-chart name="AFT HITS">
+					<hit-location class="SystemHitLocation" from="1" to="6">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="7" to="8">
+						<property name="systemType" value="Laser/Pulse Array" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="9" to="10">
+						<property name="systemType" value="Railgun" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="13">
+						<property name="systemType" value="Interceptor Mk-II" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="14" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+
+				<hit-location-chart name="PRIMARY HITS">
+					<hit-location class="SystemHitLocation" from="1" to="9">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="11">
+						<property name="systemType" value="Jump Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="12" to="13">
+						<property name="systemType" value="Sensors" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="14" to="15">
+						<property name="systemType" value="Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="16" to="17">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="18" to="19">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="20" to="20">
+						<property name="systemType" value="C &amp; C" />
+					</hit-location>
+				</hit-location-chart>
+			</hit-location-charts>
+
+			<sections>
+				<section name="FORWARD" class="StructureSection" arc="F60" hitLocationChart="FORWARD HITS">
+					<systems>
+						<system class="Structure" damageBoxes="72" armor="6" />
+						<system class="Thruster" damageBoxes="15" armor="4" arc="F120">
+							<property name="thrustRating" value="4" />
+						</system>
+						<system class="Thruster" damageBoxes="15" armor="4" arc="F120">
+							<property name="thrustRating" value="4" />
+						</system>
+						<weapon type="Heavy Particle Cannon" armor="5" arc="F60" number="1" />
+						<weapon type="Heavy Particle Cannon" armor="5" arc="F60" number="2" />
+						<weapon type="Laser/Pulse Array" armor="4" arc="F120" number="3" />		
+						<weapon type="Laser/Pulse Array" armor="4" arc="F120" number="4" />		
+						<weapon type="Railgun" armor="4" arc="F120" number="11" />
+						<weapon type="Railgun" armor="4" arc="F120" number="12" />
+						<weapon type="Interceptor Mk-II" armor="2" arc="FP180" number="27" />
+						<weapon type="Interceptor Mk-II" armor="2" arc="FS180" number="28" />
+					</systems>
+				</section>
+
+				<section name="PORT" class="StructureSection" arc="P120" hitLocationChart="SIDE HITS">
+					<systems>
+						<system class="Structure" damageBoxes="80" armor="5" />
+						<system class="Thruster" damageBoxes="20" armor="4" arc="P120">
+							<property name="thrustRating" value="6" />
+						</system>
+						<weapon type="Laser/Pulse Array" armor="4" arc="FP120" number="5" />		
+						<weapon type="Laser/Pulse Array" armor="4" arc="FP120" number="6" />		
+						<weapon type="Class-L Missile Rack" armor="3" arc="FP120" number="17" />
+						<weapon type="Class-LH Missile Rack" armor="3" arc="FP120" number="15" />
+						<weapon type="Standard Particle Beam" armor="2" arc="P180" number="19" />
+						<weapon type="Standard Particle Beam" armor="2" arc="P180" number="20" />
+						<weapon type="Standard Particle Beam" armor="2" arc="P180" number="21" />
+						<weapon type="Standard Particle Beam" armor="2" arc="P180" number="22" />
+						<weapon type="Interceptor Mk-II" armor="2" arc="P180" number="29" />
+					</systems>
+				</section>
+
+				<section name="PRIMARY" class="StructureSection" hitLocationChart="PRIMARY HITS">
+					<systems>
+						<system class="Structure" damageBoxes="60" armor="6" />			
+						<system class="CommandAndControl" damageBoxes="20" armor="6" />
+						<system class="Sensors" damageBoxes="20" armor="6" power="5">
+							<property name="sensorRating" value="9" />
+						</system>
+						<system class="Engine" damageBoxes="23" armor="6">
+							<property name="freeThrust" value="10" />
+							<property name="efficiency" value="3/1" />
+						</system>
+						<system class="JumpEngine" damageBoxes="20" armor="6" power="4">
+							<property name="jumpDelay" value="16" />
+						</system>
+						<system class="Reactor" damageBoxes="30" armor="6">
+							<property name="availablePower" value="111" />
+						</system>
+						<system class="Hangar" damageBoxes="24" armor="5">
+							<property name="launchRate" value="12" />
+						</system>
+					</systems>
+				</section>
+
+				<section name="STARBOARD" class="StructureSection" arc="S120" hitLocationChart="SIDE HITS">
+					<systems>
+						<system class="Structure" damageBoxes="80" armor="5" />
+						<system class="Thruster" damageBoxes="20" armor="4" arc="S120">
+							<property name="thrustRating" value="6" />
+						</system>
+						<weapon type="Laser/Pulse Array" armor="4" arc="FS120" number="7" />		
+						<weapon type="Laser/Pulse Array" armor="4" arc="FS120" number="8" />		
+						<weapon type="Class-L Missile Rack" armor="3" arc="FS120" number="18" />
+						<weapon type="Class-LH Missile Rack" armor="3" arc="FS120" number="16" />
+						<weapon type="Standard Particle Beam" armor="2" arc="S180" number="23" />
+						<weapon type="Standard Particle Beam" armor="2" arc="S180" number="24" />
+						<weapon type="Standard Particle Beam" armor="2" arc="S180" number="25" />
+						<weapon type="Standard Particle Beam" armor="2" arc="S180" number="26" />
+						<weapon type="Interceptor Mk-II" armor="2" arc="S180" number="30" />
+					</systems>
+				</section>
+
+				<section name="AFT" class="StructureSection" arc="A60" hitLocationChart="AFT HITS">
+					<systems>
+						<system class="Structure" damageBoxes="60" armor="5" />
+						<system class="Thruster" damageBoxes="6" armor="3" arc="A120">
+							<property name="thrustRating" value="1" />
+						</system>
+						<system class="Thruster" damageBoxes="12" armor="4" arc="A120">
+							<property name="thrustRating" value="2" />
+						</system>
+						<system class="Thruster" damageBoxes="12" armor="4" arc="A120">
+							<property name="thrustRating" value="2" />
+						</system>
+						<system class="Thruster" damageBoxes="12" armor="4" arc="A120">
+							<property name="thrustRating" value="2" />
+						</system>
+						<system class="Thruster" damageBoxes="12" armor="4" arc="A120">
+							<property name="thrustRating" value="2" />
+						</system>
+						<system class="Thruster" damageBoxes="6" armor="3" arc="A120">
+							<property name="thrustRating" value="1" />
+						</system>
+						<weapon type="Laser/Pulse Array" armor="4" arc="A120" number="9" />		
+						<weapon type="Laser/Pulse Array" armor="4" arc="A120" number="10" />		
+						<weapon type="Railgun" armor="4" arc="A120" number="13" />
+						<weapon type="Railgun" armor="4" arc="A120" number="14" />
+						<weapon type="Interceptor Mk-II" armor="2" arc="AP180" number="31" />
+						<weapon type="Interceptor Mk-II" armor="2" arc="AS180" number="32" />
+					</systems>
+				</section>
+			</sections>
+		</ship-definition>
+	</unit>
+</unit-definition>

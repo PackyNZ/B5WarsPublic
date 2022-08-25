@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+	
+	<unit name="Descari Carrana Base" hull="Carrana" version="2" author="AOG" source="SF2">			
+		<specs type="Capital Base" pointValue="750" rammingFactor="90" />
+		<combat-stats fwdAftDefense="16" stbPortDefense="16" initiativeModifier="0" />
+		<service-history>
+			<period-of-service faction="Descari" inService="2246" availability="Base" deployment="Unlimited" />
+		</service-history>
+				
+		<ship-definition>	
+			<hit-location-charts>		
+				<hit-location-chart name="SECTION HITS">	 	
+					<hit-location class="SystemHitLocation" from="1" to="4">
+						<property name="systemType" value="Heavy Plasma Bolter" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="5" to="7">
+						<property name="systemType" value="Light Particle Beam" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="8" to="10">
+						<property name="systemType" value="Class-S Missile Rack" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="12">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+						
+				<hit-location-chart name="PRIMARY HITS">			
+					<hit-location class="SystemHitLocation" from="1" to="12">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="14">
+						<property name="systemType" value="Sensors" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="15" to="16">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="17" to="19">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="20" to="20">
+						<property name="systemType" value="C &amp; C" />
+					</hit-location>
+				</hit-location-chart>
+			</hit-location-charts>
+			
+			<sections>
+				<section name="FORWARD" class="StructureSection" arc="F120" hitLocationChart="SECTION HITS">
+					<systems>
+						<system class="Structure" damageBoxes="56" armor="4" />
+						<weapon type="Heavy Plasma Bolter" armor="4" arc="F120" number="1" />					
+						<weapon type="Class-S Missile Rack" armor="4" arc="F120" number="4" />
+						<weapon type="Class-S Missile Rack" armor="4" arc="F120" number="5" />
+						<weapon type="Light Particle Beam" armor="4" arc="F120" number="10" />						
+						<weapon type="Light Particle Beam" armor="4" arc="F120" number="11" />
+						<weapon type="Light Particle Beam" armor="4" arc="F120" number="12" />
+					</systems>
+				</section>
+				
+				<section name="FWD PORT" class="ChildSection">
+					<property name="parentSections" value="FORWARD,PORT" />
+					<systems>
+						<system class="Hangar" damageBoxes="6" armor="4">
+							<property name="launchRate" value="6" />
+						</system>					
+					</systems>
+				</section>
+								
+				<section name="PORT" class="StructureSection" arc="AP120" hitLocationChart="SECTION HITS">
+					<systems>
+						<system class="Structure" damageBoxes="56" armor="4" />
+						<weapon type="Heavy Plasma Bolter" armor="4" arc="AP120" number="2" />					
+						<weapon type="Class-S Missile Rack" armor="4" arc="AP120" number="6" />
+						<weapon type="Class-S Missile Rack" armor="4" arc="AP120" number="7" />
+						<weapon type="Light Particle Beam" armor="4" arc="AP120" number="13" />						
+						<weapon type="Light Particle Beam" armor="4" arc="AP120" number="14" />
+						<weapon type="Light Particle Beam" armor="4" arc="AP120" number="15" />
+					</systems>
+				</section>
+
+				<section name="PRIMARY" class="StructureSection" hitLocationChart="PRIMARY HITS">
+					<systems>
+						<system class="Structure" damageBoxes="52" armor="5" />
+						<system class="CommandAndControl" damageBoxes="16" armor="5" />
+						<system class="Sensors" damageBoxes="16" armor="5" power="5">
+							<property name="sensorRating" value="7" />
+						</system>					
+						<system class="Reactor" damageBoxes="30" armor="5">
+							<property name="availablePower" value="29" />
+						</system>					
+						<system class="Hangar" damageBoxes="2" armor="5">
+							<property name="launchRate" value="1" />
+						</system>					
+					</systems>
+				</section>
+
+				<section name="FWD STBD" class="ChildSection">
+					<property name="parentSections" value="FORWARD,STARBOARD" />
+					<systems>
+						<system class="Hangar" damageBoxes="6" armor="4">
+							<property name="launchRate" value="6" />
+						</system>					
+					</systems>
+				</section>
+
+				<section name="STARBOARD" class="StructureSection" arc="AS120" hitLocationChart="SECTION HITS">
+					<systems>
+						<system class="Structure" damageBoxes="56" armor="4" />
+						<weapon type="Heavy Plasma Bolter" armor="4" arc="AS120" number="3" />					
+						<weapon type="Class-S Missile Rack" armor="4" arc="AS120" number="8" />
+						<weapon type="Class-S Missile Rack" armor="4" arc="AS120" number="9" />
+						<weapon type="Light Particle Beam" armor="4" arc="AS120" number="16" />						
+						<weapon type="Light Particle Beam" armor="4" arc="AS120" number="17" />
+						<weapon type="Light Particle Beam" armor="4" arc="AS120" number="18" />
+					</systems>
+				</section>			
+
+				<section name="PORT STBD" class="ChildSection">
+					<property name="parentSections" value="PORT,STARBOARD" />
+					<systems>
+						<system class="Hangar" damageBoxes="6" armor="4">
+							<property name="launchRate" value="6" />
+						</system>					
+					</systems>
+				</section>
+			</sections>
+		</ship-definition>						
+	</unit>				
+</unit-definition>

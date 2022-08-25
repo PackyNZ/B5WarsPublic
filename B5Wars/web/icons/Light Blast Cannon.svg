@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Light Blast Cannon -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 153 258.75 L 153 274.5 L 159.75 274.5 L 159.75 281.25 L 162 281.25 L 162 283.5 L 166.5 288 L 166.5 281.25 L 168.75 281.25 L 168.75 288 L 173.25 283.5 L 173.25 281.25 L 175.5 281.25 L 175.5 274.5 L 182.25 274.5 L 182.25 258.75 L 153 258.75 Z M 153 258.75 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 171 276.75 L 171 270 L 164.25 270 L 164.25 276.75 L 171 276.75 Z M 171 276.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 164.25 270 L 164.25 263.25 L 157.5 263.25 L 157.5 270 L 164.25 270 Z M 164.25 270 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 171 270 L 171 263.25 L 164.25 263.25 L 164.25 270 L 171 270 Z M 171 270 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 177.75 270 L 177.75 263.25 L 171 263.25 L 171 270 L 177.75 270 Z M 177.75 270 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

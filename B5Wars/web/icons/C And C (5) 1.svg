@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- C & C (5) -->
+<path style="fill-rule:nonzero;fill:rgb(56.865797%,56.079957%,56.275273%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 382.5 344.25 C 382.5 349.21875 378.46875 353.25 373.5 353.25 L 357.75 353.25 C 352.777344 353.25 348.75 349.21875 348.75 344.25 L 348.75 328.5 C 348.75 323.53125 352.777344 319.5 357.75 319.5 L 373.5 319.5 C 378.46875 319.5 382.5 323.53125 382.5 328.5 L 382.5 344.25 Z M 382.5 344.25 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 369 346.5 L 362.25 346.5 L 362.25 339.75 L 369 339.75 L 369 346.5 Z M 369 346.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 362.25 339.75 L 355.5 339.75 L 355.5 333 L 362.25 333 L 362.25 339.75 Z M 362.25 339.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 369 339.75 L 362.25 339.75 L 362.25 333 L 369 333 L 369 339.75 Z M 369 339.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 375.75 339.75 L 369 339.75 L 369 333 L 375.75 333 L 375.75 339.75 Z M 375.75 339.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 369 333 L 362.25 333 L 362.25 326.25 L 369 326.25 L 369 333 Z M 369 333 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

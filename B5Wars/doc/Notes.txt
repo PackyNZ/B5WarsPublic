@@ -1,0 +1,121 @@
+Forms:
+---------------------------------------------------------------------
+Selection (target sections/systems etc)
+Power/Resource allocation (Shields, missiles)
+Information/Announcement (Initiative/EW/combat effects/critical hits/drop out)
+EW/Elint
+Adaptive Armor
+Jump Point
+Movement/thrust/speed/jinking
+Ballistic weapons/Fire Allocation/Defensive fire
+Self-repair?
+Hangar operations
+Cargo
+
+
+Map:
+---------------------------------------------------------------------
+Terrain:
+	Entire Map
+	Hex Based
+
+Features:
+	Units
+	Debris
+	Asteroids
+	Planets
+
+Needed:
+	Angle of attack
+	Distance
+
+Game -> 
+		Map ->
+				Feature ->
+						Geometry ->
+						
+Location - the location of the unit on the map
+Facing - direction the unit is facing
+Direction - units direction of motion
+
+
+Shields:
+---------------------------------------------------------------------
+EM Shield: 
+
+Gravitic Shield:
+
+Shield Projection:
+	Arc for incoming fire
+	Rating - damage that can be held 
+	Cannot choose not to use
+	Overlap, defender chooses which one (used for all attacks from unit/flight)
+	energy draining weapons do damage
+
+
+Deflector Shield:
+
+Shield Generator:
+
+
+Power:
+---------------------------------------------------------------------
+
+
+
+
+To Hit:
+---------------------------------------------------------------------
+LOS
+Arc
+Profile (Fwd/Aft or Stb/Port)
+EW (offensive/defensive)
+Range (modifier or ballistic)
+Fire Control
+
+ 
+Outgoing Fire:
+	LOS
+	Weapon Arc (Arc)
+
+Incoming Fire:
+	Profile (Direction/Arc?)
+	Section hit (Arc)
+	
+
+		// TODO Vree Saucer
+		// TODO always roll on single hit location chart for sides, 
+		// TODO - pick system within arc, no system then structure block within arc, overkill primary structure
+		// TODO no system or structure block, primary hit
+		
+		// TODO Vree Turrets
+		// TODO 360 degree field of fire for all contained weapons/systems
+		// TODO weapons must fire same 60 degree arc each turn, non-weapons still 360 degrees
+		// TODO non-weapon system destroyed on weapon hits
+		// TODO hangars launch in any direction
+		// TODO if weapon/system hit roll d20 (no modifier), on 17-20 directional weapons/systems stuck 60 degrees front
+		
+		// TODO Ships
+		// TODO Roll hit location for side, target chooses, weapons/shields within arc selected first
+		// TODO no eligible systems, hits structure, overkill primry structure
+		// TODO side gone then primary hit
+		
+		// TODO Bases
+		// TODO Target side must be within arc, if none eligible then primary hit
+		// TODO all weapons from one attacker attack the same side
+		// TODO section arc/armour determines weapon arcs/system armour (gravitic shields always armour 0)
+		// TODO armour damaging weapons only affect system hit
+		
+Vree Saucer
+	MultiSection	getHitLocation(angle)
+	All Sections	getSystemsByArc(type, angle, not destroyed) - arc mandatory
+	
+Ships
+	MultiSection	getSectionByFacing(angle)
+	All Sections	getHitLocation(angle?)
+	All Sections	getSystems(type, not destroyed) - arc preferential
+	
+Bases
+	MultiSection	getSectionByFacing(angle)
+	All Sections	getHitLocation(angle?)
+	All Sections	getSystems(type, not destroyed) - arc preferential	

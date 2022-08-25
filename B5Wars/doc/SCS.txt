@@ -1,0 +1,46 @@
+All
+----------------------------------------
+Silhouette
+Icons
+
+
+Edit
+----------------------------------------
+Ship
+
+Info
+
+Zoom/Pan
+Add/Delete/Move Icons
+Highlight Associated Icons
+Save/Export
+
+
+View
+----------------------------------------
+Ship
+Fighter
+
+Info
+
+Zoom/Pan
+
+
+Manual
+----------------------------------------
+Ship
+Fighter
+
+Info
+
+Zoom/Pan
+Check Damage Boxes/Sensor/Shuttles/Missiles/Dropped Out/Destroyed
+
+
+Game
+----------------------------------------
+Ship
+Fighter
+
+Rotate
+Select Icon/Fighter

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unit-definition xmlns="http://www.b5gamer.net/B5Wars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+    <unit author="AOG" hull="Nova" model="Beta Model" name="EA Nova Dreadnought" source="SF" version="3">
+        <specs pointValue="1350" rammingFactor="360" type="Capital Ship"/>
+        <maneuvering accelDecelCost="3" pivotCost="3+3" rollCost="2+2" turnCost="1" turnDelay="4/3"/>
+        <combat-stats fwdAftDefense="16" initiativeModifier="0" stbPortDefense="17"/>
+        <service-history>
+            <period-of-service availability="Base" deployment="Limited" faction="EA" inService="2242"/>
+        </service-history>
+        <ship-definition>
+            <hit-location-charts>
+                <hit-location-chart name="FORWARD HITS">
+                    <hit-location class="SystemHitLocation" from="1" to="3">
+                        <property name="systemType" value="Thruster"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="4" to="7">
+                        <property name="systemType" value="Laser/Pulse Array"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="8" to="10">
+                        <property name="systemType" value="Interceptor Mk-I"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="11" to="18">
+                        <property name="systemType" value="Structure"/>
+                    </hit-location>
+                    <hit-location class="SectionHitLocation" from="19" to="20">
+                        <property name="sectionName" value="PRIMARY"/>
+                    </hit-location>
+                </hit-location-chart>
+                <hit-location-chart name="SIDE HITS">
+                    <hit-location class="SystemHitLocation" from="1" to="4">
+                        <property name="systemType" value="Thruster"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="5" to="11">
+                        <property name="systemType" value="Laser/Pulse Array"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="12" to="18">
+                        <property name="systemType" value="Structure"/>
+                    </hit-location>
+                    <hit-location class="SectionHitLocation" from="19" to="20">
+                        <property name="sectionName" value="PRIMARY"/>
+                    </hit-location>
+                </hit-location-chart>
+                <hit-location-chart name="AFT HITS">
+                    <hit-location class="SystemHitLocation" from="1" to="6">
+                        <property name="systemType" value="Thruster"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="7" to="9">
+                        <property name="systemType" value="Laser/Pulse Array"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="10" to="12">
+                        <property name="systemType" value="Interceptor Mk-I"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="13" to="18">
+                        <property name="systemType" value="Structure"/>
+                    </hit-location>
+                    <hit-location class="SectionHitLocation" from="19" to="20">
+                        <property name="sectionName" value="PRIMARY"/>
+                    </hit-location>
+                </hit-location-chart>
+                <hit-location-chart name="PRIMARY HITS">
+                    <hit-location class="SystemHitLocation" from="1" to="8">
+                        <property name="systemType" value="Structure"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="9" to="10">
+                        <property name="systemType" value="Jump Engine"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="11" to="13">
+                        <property name="systemType" value="Sensors"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="14" to="15">
+                        <property name="systemType" value="Engine"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="16" to="17">
+                        <property name="systemType" value="Hangar"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="18" to="19">
+                        <property name="systemType" value="Reactor"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="20" to="20">
+                        <property name="systemType" value="C &amp; C"/>
+                    </hit-location>
+                </hit-location-chart>
+            </hit-location-charts>
+            <sections>
+                <section arc="F60" class="StructureSection" hitLocationChart="FORWARD HITS" name="FORWARD">
+                    <systems>
+                        <system armor="6" class="Structure" damageBoxes="60">
+                            <system-icons>
+                                <structure-icon definition="2:1:14,1:2:16,1:3:16,2:4:14" x="255" y="268"/>
+                                <armor-icon x="302" y="298"/>
+                            </system-icons>
+                        </system>
+                        <system arc="F120" armor="3" class="Thruster" damageBoxes="10">
+                            <property name="thrustRating" value="4"/>
+                            <system-icons>
+                                <system-icon x="251" y="158"/>
+                                <armor-icon x="267" y="196"/>
+                            </system-icons>
+                        </system>
+                        <system arc="F120" armor="3" class="Thruster" damageBoxes="10">
+                            <property name="thrustRating" value="4"/>
+                            <system-icons>
+                                <system-icon x="323" y="158"/>
+                                <armor-icon x="339" y="196"/>
+                            </system-icons>
+                        </system>
+                        <weapon arc="FP60" armor="4" number="1" type="Laser/Pulse Array">
+                            <weapon-icons>
+                                <weapon-icon mirror="true" x="201" y="161"/>
+                                <armor-icon x="209" y="213"/>
+                                <arc-icon x="230" y="163"/>
+                                <number-icon x="230" y="208"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="FP60" armor="4" number="2" type="Laser/Pulse Array">
+                            <weapon-icons>
+                                <weapon-icon mirror="true" x="201" y="242"/>
+                                <armor-icon x="209" y="294"/>
+                                <arc-icon x="185" y="269"/>
+                                <number-icon x="187" y="294"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="FS60" armor="4" number="3" type="Laser/Pulse Array">
+                            <weapon-icons>
+                                <weapon-icon x="387" y="161"/>
+                                <armor-icon x="395" y="213"/>
+                                <arc-icon x="417" y="188"/>
+                                <number-icon x="419" y="212"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="FS60" armor="4" number="4" type="Laser/Pulse Array">
+                            <weapon-icons>
+                                <weapon-icon x="387" y="242"/>
+                                <armor-icon x="395" y="294"/>
+                                <arc-icon x="417" y="269"/>
+                                <number-icon x="419" y="294"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="FP180" armor="2" number="19" type="Interceptor Mk-I">
+                            <weapon-icons>
+                                <weapon-icon x="263" y="214"/>
+                                <armor-icon x="268" y="250"/>
+                                <arc-icon x="243" y="229"/>
+                                <number-icon x="290" y="229"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="FS180" armor="2" number="20" type="Interceptor Mk-I">
+                            <weapon-icons>
+                                <weapon-icon x="334" y="214"/>
+                                <armor-icon x="339" y="250"/>
+                                <arc-icon x="360" y="228"/>
+                                <number-icon x="318" y="229"/>
+                            </weapon-icons>
+                        </weapon>
+                    </systems>
+                </section>
+                <section arc="P120" class="StructureSection" hitLocationChart="SIDE HITS" name="PORT">
+                    <systems>
+                        <system armor="4" class="Structure" damageBoxes="60">
+                            <system-icons>
+                                <structure-icon definition="1:1:5,1:2:5,1:3:5,1:4:5,1:5:5,1:6:5,1:7:5,1:8:5,1:9:5,1:10:5,1:11:5,1:12:5" x="0" y="0"/>
+                            </system-icons>
+                        </system>
+                        <system arc="P120" armor="3" class="Thruster" damageBoxes="15">
+                            <property name="thrustRating" value="5"/>
+                        </system>
+                        <weapon arc="FP120" armor="3" number="5" type="Laser/Pulse Array"/>
+                        <weapon arc="FP120" armor="3" number="6" type="Laser/Pulse Array"/>
+                        <weapon arc="FP120" armor="3" number="7" type="Laser/Pulse Array"/>
+                        <weapon arc="FP120" armor="3" number="8" type="Laser/Pulse Array"/>
+                        <weapon arc="FP120" armor="3" number="9" type="Laser/Pulse Array"/>
+                    </systems>
+                </section>
+                <section class="StructureSection" hitLocationChart="PRIMARY HITS" name="PRIMARY">
+                    <systems>
+                        <system armor="6" class="Structure" damageBoxes="55">
+                            <system-icons>
+                                <structure-icon definition="1:1:5,1:2:5,1:3:5,1:4:5,1:5:5,1:6:5,1:7:5,1:8:5,1:9:5,1:10:5,1:11:5" x="291" y="478"/>
+                                <armor-icon x="328" y="537"/>
+                            </system-icons>
+                        </system>
+                        <system armor="6" class="CommandAndControl" damageBoxes="16">
+                            <system-icons>
+                                <system-icon x="288" y="570"/>
+                                <armor-icon x="272" y="583"/>
+                            </system-icons>
+                        </system>
+                        <system armor="6" class="Sensors" damageBoxes="20" power="4">
+                            <property name="sensorRating" value="8"/>
+                            <system-icons>
+                                <system-icon x="288" y="410"/>
+                                <armor-icon x="273" y="430"/>
+                                <power-icon x="331" y="429"/>
+                            </system-icons>
+                        </system>
+                        <system armor="6" class="Engine" damageBoxes="20">
+                            <property name="freeThrust" value="6"/>
+                            <property name="efficiency" value="3/1"/>
+                            <system-icons>
+                                <system-icon x="283" y="616"/>
+                                <armor-icon x="269" y="641"/>
+                            </system-icons>
+                        </system>
+                        <system armor="6" class="JumpEngine" damageBoxes="20" power="3">
+                            <property name="jumpDelay" value="24"/>
+                            <system-icons>
+                                <system-icon x="234" y="462"/>
+                                <armor-icon x="218" y="481"/>
+                                <power-icon x="218" y="497"/>
+                            </system-icons>
+                        </system>
+                        <system armor="6" class="Reactor" damageBoxes="40">
+                            <property name="availablePower" value="101"/>
+                            <system-icons>
+                                <system-icon x="333" y="461"/>
+                                <armor-icon x="384" y="487"/>
+                            </system-icons>
+                        </system>
+                        <system armor="6" class="Hangar" damageBoxes="26">
+                            <property name="launchRate" value="12"/>
+                            <system-icons>
+                                <system-icon x="288" y="339"/>
+                                <armor-icon x="273" y="373"/>
+                            </system-icons>
+                        </system>
+                    </systems>
+                </section>
+                <section arc="S120" class="StructureSection" hitLocationChart="SIDE HITS" name="STARBOARD">
+                    <systems>
+                        <system armor="4" class="Structure" damageBoxes="60">
+                            <system-icons>
+                                <structure-icon definition="1:1:5,1:2:5,1:3:5,1:4:5,1:5:5,1:6:5,1:7:5,1:8:5,1:9:5,1:10:5,1:11:5,1:12:5" x="0" y="0"/>
+                            </system-icons>
+                        </system>
+                        <system arc="S120" armor="3" class="Thruster" damageBoxes="15">
+                            <property name="thrustRating" value="5"/>
+                        </system>
+                        <weapon arc="FS120" armor="3" number="10" type="Laser/Pulse Array"/>
+                        <weapon arc="FS120" armor="3" number="11" type="Laser/Pulse Array"/>
+                        <weapon arc="FS120" armor="3" number="12" type="Laser/Pulse Array"/>
+                        <weapon arc="FS120" armor="3" number="13" type="Laser/Pulse Array"/>
+                        <weapon arc="FS120" armor="3" number="14" type="Laser/Pulse Array"/>
+                    </systems>
+                </section>
+                <section arc="A60" class="StructureSection" hitLocationChart="AFT HITS" name="AFT">
+                    <systems>
+                        <system armor="4" class="Structure" damageBoxes="50">
+                            <system-icons>
+                                <structure-icon definition="9:1:2,4:2:12,1:3:18,1:4:18" x="248" y="682"/>
+                                <armor-icon x="302" y="712"/>
+                            </system-icons>
+                        </system>
+                        <system arc="A120" armor="4" class="Thruster" damageBoxes="9">
+                            <property name="thrustRating" value="2"/>
+                            <system-icons>
+                                <system-icon x="225" y="717"/>
+                                <armor-icon x="237" y="762"/>
+                            </system-icons>
+                        </system>
+                        <system arc="A120" armor="4" class="Thruster" damageBoxes="9">
+                            <property name="thrustRating" value="2"/>
+                            <system-icons>
+                                <system-icon x="266" y="717"/>
+                                <armor-icon x="278" y="762"/>
+                            </system-icons>
+                        </system>
+                        <system arc="A120" armor="4" class="Thruster" damageBoxes="9">
+                            <property name="thrustRating" value="2"/>
+                            <system-icons>
+                                <system-icon x="315" y="717"/>
+                                <armor-icon x="327" y="762"/>
+                            </system-icons>
+                        </system>
+                        <system arc="A120" armor="4" class="Thruster" damageBoxes="9">
+                            <property name="thrustRating" value="2"/>
+                            <system-icons>
+                                <system-icon x="356" y="717"/>
+                                <armor-icon x="368" y="762"/>
+                            </system-icons>
+                        </system>
+                        <weapon arc="AP120" armor="3" number="15" type="Laser/Pulse Array">
+                            <weapon-icons>
+                                <weapon-icon rotation="180" x="130" y="664"/>
+                                <armor-icon x="106" y="671"/>
+                                <arc-icon x="101" y="688"/>
+                                <number-icon x="119" y="714"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="AP120" armor="3" number="16" type="Laser/Pulse Array">
+                            <weapon-icons>
+                                <weapon-icon rotation="180" x="166" y="648"/>
+                                <armor-icon x="208" y="658"/>
+                                <arc-icon x="206" y="675"/>
+                                <number-icon x="191" y="691"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="AS120" armor="3" number="17" type="Laser/Pulse Array">
+                            <weapon-icons>
+                                <weapon-icon mirror="true" rotation="180" x="405" y="641"/>
+                                <armor-icon x="382" y="645"/>
+                                <arc-icon x="382" y="658"/>
+                                <number-icon x="391" y="682"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="AS120" armor="3" number="18" type="Laser/Pulse Array">
+                            <weapon-icons>
+                                <weapon-icon mirror="true" rotation="180" x="486" y="657"/>
+                                <armor-icon x="532" y="676"/>
+                                <arc-icon x="524" y="689"/>
+                                <number-icon x="516" y="716"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="AP180" armor="2" number="21" type="Interceptor Mk-I">
+                            <weapon-icons>
+                                <weapon-icon rotation="180" x="195" y="729"/>
+                                <armor-icon x="182" y="758"/>
+                                <arc-icon x="199" y="763"/>
+                                <number-icon x="179" y="741"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="AS180" armor="2" number="22" type="Interceptor Mk-I">
+                            <weapon-icons>
+                                <weapon-icon rotation="180" x="399" y="728"/>
+                                <armor-icon x="422" y="757"/>
+                                <arc-icon x="403" y="762"/>
+                                <number-icon x="426" y="740"/>
+                            </weapon-icons>
+                        </weapon>
+                    </systems>
+                </section>
+            </sections>
+        </ship-definition>
+    </unit>
+</unit-definition>

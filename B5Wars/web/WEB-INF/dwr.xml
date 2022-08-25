@@ -1,0 +1,18 @@
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "dwr20.dtd">
+
+<dwr>
+	<allow>
+		<create creator="new" javascript="b5wars">
+			<param name="class"	value="net.b5gamer.b5wars.ajax.AjaxMethods" />
+		</create>
+        <convert converter="bean" match="net.b5gamer.b5wars.ajax.UnitBean" javascript="Unit"/>
+        <convert converter="bean" match="net.b5gamer.b5wars.ajax.SmallUnitBean" javascript="SmallUnit"/>
+        <convert converter="bean" match="net.b5gamer.b5wars.ajax.StructuralUnitBean" javascript="StructuralUnit"/>
+        <convert converter="bean" match="net.b5gamer.b5wars.ajax.SystemBean" javascript="System"/>
+        <convert converter="bean" match="net.b5gamer.b5wars.ajax.PoweredSystemBean" javascript="PoweredSystem"/>
+        <convert converter="bean" match="net.b5gamer.b5wars.ajax.WeaponBean" javascript="Weapon"/>
+        <convert converter="bean" match="net.b5gamer.b5wars.ajax.MutableValueBean"/>
+        <convert converter="bean" match="net.b5gamer.icon.IconPosition"/>
+        <convert converter="bean" match="net.b5gamer.map.Arc"/>
+	</allow>
+</dwr>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Hangar (4) -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 258.75 193.5 L 258.75 225 L 290.25 225 L 290.25 193.5 L 285.105469 198 L 280.605469 193.5 L 267.105469 193.5 L 262.605469 198 L 258.75 193.5 Z M 258.75 193.5 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Annotation -->
+<path style="opacity:0.5;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff1e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 277.82756,597.45176 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+     
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 274.5 211.5 L 274.5 218.25 L 267.75 218.25 L 267.75 211.5 L 274.5 211.5 Z M 274.5 211.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 281.25 211.5 L 281.25 218.25 L 274.5 218.25 L 274.5 211.5 L 281.25 211.5 Z M 281.25 211.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 274.5 204.75 L 274.5 211.5 L 267.75 211.5 L 267.75 204.75 L 274.5 204.75 Z M 274.5 204.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 281.25 204.75 L 281.25 211.5 L 274.5 211.5 L 274.5 204.75 L 281.25 204.75 Z M 281.25 204.75 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

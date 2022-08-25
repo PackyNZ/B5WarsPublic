@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Burst Pulse Cannon -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 245.25 427.5 L 258.75 427.5 L 258.75 450 L 248.75 450 L 251 456.75 L 246.5 454.5 L 246.5 459 L 248.75 459 L 251 465.75 L 246.5 463.5 L 244.25 472.5 L 242 463.5 L 237.5 465.75 L 239.75 459 L 242 459 L 242 454.5 L 237.5 456.75 L 239.75 450 L 229.5 450 L 229.5 427.5 L 245.25 427.5 Z M 245.25 427.5 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 240.75 438.75 L 240.75 445.5 L 234 445.5 L 234 438.75 L 240.75 438.75 Z M 240.75 438.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 247.5 438.75 L 247.5 445.5 L 240.75 445.5 L 240.75 438.75 L 247.5 438.75 Z M 247.5 438.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 254.25 438.75 L 254.25 445.5 L 247.5 445.5 L 247.5 438.75 L 254.25 438.75 Z M 254.25 438.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 240.75 432 L 240.75 438.75 L 234 438.75 L 234 432 L 240.75 432 Z M 240.75 432 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 247.5 432 L 247.5 438.75 L 240.75 438.75 L 240.75 432 L 247.5 432 Z M 247.5 432 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 254.25 432 L 254.25 438.75 L 247.5 438.75 L 247.5 432 L 254.25 432 Z M 254.25 432 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

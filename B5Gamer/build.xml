@@ -1,0 +1,28 @@
+<project name="B5Gamer" default="war" basedir=".">
+
+    <property name="app.name" value="b5gamer"/>
+    <property name="deploy.home" value="deploy"/>
+    <property name="app.jar" value="${app.name}.jar"/>
+    <property name="app.war" value="${app.name}.war"/>
+
+    <target name="clean">
+        <delete dir="${deploy.home}" />
+    </target>
+
+    <target name="prepare" depends="clean">
+    	<mkdir dir="${deploy.home}" />
+    </target>
+
+    <target name="jar" depends="prepare" description="">       
+    	<jar jarfile="${deploy.home}/${app.jar}" basedir="web/WEB-INF/classes">
+			<exclude name="net/b5gamer/test/**" />
+    	</jar>
+    </target>
+
+    <target name="war" depends="prepare" description="">       
+    	<war warfile="${deploy.home}/${app.war}" basedir="web">
+			<exclude name="WEB-INF/classes/net/b5gamer/test/**" />
+    	</war>
+	</target>
+	
+</project>

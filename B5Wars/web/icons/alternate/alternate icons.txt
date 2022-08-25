@@ -1,0 +1,72 @@
+Brakiri
+	Devaskar	C&C (14)
+	Tokrana OSAT	Shield Generator (8)
+
+
+Centauri
+	Altarian Magnus	C&C (12)
+	Balvarin	C&C (20)
+			Jump Engine (18)
+	Dargan		Reactor (17)
+	Demos		C&C (14)
+			Jump Engine (16)
+	Haven		C&C (8)
+			Engine (9)
+	Optine		Main Thr (12)
+	Primus Maximus	C&C (8)
+
+
+Dilgar
+	Garasoch D	Hangar (28)
+	Mishakur	C&C (30)
+
+
+Earth
+	B5 Refitted	C&C (27)
+			Hangar (26)
+	Earthforce One	Hangar (7)
+	Explorer	C&C (28)
+			Hangar (30)
+	Hyperion	C&C (16)
+	Tethys Plasma	Retro Thr (7)
+			Reactor (9)
+
+
+Grome
+	Adrina		Engine (24)
+	Gralac		Engine (28)
+
+
+Minbari
+	Norgath		Sensors (36)
+	Relata		Cargo (20)
+
+
+Narn
+	Arcismus	Cargo (20)
+			Cargo (30)
+	Bin Tak		C&C (28)
+			Hangar (22)
+			Sensors (32)
+	GQuan 		Jump Engine (30)
+	GTal		Sensors (27)
+	ShoKar 		Sensors (21)
+	TLoth		Jump Engine (24)
+	VarNic		Hangar(7)
+
+
+Pak'ma'ra
+	Urshtalu	Cargo (35)
+
+
+Shadows
+	Battle Cruiser	Sensors (28)
+	Dreadnought	Hangar (12)
+	Heavy Carrier	Hangar (48)
+	Patrol Cruiser	Reactor (16)
+			Self repair (4)
+
+			
+Vorlon
+	Asteroid	Main Thr (24)
+	Dreadnought	Hangar (14)

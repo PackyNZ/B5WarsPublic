@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Plasma Battery (4) -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 209.25 443.25 L 209.25 465.75 L 216 465.75 L 216 470.25 C 218.472656 472.144531 223.074219 471.988281 225 470.25 L 225 465.75 L 231.75 465.75 L 231.75 443.25 L 209.25 443.25 Z M 209.25 443.25 " transform="matrix(1,0,0,-1,17,773)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 220.5 454.5 L 220.5 461.25 L 213.75 461.25 L 213.75 454.5 L 220.5 454.5 Z M 220.5 454.5 " transform="matrix(1,0,0,-1,17,773)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 227.25 454.5 L 227.25 461.25 L 220.5 461.25 L 220.5 454.5 L 227.25 454.5 Z M 227.25 454.5 " transform="matrix(1,0,0,-1,17,773)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 220.5 447.75 L 220.5 454.5 L 213.75 454.5 L 213.75 447.75 L 220.5 447.75 Z M 220.5 447.75 " transform="matrix(1,0,0,-1,17,773)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 227.25 447.75 L 227.25 454.5 L 220.5 454.5 L 220.5 447.75 L 227.25 447.75 Z M 227.25 447.75 " transform="matrix(1,0,0,-1,17,773)"/>
+
+</svg>

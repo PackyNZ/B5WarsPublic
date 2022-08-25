@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+
+	<unit name="Vree Xorr War Saucer" hull="Xorr" version="2" author="AOG" source="SF">			
+		<specs type="Capital Ship" pointValue="550" rammingFactor="180" />
+		<maneuvering turnCost="2/3" turnDelay="1/2" accelDecelCost="3" pivotCost="0+0" rollCost="4+4" /> 		
+		<combat-stats fwdAftDefense="14" stbPortDefense="14" initiativeModifier="0" />
+		<service-history>
+			<period-of-service faction="Vree" inService="2210" availability="Base" deployment="Unlimited" />
+		</service-history>
+		<traits>
+			<trait name="Gravitic Drive System" />
+		</traits>
+				
+		<ship-definition>	
+			<hit-location-charts>		
+				<hit-location-chart name="GENERAL HITS">	 	
+					<hit-location class="SystemHitLocation" from="1" to="4">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="5" to="7">
+						<property name="systemType" value="Weapon" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="8" to="17">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="18" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+		
+				<hit-location-chart name="PRIMARY HITS">			
+					<hit-location class="SystemHitLocation" from="1" to="10">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="12">
+						<property name="systemType" value="Sensors" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="15">
+						<property name="systemType" value="Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="16" to="16">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="17" to="19">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="20" to="20">
+						<property name="systemType" value="C &amp; C" />
+					</hit-location>
+				</hit-location-chart>
+			</hit-location-charts>
+			
+			<sections generalHitLocationChart="GENERAL HITS">
+				<section name="FORWARD" class="Section">
+					<systems>
+						<system class="Structure" damageBoxes="24" armor="4" arc="F120" />
+						<system class="Thruster" damageBoxes="14" armor="4" arc="F120">
+							<property name="thrustRating" value="8" />
+						</system>					
+					</systems>
+				</section>
+			
+				<section name="PORT" class="MultiSection">
+					<systems>
+						<system class="Thruster" damageBoxes="14" armor="4" arc="P60">
+							<property name="thrustRating" value="8" />
+						</system>					
+					</systems>
+					<section name="FWD PORT" class="Section">
+						<systems>
+							<system class="Structure" damageBoxes="24" armor="4" arc="FP120" />
+							<weapon type="Antiproton Gun" armor="3" arc="FP120" number="4" />
+						</systems>
+					</section>
+					<section name="AFT PORT" class="Section">
+						<systems>
+							<system class="Structure" damageBoxes="24" armor="4" arc="AP120" />
+							<weapon type="Antiproton Gun" armor="3" arc="AP120" number="6" />
+						</systems>
+					</section>
+				</section>
+				
+				<section name="PRIMARY" class="StructureSection" hitLocationChart="PRIMARY HITS">
+					<systems>
+						<system class="Structure" damageBoxes="40" armor="5" />
+						<system class="CommandAndControl" damageBoxes="12" armor="5" />
+						<system class="Sensors" damageBoxes="12" armor="5" power="8">
+							<property name="sensorRating" value="8" />
+						</system>					
+						<system class="Engine" damageBoxes="12" armor="5">
+							<property name="freeThrust" value="8" />
+							<property name="efficiency" value="2/1" />
+						</system>					
+						<system class="Reactor" damageBoxes="15" armor="5">
+							<property name="availablePower" value="48" />
+						</system>					
+						<system class="Hangar" damageBoxes="1" armor="5">
+							<property name="launchRate" value="1" />
+						</system>					
+					</systems>
+				</section>
+
+				<section name="TURRET #1" class="Turret" arc="360">
+					<systems>
+						<weapon type="Antimatter Cannon" armor="3" arc="360" number="1" />
+						<weapon type="Antimatter Cannon" armor="3" arc="360" number="2" />
+					</systems>
+				</section>
+
+				<section name="TURRET #2" class="Turret" arc="360">
+					<systems>
+						<weapon type="Antimatter Cannon" armor="3" arc="360" number="3" />
+					</systems>
+				</section>
+
+				<section name="STARBOARD" class="MultiSection">
+					<systems>
+						<system class="Thruster" damageBoxes="14" armor="4" arc="S60">
+							<property name="thrustRating" value="8" />
+						</system>					
+					</systems>
+					<section name="FWD STBD" class="Section">
+						<systems>
+							<system class="Structure" damageBoxes="24" armor="4" arc="FS120" />
+							<weapon type="Antiproton Gun" armor="3" arc="FS120" number="5" />
+						</systems>
+					</section>
+					<section name="AFT STBD" class="Section">
+						<systems>
+							<system class="Structure" damageBoxes="24" armor="4" arc="AS120" />
+							<weapon type="Antiproton Gun" armor="3" arc="AS120" number="7" />
+						</systems>
+					</section>
+				</section>
+			
+				<section name="AFT" class="Section">
+					<systems>
+						<system class="Structure" damageBoxes="24" armor="4" arc="A120" />
+						<system class="Thruster" damageBoxes="14" armor="4" arc="A120">
+							<property name="thrustRating" value="8" />
+						</system>					
+					</systems>
+				</section>			
+			</sections>
+		</ship-definition>						
+	</unit>				
+</unit-definition>

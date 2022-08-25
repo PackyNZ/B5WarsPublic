@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<defs>
+<g>
+<symbol overflow="visible" id="glyph27-1">
+<path style="stroke:none;" d="M 5.6875 1.703125 L 2.421875 1.046875 L 2.421875 2.375 L 5.6875 1.703125 Z M 6.5625 1.4375 L 6.5625 1.984375 L 0 3.375 L 0 2.859375 L 1.6875 2.53125 L 1.6875 0.890625 L 0 0.5625 L 0 0.046875 L 6.5625 1.4375 Z M 6.5625 1.4375 "/>
+</symbol>
+</g>
+</defs>
+
+<!-- Class-A Missile Rack -->
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 480.375,434.125 0,-22.5 11.25,0 0,-6.75 -2.25,0 2.25,-4.5 0,-4.5 -2.25,0 5.75,-11.25 5.5,11.25 -2.25,0 0,4.5 2.25,4.5 -2.25,0 0,6.75 11.25,0 0,22.5 -29.25,0 z m 0,0"/>
+<g style="fill:#211e1e;fill-opacity:1" transform="matrix(0,-0.93607748,1.1260444,0,35.192085,872.14606)">
+  <use xlink:href="#glyph27-1" x="510.75009" y="406.72961"/>
+</g>
+
+<!-- Damage Boxes -->
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 491.625,416.125 0,6.75 -6.75,0 0,-6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 498.375,416.125 0,6.75 -6.75,0 0,-6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 505.125,416.125 0,6.75 -6.75,0 0,-6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 491.625,422.875 0,6.75 -6.75,0 0,-6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 498.375,422.875 0,6.75 -6.75,0 0,-6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 505.125,422.875 0,6.75 -6.75,0 0,-6.75 6.75,0 z m 0,0"/>
+
+</svg>

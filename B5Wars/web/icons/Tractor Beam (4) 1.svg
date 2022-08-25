@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Tractor Beam (4) -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 380.25 342 L 380.25 355.5 L 384.75 360 L 391.5 378 L 391.5 360 L 398.25 360 L 400.5 375.75 L 402.75 360 L 409.5 360 L 409.5 378 L 416.25 360 L 420.75 355.5 L 420.75 342 L 380.25 342 Z M 380.25 342 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 393.75 346.5 L 393.75 353.25 L 387 353.25 L 387 346.5 L 393.75 346.5 Z M 393.75 346.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 400.5 346.5 L 400.5 353.25 L 393.75 353.25 L 393.75 346.5 L 400.5 346.5 Z M 400.5 346.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 407.25 346.5 L 407.25 353.25 L 400.5 353.25 L 400.5 346.5 L 407.25 346.5 Z M 407.25 346.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 414 346.5 L 414 353.25 L 407.25 353.25 L 407.25 346.5 L 414 346.5 Z M 414 346.5 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

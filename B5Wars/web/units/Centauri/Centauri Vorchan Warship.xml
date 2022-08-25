@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+
+	<unit name="Centauri Vorchan Warship" hull="Vorchan" version="3" author="AOG" source="SF">			
+		<specs type="Heavy Combat Vessel" pointValue="360" rammingFactor="135" />
+		<maneuvering turnCost="1/2" turnDelay="1/3" accelDecelCost="2" pivotCost="2+2" rollCost="1+1" /> 		
+		<combat-stats fwdAftDefense="12" stbPortDefense="14" initiativeModifier="8" />
+		<service-history>
+			<period-of-service faction="Centauri" inService="2160" availability="Base" deployment="Unlimited" />
+		</service-history>
+				
+		<ship-definition>	
+			<hit-location-charts>		
+				<hit-location-chart name="FORWARD HITS">	 	
+					<hit-location class="SystemHitLocation" from="1" to="3">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="4" to="5">
+						<property name="systemType" value="Plasma Accelerator" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="6" to="9">
+						<property name="systemType" value="Twin Array" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+				
+				<hit-location-chart name="AFT HITS">	 	
+					<hit-location class="SystemHitLocation" from="1" to="5">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="6" to="9">
+						<property name="systemType" value="Jump Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+		
+				<hit-location-chart name="PRIMARY HITS">			
+					<hit-location class="SystemHitLocation" from="1" to="7">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="8" to="10">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="12">
+						<property name="systemType" value="Sensors" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="15">
+						<property name="systemType" value="Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="16" to="17">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="18" to="19">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="20" to="20">
+						<property name="systemType" value="C &amp; C" />
+					</hit-location>
+				</hit-location-chart>
+			</hit-location-charts>
+			
+			<sections>
+				<section name="FORWARD" class="StructureSection" arc="F180" hitLocationChart="FORWARD HITS">
+					<systems>
+						<system class="Structure" damageBoxes="48" armor="5" />
+						<system class="Thruster" damageBoxes="10" armor="5" arc="F120">
+							<property name="thrustRating" value="3" />
+						</system>
+						<system class="Thruster" damageBoxes="10" armor="5" arc="F120">
+							<property name="thrustRating" value="3" />
+						</system>
+						<weapon type="Plasma Accelerator" armor="4" arc="F120" number="1" />
+						<weapon type="Twin Array" armor="3" arc="F240" number="2" />
+						<weapon type="Twin Array" armor="3" arc="F240" number="3" />
+					</systems>
+				</section>
+			
+				<section name="PORT" class="ChildSection">
+					<property name="parentSections" value="PRIMARY" />
+					<systems>
+						<system class="Thruster" damageBoxes="15" armor="5" arc="P120">
+							<property name="thrustRating" value="5" />
+						</system>
+					</systems>
+				</section>
+							
+				<section name="PRIMARY" class="StructureSection" hitLocationChart="PRIMARY HITS">
+					<systems>
+						<system class="Structure" damageBoxes="28" armor="6" />
+						<system class="CommandAndControl" damageBoxes="12" armor="6" />
+						<system class="Sensors" damageBoxes="20" armor="6" power="4">
+							<property name="sensorRating" value="8" />
+						</system>					
+						<system class="Engine" damageBoxes="11" armor="7">
+							<property name="freeThrust" value="10" />
+							<property name="efficiency" value="2/1" />
+						</system>					
+						<system class="Reactor" damageBoxes="12" armor="7">
+							<property name="availablePower" value="20" />
+						</system>					
+						<system class="Hangar" damageBoxes="2" armor="6">
+							<property name="launchRate" value="2" />
+						</system>					
+					</systems>
+				</section>
+
+				<section name="STARBOARD" class="ChildSection">
+					<property name="parentSections" value="PRIMARY" />
+					<systems>
+						<system class="Thruster" damageBoxes="15" armor="5" arc="S120">
+							<property name="thrustRating" value="5" />
+						</system>
+					</systems>
+				</section>
+
+				<section name="AFT" class="StructureSection" arc="A180" hitLocationChart="AFT HITS">
+					<systems>
+						<system class="Structure" damageBoxes="44" armor="4" />
+						<system class="Thruster" damageBoxes="8" armor="4" arc="A120">
+							<property name="thrustRating" value="5" />
+						</system>					
+						<system class="Thruster" damageBoxes="8" armor="4" arc="A120">
+							<property name="thrustRating" value="5" />
+						</system>
+						<system class="JumpEngine" damageBoxes="16" armor="6" power="3">
+							<property name="jumpDelay" value="16" />
+						</system>
+					</systems>
+				</section>
+			</sections>
+		</ship-definition>						
+	</unit>				
+</unit-definition>

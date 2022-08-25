@@ -1,0 +1,398 @@
+Checked: SF2 (up to markab) S7, S8, V4, V5, V6, L2, WotCR 
+
+For next Unit Viewer release:
+	-B5W Units in XML
+	Unit Definition Guide
+
+	Systems - XML parameters, toString()
+	Hangars, Self-Repair, Cargo, Sensors, Jump Engine
+	Limited Autonomy, Bio-Drive System, Singularity Drive System, Advanced Jump Drive?
+	No Energy Web
+
+	Bases
+	Fighters?
+	Shuttles?
+	
+	Traits
+	Unreliabilities
+	Initiative Bonus
+	Adaptive Armor
+	
+	GUI - Unit viewer
+	Hit Locators
+	
+Weapons + XML
+SmallUnits + XML
+GUI - Interface & Interaction handlers
+
+Game Core
+GUI - Interface
+
+
+Units
+----------------------------------------------------------------------------
+PODS (IF USED) - Civilian Tug
+OPTIONAL POD (Cost: 10) - civilian tug sf2, Llort Daggaden Penetrators
+Can carry up to 100 boxes of cargo pods attached to starboard - Llort Erlorra Early Raiding Cruiser
+Accel Cost 3 without pods - Torata Heltaka Logistics Cruiser
+JAMMER If used by the Minbari, this ship is equipped with a jammer in the primary section (hit on 8-9). Increase the ship's cost by 75 points. - Minbari Protectorate Rolentha Combat Tug
+
+Enormous Unit - Civilian Fixed Jump Gate
+Does Not Block LOS - Civilian Fixed Jump Gate
+
+
+Sections
+----------------------------------------------------------------------------
+Shadow Energy Diffuser - can only be used for systems on the same side of the ship, or central systems
+
+Sections on this base can be hit by fire from any unit they could legally target (i.e., is within the firing arc of their weapons). - Llort Kaedashkada Starbase
+
+Particle beams are lost if the cargo pod they are attached to is dropped. - Alacan Azafac Armed Freighter
+
+ORBITAL SEGMENTS Can be targeted as a fighter with defense 8/8. - Kirishiac Lordship
+
+
+Hit Locations
+----------------------------------------------------------------------------
+return roll
+
+Ipsha Battleglobe - 9-10: Fwd/Aft Thrust
+port side hit natural 20 C&C - olympus
+missile rack any - warlock
+Sections on this base can be hit by fire from any unit they could legally target (i.e., is within the firing arc of their weapons). - Llort Kaedashkada Starbase
+
+*Power Enhancement Pod (Optional) - Ipsha Tetra Escort If power enhancement pod is present, it is hit on a primary roll of 1-2 instead of the thrusters
+10-11: Cargo (if pod attached) - Llort Daggaden Penetrators
+TWIN ARRAYS Use the arc shown here if a cargo pod is attached - Llort Daggaden Penetrators
+Agile Ship (without pod) - Llort Daggaden Penetrators
+1(+1) Thrust - Llort Daggaden Penetrators
+
+orbital - 
+orbital segment - 
+heavy weapon orbital - 
+orbital hit on structure - 
+GA/side GA orbital - 
+
+
+Systems
+----------------------------------------------------------------------------
+*Structure
+*ConnectingStrut
+*Bulkhead
+*Tendril
+
+*EM Shield
+*Gravitic Shield
+*Shield Generator
+-Shield Projector
+xShading Field - The Dark Knife
+xThought Shield - Thoughtforce, Mindrider Consortium
+xThought Shield: Absorbs 9 points of damage each turn - Mindrider Thought Projections
+!Shield Reinforcement - Mindrider Consortium
+!Flare Shielding - The Triad: Order: Seraph
+Shade Modulator - Torvalus Veiled Scimitar
+xDeflector Shield (Star Trek)
+xShield Projection (Star Trek)
+
+Self-Repair - Minbari Command White Star
+Self-Repair - Ancient pg 231
+Self-Repair - Vorlon pg 231
+Self-Repair - Shadows pg 241
+Structure Self-Repair - Triad pg 250, The Triumviron
+-Energy Diffuser - Shadow Scout pg 236
+xDeflector Shield (Star Trek)
+
+Reactor
+Power Capacitor - Vorlon Heavy Cruiser pg 234
+Mag-Gravitic Reactor (L2 pg 20) - Ipsha Battleglobe
+Plasma Battery - Pak'ma'ra Thar'not'ak Plasma Cruiser
+
+Cargo
+Quarters - EA Tantalus Assault Transport
+cargo/troops/passengers/ - auxiliaries sf2 pg 19
+Prisoners/Troops
+Cargo/Troops - Balosian Talasi Assault Ship
+Cargo/Medical Bay - Dilgar Eskravat-H Medical Ship
+Marine Barracks - Drazi Claweagle Direct Assault Frigate
+!Diplomatic Quarters - EarthForce One
+
+Sensors - (L2 pg 4)
+Normal Sensors - EA Shadow Omega Destroyer
+Advanced Sensors - Shadow Scout
+Antiquated Sensors (L2 pg 43) - Grome Mogorta Warship
+-Aegis Sensor Pod - EA Hyperion Aegis Cruiser
+Cannot use offensive EW - Markab Kowart Rescue Cruiser
+Mass Sensor System - Streib Collector Ship
+Constrained ELINT Ship - Mindrider Consortium
+Hyach Stealth Ships (L2 pg 5)
+	Limited Stealth Abilities - Hyach Alichi Tal Infiltrator
+Stealth Specialist - Hyach Alichi Tal Infiltrator
+Chameleon Sensors - Centauri Dargan Strike Cruiser
+Cloaking Device (Star Trek)
+
+-Jammer
+
+Command & Control - OSATs no C&C
+Control (LCV) - Narn D'Tarn Light Gunboats (V4)
+Pilot - Shadow Scout pg 238
+Limited Autonomy - Vorlons pg 233
+
+Computer (L2 pg 4) - Hyach Urutha Kal Dreadnought
+	1 BONUS FIRE CONTROL POINT - Hyach Takalti Kal Heavy OSATs
+Targeting Array (L2 pg 43) - Grome Adrina War Escort
+Targeting Array (Stabilized Version) - Grome Gormok Orbital Satellites
+Escort Array (L2 pg 43) - Grome Adrina War Escort
+
+Thruster
+Engine
+Drive (LCV) - Narn D'Tarn Light Gunboats (V4)
+Bio-Thruster - Shadow Scout
+Bio-Drive System - Shadow Scout pg 236
+Bio Drives (Star Trek, Species 8472 Battleship)
+Singularity Drive System (L2 pg 21) - Ipsha Battleglobe
+Impulse Thruster (Star Trek)
+!Impulse Drive (Star Trek)
+
+Jump Engine
+Phasing Drive - Shadow Scout pg 237
+Half phasing - pg 238
+Advanced Jump Drive - Vorlon Heavy Cruiser
+Special Jump Drive - The Dark Knife
+Transverse Drive - Torvalus
+!Extra-dimensional Jump Engine - Walker Guideship
+Extra-dimensional Jump Drive - Walker Guideship
+Warp Engine (Star Trek)
+Warp Engine Ring (Star Trek, Vulcan)
+Hyperdrive (Star Trek)
+Hyperdrive Multiplier x2 (Star Trek)
+Fluidic Drive (Star Trek, Species 8472 Battleship)
+
+Hangar
+multi-part/directional hangar - EA Hyperion Patrol Cruiser
+Catapult
+External Fighter Rail
+!Docking Bay - Walker Traveler
+6 Drones Linked to C&C (see rules) - Torvalus Black Rapier
+DOCKING BAY 24 Mapmaker Probes or 6 Scribes or 1 Waymarker or 2 Pathfinders or any combination. Launch Rate: Special (See rules) - Walker Traveler
+May not substitute H-K's for Assault Shuttles - WCR Orieni Enlightenment Invader
+May replace minesweeping shuttles with a flight of H-K's for 30 Combat Points (plus cost of HK's) - WCR Orieni Vigilant Combat Support Ship
+6 Minesweeping Shuttles - WCR Orieni Vigilant Combat Support Ship
+
+Tractor Beam - Minbari White Star, Vree Vortna Tug
+xEnergy Draining Tractor Beam (Star Trek, Borg Cube)
+
+-Grappling Claw - Drazi Claweagle Direct Assault Frigate
+
+-Hunter Killer Control System (WotCR pg 33) - Orieni Commune Battle Leader
+-HKCommandLink Jamming (WotCR pg 34)
+
+-Reload Rack
+-Antifighter Missiles are standard (no extra cost) - EA Hyperion Aegis Cruiser, EA Tethys Light Escort Carrier
+
+!particle impeder
+!interceptor
+-TWIN ARRAYS Use the arc shown here if a cargo pod is attached - Llort Daggaden Penetrators
+
+
+Traits/Special Notes
+----------------------------------------------------------------------------
+Atmospheric Capable (if both sides intact) - Drazi Sleekbird Assault Cruiser
+
+Agile Ship (without pod) - Llort Daggaden Penetrators
+Accel Cost 3 without pods - Torata Heltaka Logistics Cruiser
+*Turning in Reverse: add +1/3 to turn cost - Hyach Alichi Kav Stealth Cruiser
+Continuously Pivoting - Mindrider Wheel of Thought
+May Skin Dance - Torvalus Black Rapier
+May Jink 2 levels (at pivot cost per level) - Torvalus Shrouded Saber
+
+<initiative-influence initiativeModifier="1" appliesTo="Command|Faction|Fleet|Foe|Friendly|Named" target="Sky Serpents" appliesWithin="30" />
+
+Adds +1 initiative bonus to all EA ships in the scenario (including itself) - EA Poseidon Supercarrier
+Adds +1 initiative bonus to all Centauri ships in the scenario - Centauri Primus Maximus Command Cruiser
++1 init friendly within 30 - kirishiac overlord
+Initiative Bonus Provides a +1 initiative bonus to all Sky Serpents within 5 hexes. - Drazi Fanged Serpent Command Fighters
++1 initiative to fleet (Star Trek)
+Command Bonus +2 - Dilgar Garasoch-D Command Carrier
+
+*Normal Sensors - EA Shadow Omega Destroyer
+Advanced Sensors - Shadow Scout
+Antiquated Sensors (L2 pg 43) - Grome Mogorta Warship
+Cannot use offensive EW - Markab Kowart Rescue Cruiser
+Special EW Requirement (4 EW must be DEW) - TFS Blockade Runner
+Chameleon Sensors - Centauri Dargan Strike Cruiser
+Mass Sensor System - Streib Collector Ship
+Constrained ELINT Ship - Mindrider Consortium
+Jealous ELINT Ship - The Triad: Chaos: Demon
+
+-ADAPTIVE ARMOR - Minbari White Star 3 Note: Max 1 point per weapon type
+-ADAPTIVE ARMOR - Vorlon Heavy Cruiser 6 Note: Max 3 pts per weapon type, Can have 3 points pre-assigned
+-Advanced Armor - Shadow Scout
+Hardened Adv. Armor - Kirishiac Lordship pg 248
+
+Triad Capital Ship - The Triad: Chaos: Demon
+Walker Jump Ship - Walker Guideship
+Primordial Shadow Ship - Shadow Battle Cruiser
+Vorlon Ship Petals - Vorlon Strike Cruiser
+
+Advanced Jump Drive - Vorlon Heavy Cruiser
+Special Jump Drive - The Dark Knife
+Bio-Drive System - Shadow Scout
+Extra-dimensional Jump Drive - Walker Guideship
+Singularity Drive System (L2 pg 21) - Ipsha Battleglobe
+Bio Drives (Star Trek, Species 8472 Battleship)
+Impulse Drive (Star Trek)
+Hyperdrive Multiplier x2 (Star Trek)
+
+Crew Specialists: 1 - Hyach Alichi Kav Stealth Cruiser
+Other Specialists: 2
+Hyach crew specialists (L2 pg 7, S7 pg 2)
+	Defense Specialist - Hyach Okath Kur Escort Frigate (V5)
+	Intelligence Specialist - Hyach Irokai Kal Command Gunship
+	Other Specialists: 2 - Hyach Irokai Kal Command Gunship
+	Stealth Specialist - Hyach Alichi Tal Infiltrator
+
+Unreliable - S5 (unreliabilities/disadvantages)
+Unreliable Ship (Communications Problems, Power Fluctuations, Sensor Fluctuations, Engine Fluctuations, Poor Defensive Targeting, Sluggish) - Grome Trokan Margus Command Flagship
+Unreliable Ship (Vulnerable to Criticals, Comm Problems, Sensor Fluctuations, Ablated Armor) - Centauri Centaurum Battleship (Upgraded)
+Unreliable Ship (Vulnerable to Criticals, Weapon Misfirings, Pre-Existing Damage) - Centauri Optine Battlecruiser (Upgraded)
+Unreliable (After 2205) Vulnerable to Criticals - Centauri Accelerator Primus Battlecruiser
+Unreliable Ship (Inadequate Hangars (Side)) - Grome Gralac Heavy Carrier
+Unreliable Ship (Haphazard Targeting Syst.) - Grome Adrina War Escort
+Unreliable Ship (Fractured Lock-Ons) - Grome Melagar Frigate Leader
+	No further targets possible - Grome Melagar Frigate Leader
+Unreliable Ship (Vulnerable to Criticals) - Hurr Torkoth Fast Frigate
+Unreliable Ship (Y1998 Only) Power Fluctuations - Drazi Auk Gunship (V6)
+	ablated armor - centaurum sf2
+	sluggish - kendari sf2
+	weapon misfirings, pre-existing damage - optine sf2
+
++4 Ramming Bonus
+
+Minesweeper Bonus: +3 - Centauri Leevan Mine Sweeper
+
+Hyach Stealth Ships (L2 pg 5)
+	Limited Stealth Abilities - Hyach Alichi Tal Infiltrator
+Stealth Specialist - Hyach Alichi Tal Infiltrator
+
+6 Drones Linked to C&C (see rules) - Torvalus Black Rapier
+DOCKING BAY 24 Mapmaker Probes or 6 Scribes or 1 Waymarker or 2 Pathfinders or any combination. Launch Rate: Special (See rules) - Walker Traveler
+
+Low Crew Training - Drazi Taileagle Escort Frigate
+10 Marine Contingents - Raider Assault Sloop (V4)
+telepaths vs shadows pg 239
+affected by gravitic argumentor - kirishiac warrior projectiles
+attacks by ramming - kirishiac warrior projectiles
+can carry up to 100 boxes of cargo pods - llort erlorra early raiding cruiser
+
+Combat Transporters (+2) (Star Trek)
+Enhanced Transporters (Star Trek, Jem'Hadar Battlecruiser)
+
++6 Pilot Ejection Bonus - Yolu Utan Heavy Fighters
+
+May not substitute H-K's for Assault Shuttles - WCR Orieni Enlightenment Invader
+May replace minesweeping shuttles with a flight of H-K's for 30 Combat Points (plus cost of HK's) - WCR Orieni Vigilant Combat Support Ship
+
+
+Weapons
+----------------------------------------------------------------------------
+targetting solution
+
+No Energy Web - Belt Alliance
+
+Targeting Array (L2 pg 43) - Grome Adrina War Escort
+Escort Arrays (L2 pg 43) - Grome Adrina War Escort
+ 
+Cooldown Periods (L2 pg 20)
+Ion weapons (L2 pg 16)
+Grome Railgun Shells (S7 pg 4)
+Proximity Weapons (L2 pg 28)
+Limpet-Bore Torpedo (L2 pg 32)
+Missiles (S8 pg 8)
+Antifighter Missiles are standard (no extra cost) - EA Hyperion Aegis Cruiser, EA Tethys Light Escort Carrier
+
+Benefits Against EM Weapons (L2 pg 25)
+
+
+Fighters
+----------------------------------------------------------------------------
+destroyed/inoperable/destroyed this turn
+
+2 Per Hangar Box - Vree Zorth Light Fighters
+Does not need hangars. - Walker Mapmaker Sensor Probes
+
+Can carry 4 missiles, Launch rate 1 per turn
+Can carry 8 missiles, and fire a maximum of 2 missiles per turn at the same target
+Can carry 4 Y-missiles (launch range 8, 6 damage, 2 points, dogfight firing rules) - EA Anti-Raider Starfuries
+Can carry 8 missiles, and fire a maximum of 2 missiles per turn at the same target. - S8 Rogolon Vostor Assault Fighter
+
+Destroyed on dropout. - The Triad: Neutrality: Phantom
+Ghost Ships (6): Must be bought as full flights. Loss of ghosts reduces offensive bonus. See rules. - The Triad: Neutrality: Phantom
+
+Includes Navigator
+Navigator available
+OPTIONAL NAVIGATOR Cost: 10 Combat Points Initiative Bonus: +1 Missile guidance ability - Dilgar Heavy Thorun Dartfighters (Mk-III)
+Price and statistics includes navigator - Cascor Caltus Torpedo Fighters
+
+ENERGY DIFFUSER Each fighter has one diffuser with 2 tendrils. Each tendril can absorb three hits. One point per fighter can be emptied each turn. - Shadow Medium Fighters
+
+weapon cannot fire in same turn - Cascor Calaq Assault Fighters
+Cannot fire the light fusion cannons and light molecular disruptors in the same turn - Yolu Utan Heavy Fighters
+weapon can fire same turn but at penalty - Cascor Tiqincc Medium Fighters
+
+-2 critical bonus - Ipsha Urchin Heavy Fighters
+2 Weapon Hardpoints - Kor-Lyan Koskova Battlecruiser	
+6 ammunition per gun - Grome Regla Light Fighters
+Stealth Fighter - Centauri Rutarian Strike Fighters
++6 Pilot Ejection Bonus	- Yolu Utan Heavy Fighters
+Attacks by Ramming - Kirishiac Warrior Projectiles
+
+Hunter-Killer Remote Fighters (WotCR pg 33)
+UNCONTOLLED PENALTIES -3 to Initiative Bonus - WCR Orieni Shining Light Hunter-Killer Fighter 
+UNCONTOLLED PENALTIES May only use half of free thust for acceleration or deceleration - WCR Orieni Shining Light Hunter-Killer Fighter
+No weapons - WCR Orieni Shining Light Hunter-Killer Fighter
+May not use Ramming Prow enhancement - WCR Orieni Shining Light Hunter-Killer Fighter
+Ram Attempt Penalty of -1 per 2 hexes traveled during ram attempt - WCR Orieni Shining Light Hunter-Killer Fighter
++1 Ramming Bonus to Ram Attempt - WCR Orieni Shining Light Hunter-Killer Fighter
+Ramming Attempt Modifiers & Ramming Results charts - WCR Orieni Shining Light Hunter-Killer Fighter
+
+Initiative Bonus Provides a +1 initiative bonus to all Sky Serpents within 5 hexes. - Drazi Fanged Serpent Command Fighters
+warrior projectile sf2 pg 53
+Affected by Gravitic Augmenter - Kirishiac Warrior Projectiles
+
+Armor shown includes gravitic shield. If this is deactivated, reduce all armor by 1 and increase thrust by 2. - Abbai Kotha Medium Fighters
+
+Also has one ionizer tail gun, using the above stats. Unlinked. Uses the reverse weapon arc. Can fire on the same turn as forward ionizers at a -2 penalty. - Cascor Tiqincc Medium Fighters
+
+*Locked-onto as individual units - Super-Heavy Ftrs
+*Do not use flight level combat for this unit - Super-Heavy Ftrs
+One shot is fired per flight per turn. - The Triad: Chaos: Imp
+
++6 Pilot Ejection Bonus - Yolu Utan Heavy Fighters
+
+H.O.T. REFIT Reduce armor by 1/2 in each direction (round down) and increase free thrust by 1. Reduce point cost by 1 for each point of armor removed after the first 4 points. - V6 Centauri Phalan-I Heavy Interceptor
+
+Special Jump Drive: Jump Delay 20 turns. - Torvalus Stiletto Drones
+10 turn Jump Delay. - Walker Mapmaker Sensor Probes
+
+Special Shading Field: See rules. - Torvalus Stiletto Drones
+Thought Shield: Absorbs 9 points of damage each turn - Mindrider Thought Projections
+
+3 EW (see rules). - Walker Mapmaker Sensor Probes
+
+
+Other
+----------------------------------------------------------------------------
+Enhancements
+Elite Officers (S7 pg 5)
+	Hurr Expert Quartermaster (L2 pg 48)
+Hyach Crew Specialists (L2 pg 7)
+Poor Crews (WotCR pg 24)
+Unprofessional Squadrons (WotCR pg 23)
+
+Mines (S7 from pg 13)
+Usuuth Mines (S8 pg 12)
+Minesweeping Shuttle (WotCR pg 34)
+
+Scenarios
+HKCommandLink Jamming (WotCR pg 34)
+

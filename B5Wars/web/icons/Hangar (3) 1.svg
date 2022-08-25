@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Hangar (3) -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 292.5 195.75 L 292.5 220.5 L 328.5 220.5 L 328.5 195.75 L 321.75 200.25 L 316.820312 195.75 L 305.570312 195.75 L 299.25 200.25 L 292.5 195.75 Z M 292.5 195.75 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Annotation -->
+<path style="opacity:0.5;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff1e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 313.94169,595.15292 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+     
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 307.25 207 L 307.25 213.75 L 300.5 213.75 L 300.5 207 L 307.25 207 Z M 307.25 207 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 314 207 L 314 213.75 L 307.25 213.75 L 307.25 207 L 314 207 Z M 314 207 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 320.75 207 L 320.75 213.75 L 314 213.75 L 314 207 L 320.75 207 Z M 320.75 207 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

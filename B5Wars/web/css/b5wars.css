@@ -1,0 +1,34 @@
+BODY {margin: 5px; background: #000020;}
+BODY.applet {margin: 0px;}
+BODY.scs {margin: 5px;}
+
+DIV.full {width: 100%; height: 100%;}
+DIV.editor {width: 612px; height: 792px; background: white;}
+DIV.scs {width: 612px; height: 792px; background: white;}
+
+TABLE {border: 0px;}
+TABLE.full {width: 100%; height: 100%;}
+TABLE.wide {width: 100%;}
+TABLE.centered {margin-left: auto; margin-right: auto;}
+
+TR.searchresultsheader {background: #354969;; font-family: Verdana; font-size: 10pt; color: white; font-weight: bold;}
+TR.searchresults {background: #4A5D80; font-family: Verdana; font-size: 9pt; color: white; font-weight: normal;}
+TR.searchresultshighlighted {background: #657FA9; font-family: Verdana; font-size: 9pt; color: white; font-weight: normal;}
+
+TH.searchresults {}
+
+TD.full {width: 100%; height: 100%;}
+TD.searchresults {}
+
+P {font-family: Verdana; font-size: 10pt; color: white; font-weight: normal; text-align: center;}
+FONT {font-family: Verdana; font-size: 10pt; color: white; font-weight: normal;}
+FONT.copyright {font-size: 8pt;}
+FONT.contact {font-size: 8pt;}
+FONT.header {font-size: 11pt; font-weight: bold;}
+	
+IMG {border: 0px;}
+
+INPUT.menubutton {width: 100px; font-family: Verdana; font-size: 10pt; font-weight: bold;}
+
+A.menubutton {text-decoration: none;}
+A.contact {font-family: Verdana; font-size: 8pt; font-weight: normal;}

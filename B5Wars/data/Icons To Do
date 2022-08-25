@@ -1,0 +1,46 @@
+		new ShipWeapon("Quad Particle Array",			8,	4,	new FireControl(new Integer(4), new Integer(4), new Integer(4))); // Quad Particle Beam?
+		new ShipWeapon("Heavy Particle Projector",		8,	3,	new FireControl(new Integer(3), new Integer(2), new Integer(-1))); // S8 Usuuth Orthuus Battle Leader
+		new ShipWeapon("Particle Projector",			6,	1,	new FireControl(new Integer(2), new Integer(2), new Integer(1))); // WCR Centauri Astur Assault Ship
+		new ShipWeapon("Light Particle Projector",		3,	1,	new FireControl(new Integer(2), new Integer(2), new Integer(3))); // S8 Usuuth Orthuus Battle Leader
+		new ShipWeapon("Sentinel Point Defense",		4,	1,	new FireControl()); // WCR Centauri Kendari Fleet Scout
+		new ShipWeapon("Particle Hammer",				12,	5,	new FireControl(new Integer(3), new Integer(1), new Integer(-2))); // S8 Usuuth Orthuus Battle Leader
+//		new ShipWeapon("Ultra Pulse Cannon",			28,	12,	new FireControl(new Integer(6), new Integer(6), new Integer(6))); // Ancients - Thoughtforce
+//		new ShipWeapon("Trioptic Pulsar",				6,	3,	new FireControl(new Integer(2), new Integer(3), new Integer(4))); // Ancients - Thoughtforce
+
+		// Laser Weapons
+		new ShipWeapon("Heavy Laser Lance",				6,	4,	new FireControl(new Integer(3), new Integer(3), new Integer(-5))); // WCR Orieni Benevolent Heavy Scout
+		new ShipWeapon("Laser Lance",					6,	4,	new FireControl(new Integer(3), new Integer(3), new Integer(-5))); // WCR Orieni Benevolent Heavy Scout
+		new ShipWeapon("Tactical Laser",				5,	4,	new FireControl(new Integer(2), new Integer(1), new Integer(-5))); // WCR Centauri Balcirax Attack Destroyer
+		new ShipWeapon("Imperial Laser",				8,	5,	new FireControl(new Integer(3), new Integer(2), new Integer(-5))); // WCR Centauri Celerian Warcruiser
+		
+		// Plasma Weapons
+//		new ShipWeapon("Hyperplasma Cutter",			16,	9,	new FireControl(new Integer(6), new Integer(6), new Integer(6))); // The Triumviron
+		
+		// Electromagnetic Weapons
+		new ShipWeapon("Sensor Spear",					6,	3,	new FireControl(new Integer(1), new Integer(1), new Integer(-1))); // S8 Abbai Nota Deep Scout
+		new ShipWeapon("Comm Jammer",					4,	3,	new FireControl(new Integer(2), new Integer(2), new Integer(0))); // S8 Abbai Nota Deep Scout, Com Jammer
+		
+		// Matter Weapons
+		new ShipWeapon("Gatling Railgun",				4,	1,	new FireControl(new Integer(0), new Integer(2), new Integer(4))); // WCR - Orieni Benevolent Heavy Scout
+		new ShipWeapon("Rapid Gatling Railgun",			4,	1,	new FireControl(new Integer(0), new Integer(2), new Integer(4))); // WCR - Orieni Benevolent Heavy Scout
+		new ShipWeapon("Gauss Cannon",					10,	4,	new FireControl(new Integer(2), new Integer(1), new Integer(-3))); // WCR - Orieni Obedient Patrol Frigate
+		new ShipWeapon("Heavy Gauss Cannon",			10,	4,	new FireControl(new Integer(3), new Integer(2), new Integer(-2))); // WCR - Orieni Paragon Strike Force Command Ship
+		
+
+
+
+-Cargo (*Marine Barracks, *Quarters, *Prisoners, *Troops, *Diplomatic Quarters)
+-C & C
+-Engine
+-Hangar
+-Jump Engine
+-Reactor
+-Sensors
+-Thruster
+
+External Fighter Rail
+Structure
+
+-Power Capacitor
+Structure Self-Repair
+Thought Shield

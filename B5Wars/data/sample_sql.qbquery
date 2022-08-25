@@ -1,0 +1,69 @@
+﻿-- display records
+Select * From user;
+Select * From unit;
+Select * From period_of_service;
+
+
+-- select Faction list
+Select Distinct(faction)
+From period_of_service
+Order By faction;
+
+
+-- select units for given faction
+Select u.type, u.model, Max(u.version) As version
+From unit As u
+  Inner Join period_of_service As ps On u.type = ps.type And u.model = ps.model And u.version = ps.version
+Where ps.faction = 'EA'
+Group By u.type, u.model
+Order By u.type, u.model;
+
+
+-- select units for given faction and time
+Select u.type, u.model, Max(u.version) As version
+From unit As u
+  Inner Join period_of_service As ps On u.type = ps.type And u.model = ps.model And u.version = ps.version
+Where ps.faction = 'EA'
+And (ps.in_service_from <= 2244 Or (ps.in_service_from Is NULL And ps.in_service_until > 2244))
+Group By u.type, u.model
+Order By u.type, u.model;
+
+
+-- select unit
+Select *
+From unit
+Where type = 'EA Hyperion Heavy Cruiser'
+And model = 'Theta Model'
+And version = 2;
+
+Select *
+From unit
+Where type = 'EA Hyperion Heavy Cruiser'
+And model = 'Theta Model'
+And version =
+  (Select Max(version)
+  From unit
+  Where type = 'EA Hyperion Heavy Cruiser'
+  And model = 'Theta Model');
+
+
+-- select obsolete units
+Select *
+From unit u1
+Where version <
+  (Select Max(version)
+  From unit u2
+  Where u2.type = u1.type
+  And u2.model = u1.model);
+
+
+-- delete unit
+Delete From unit
+Where type = 'EA Hyperion Heavy Cruiser'
+And model = 'Theta Model'
+And version = 3;
+-- below should be done automatically due to foreign key constraints
+Delete From period_of_service
+Where type = 'EA Hyperion Heavy Cruiser'
+And model = 'Theta Model'
+And version = 3;

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+
+	<unit name="Centauri Primus Battlecruiser" hull="Primus" version="3" author="AOG" source="SF">
+		<specs type="Capital Ship" pointValue="830" rammingFactor="260" />
+		<maneuvering turnCost="2/3" turnDelay="2/3" accelDecelCost="3" pivotCost="3+3" rollCost="2+2" />
+		<combat-stats fwdAftDefense="16" stbPortDefense="17" initiativeModifier="0" />
+		<service-history>
+			<period-of-service faction="Centauri" inService="2202" availability="Base" deployment="Unlimited" />
+		</service-history>
+
+		<ship-definition>
+			<hit-location-charts>
+				<hit-location-chart name="FORWARD HITS">
+					<hit-location class="SystemHitLocation" from="1" to="3">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="4" to="7">
+						<property name="systemType" value="Twin Array" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="8" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+
+				<hit-location-chart name="SIDE HITS">
+					<hit-location class="SystemHitLocation" from="1" to="3">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="4" to="7">
+						<property name="systemType" value="Battle Laser" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="8" to="11">
+						<property name="systemType" value="Twin Array" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="12" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+
+				<hit-location-chart name="AFT HITS">
+					<hit-location class="SystemHitLocation" from="1" to="7">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="8" to="12">
+						<property name="systemType" value="Jump Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+
+				<hit-location-chart name="PRIMARY HITS">
+					<hit-location class="SystemHitLocation" from="1" to="9">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="12">
+						<property name="systemType" value="Sensors" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="15">
+						<property name="systemType" value="Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="16" to="17">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="18" to="19">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="20" to="20">
+						<property name="systemType" value="C &amp; C" />
+					</hit-location>
+				</hit-location-chart>
+			</hit-location-charts>
+
+			<sections>
+				<section name="FORWARD" class="StructureSection" arc="F60" hitLocationChart="FORWARD HITS">
+					<systems>
+						<system class="Structure" damageBoxes="42" armor="5" />
+						<system class="Thruster" damageBoxes="10" armor="6" arc="F120">
+							<property name="thrustRating" value="3" />
+						</system>
+						<system class="Thruster" damageBoxes="10" armor="6" arc="F120">
+							<property name="thrustRating" value="3" />
+						</system>
+						<weapon type="Twin Array" armor="3" arc="F240" number="5" />
+						<weapon type="Twin Array" armor="3" arc="F240" number="6" />
+						<weapon type="Twin Array" armor="3" arc="F240" number="7" />
+						<weapon type="Twin Array" armor="3" arc="F240" number="8" />
+					</systems>
+				</section>
+
+				<section name="PORT" class="StructureSection" arc="P120" hitLocationChart="SIDE HITS">
+					<systems>
+						<system class="Structure" damageBoxes="56" armor="5" />
+						<system class="Thruster" damageBoxes="15" armor="5" arc="P120">
+							<property name="thrustRating" value="5" />
+						</system>
+						<weapon type="Battle Laser" armor="5" arc="FP120" number="1" />
+						<weapon type="Battle Laser" armor="5" arc="FP120" number="2" />
+						<weapon type="Twin Array" armor="3" arc="FP240" number="9" />
+						<weapon type="Twin Array" armor="3" arc="FP240" number="10" />
+					</systems>
+				</section>
+
+				<section name="PRIMARY" class="StructureSection" hitLocationChart="PRIMARY HITS">
+					<systems>
+						<system class="Structure" damageBoxes="40" armor="7" />
+						<system class="CommandAndControl" damageBoxes="20" armor="7" />
+						<system class="Sensors" damageBoxes="20" armor="7" power="5">
+							<property name="sensorRating" value="10" />
+						</system>
+						<system class="Engine" damageBoxes="18" armor="7">
+							<property name="freeThrust" value="10" />
+							<property name="efficiency" value="2/1" />
+						</system>
+						<system class="Reactor" damageBoxes="22" armor="8">
+							<property name="availablePower" value="48" />
+						</system>
+						<system class="Hangar" damageBoxes="14" armor="7">
+							<property name="launchRate" value="6" />
+						</system>
+					</systems>
+				</section>
+
+				<section name="STARBOARD" class="StructureSection" arc="S120" hitLocationChart="SIDE HITS">
+					<systems>
+						<system class="Structure" damageBoxes="56" armor="5" />
+						<system class="Thruster" damageBoxes="15" armor="5" arc="S120">
+							<property name="thrustRating" value="5" />
+						</system>
+						<weapon type="Battle Laser" armor="5" arc="FS120" number="3" />
+						<weapon type="Battle Laser" armor="5" arc="FS120" number="4" />
+						<weapon type="Twin Array" armor="3" arc="FS240" number="11" />
+						<weapon type="Twin Array" armor="3" arc="FS240" number="12" />
+					</systems>
+				</section>
+
+				<section name="AFT" class="StructureSection" arc="A60" hitLocationChart="AFT HITS">
+					<systems>
+						<system class="Structure" damageBoxes="40" armor="5" />
+						<system class="Thruster" damageBoxes="8" armor="5" arc="A120">
+							<property name="thrustRating" value="2" />
+						</system>
+						<system class="Thruster" damageBoxes="8" armor="5" arc="A120">
+							<property name="thrustRating" value="3" />
+						</system>
+						<system class="Thruster" damageBoxes="8" armor="5" arc="A120">
+							<property name="thrustRating" value="3" />
+						</system>
+						<system class="Thruster" damageBoxes="8" armor="5" arc="A120">
+							<property name="thrustRating" value="2" />
+						</system>
+						<system class="JumpEngine" damageBoxes="25" armor="6" power="3">
+							<property name="jumpDelay" value="16" />
+						</system>
+					</systems>
+				</section>
+			</sections>
+		</ship-definition>
+	</unit>
+</unit-definition>

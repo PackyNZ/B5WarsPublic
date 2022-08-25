@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Energy Mine -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 245.25 513 L 245.25 528.75 L 263.25 528.75 L 263.25 535.5 L 256.5 533.25 L 261 540 L 254.25 543.5 L 261 546.75 L 256.5 553.5 L 263.25 551.25 L 266.5 558 L 270 551.25 L 276.75 553.5 L 272.25 546.75 L 279 543.5 L 272.25 540 L 276.75 533.25 L 270 535.5 L 270 528.75 L 288 528.75 L 288 513 L 245.25 513 Z M 245.25 513 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 256.5 517.5 L 256.5 524.25 L 249.75 524.25 L 249.75 517.5 L 256.5 517.5 Z M 256.5 517.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 263.25 517.5 L 263.25 524.25 L 256.5 524.25 L 256.5 517.5 L 263.25 517.5 Z M 263.25 517.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 270 517.5 L 270 524.25 L 263.25 524.25 L 263.25 517.5 L 270 517.5 Z M 270 517.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 276.75 517.5 L 276.75 524.25 L 270 524.25 L 270 517.5 L 276.75 517.5 Z M 276.75 517.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 283.5 517.5 L 283.5 524.25 L 276.75 524.25 L 276.75 517.5 L 283.5 517.5 Z M 283.5 517.5 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

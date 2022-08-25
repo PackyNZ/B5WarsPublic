@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+
+	<unit name="Narn T'Loth Assault Cruiser" hull="T'Loth" version="3" author="AOG" source="SF">			
+		<specs type="Capital Ship" pointValue="500" rammingFactor="270" />
+		<maneuvering turnCost="2/3" turnDelay="1" accelDecelCost="4" pivotCost="2+2" rollCost="3+3" /> 		
+		<combat-stats fwdAftDefense="16" stbPortDefense="18" initiativeModifier="0" />
+		<service-history>
+			<period-of-service faction="Narn" inService="2241" availability="Base" deployment="Unlimited" />
+		</service-history>
+				
+		<ship-definition>	
+			<hit-location-charts>		
+				<hit-location-chart name="FORWARD HITS">	 	
+					<hit-location class="SystemHitLocation" from="1" to="5">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="6" to="8">
+						<property name="systemType" value="Light Pulse Cannon" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="9" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+				
+				<hit-location-chart name="SIDE HITS">	 	
+					<hit-location class="SystemHitLocation" from="1" to="4">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="5" to="7">
+						<property name="systemType" value="Heavy Plasma Cannon" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="8" to="9">
+						<property name="systemType" value="Light Pulse Cannon" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+		
+				<hit-location-chart name="AFT HITS">	 	
+					<hit-location class="SystemHitLocation" from="1" to="10">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="12">
+						<property name="systemType" value="Light Pulse Cannon" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+		
+				<hit-location-chart name="PRIMARY HITS">			
+					<hit-location class="SystemHitLocation" from="1" to="9">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="10">
+						<property name="systemType" value="Jump Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="12">
+						<property name="systemType" value="Sensors" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="14">
+						<property name="systemType" value="Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="15" to="17">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="18" to="19">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="20" to="20">
+						<property name="systemType" value="C &amp; C" />
+					</hit-location>
+				</hit-location-chart>
+			</hit-location-charts>
+			
+			<sections>
+				<section name="FORWARD" class="StructureSection" arc="F60" hitLocationChart="FORWARD HITS">
+					<systems>
+						<system class="Structure" damageBoxes="44" armor="4" />
+						<system class="Thruster" damageBoxes="10" armor="4" arc="F120">
+							<property name="thrustRating" value="4" />
+						</system>					
+						<system class="Thruster" damageBoxes="10" armor="4" arc="F120">
+							<property name="thrustRating" value="4" />
+						</system>					
+						<weapon type="Light Pulse Cannon" armor="2" arc="F180" number="5" />
+						<weapon type="Light Pulse Cannon" armor="2" arc="F180" number="6" />
+					</systems>
+				</section>
+			
+				<section name="PORT" class="StructureSection" arc="P120" hitLocationChart="SIDE HITS">
+					<systems>
+						<system class="Structure" damageBoxes="62" armor="4" />
+						<system class="Thruster" damageBoxes="15" armor="4" arc="P120">
+							<property name="thrustRating" value="4" />
+						</system>					
+						<weapon type="Heavy Plasma Cannon" armor="4" arc="FP60" number="1" />
+						<weapon type="Heavy Plasma Cannon" armor="4" arc="FP60" number="2" />
+						<weapon type="Light Pulse Cannon" armor="2" arc="P180" number="7" />
+					</systems>
+				</section>
+		
+				<section name="PRIMARY" class="StructureSection" hitLocationChart="PRIMARY HITS">
+					<systems>
+						<system class="Structure" damageBoxes="45" armor="5" />
+						<system class="CommandAndControl" damageBoxes="20" armor="5" />
+						<system class="Sensors" damageBoxes="21" armor="5" power="3">
+							<property name="sensorRating" value="7" />
+						</system>					
+						<system class="Engine" damageBoxes="20" armor="5">
+							<property name="freeThrust" value="12" />
+							<property name="efficiency" value="3/1" />
+						</system>					
+						<system class="JumpEngine" damageBoxes="24" armor="5" power="3">
+							<property name="jumpDelay" value="20" />
+						</system>					
+						<system class="Reactor" damageBoxes="21" armor="5">
+							<property name="availablePower" value="38" />
+						</system>					
+						<system class="Hangar" damageBoxes="26" armor="5">
+							<property name="launchRate" value="12" />
+						</system>					
+					</systems>
+				</section>
+		
+				<section name="STARBOARD" class="StructureSection" arc="S120" hitLocationChart="SIDE HITS">
+					<systems>
+						<system class="Structure" damageBoxes="62" armor="4" />
+						<system class="Thruster" damageBoxes="15" armor="4" arc="S120">
+							<property name="thrustRating" value="4" />
+						</system>					
+						<weapon type="Heavy Plasma Cannon" armor="4" arc="FS60" number="3" />
+						<weapon type="Heavy Plasma Cannon" armor="4" arc="FS60" number="4" />
+						<weapon type="Light Pulse Cannon" armor="2" arc="S180" number="8" />
+					</systems>
+				</section>
+			
+				<section name="AFT" class="StructureSection" arc="A60" hitLocationChart="AFT HITS">
+					<systems>
+						<system class="Structure" damageBoxes="48" armor="4" />
+						<system class="Thruster" damageBoxes="9" armor="4" arc="A120">
+							<property name="thrustRating" value="3" />
+						</system>					
+						<system class="Thruster" damageBoxes="9" armor="4" arc="A120">
+							<property name="thrustRating" value="3" />
+						</system>					
+						<system class="Thruster" damageBoxes="9" armor="4" arc="A120">
+							<property name="thrustRating" value="3" />
+						</system>					
+						<system class="Thruster" damageBoxes="9" armor="4" arc="A120">
+							<property name="thrustRating" value="3" />
+						</system>					
+						<weapon type="Light Pulse Cannon" armor="2" arc="A180" number="9" />
+						<weapon type="Light Pulse Cannon" armor="2" arc="A180" number="10" />
+					</systems>
+				</section>
+			</sections>
+		</ship-definition>						
+	</unit>				
+</unit-definition>

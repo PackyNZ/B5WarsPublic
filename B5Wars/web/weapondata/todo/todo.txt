@@ -1,0 +1,65 @@
+		// TODO: Mindrider, Torvalus, Triad, Walker (done systems)
+		
+		// Particle Weapons
+//		new ShipWeapon("Quad Particle Array",			8,	4,	new FireControl(new Integer(4), new Integer(4), new Integer(4))); // Quad Particle Beam?
+		new ShipWeapon("Heavy Interceptor Battery",		6,	3,	new FireControl(null, null, new Integer(10)), 4);
+		new ShipWeapon("Energy Pulsar",					6,	3,	new FireControl(new Integer(3), new Integer(2), new Integer(1)));
+		
+		new ShipWeapon("Discharge Cannon",				15,	5,	new FireControl(new Integer(2), new Integer(3), new Integer(4)));
+
+
+
+
+
+		
+		new ShipWeapon("Heavy Particle Projector",		8,	3,	new FireControl(new Integer(3), new Integer(2), new Integer(-1))); // S8 Usuuth Orthuus Battle Leader
+		new ShipWeapon("Particle Projector",			6,	1,	new FireControl(new Integer(2), new Integer(2), new Integer(1))); // WCR Centauri Astur Assault Ship
+		new ShipWeapon("Light Particle Projector",		3,	1,	new FireControl(new Integer(2), new Integer(2), new Integer(3))); // S8 Usuuth Orthuus Battle Leader
+		new ShipWeapon("Sentinel Point Defense",		4,	1,	new FireControl()); // WCR Centauri Kendari Fleet Scout
+		new ShipWeapon("Particle Hammer",				12,	5,	new FireControl(new Integer(3), new Integer(1), new Integer(-2))); // S8 Usuuth Orthuus Battle Leader
+
+		// Laser Weapons
+		new ShipWeapon("Heavy Laser Lance",				6,	4,	new FireControl(new Integer(3), new Integer(3), new Integer(-5))); // WCR Orieni Benevolent Heavy Scout
+		new ShipWeapon("Laser Lance",					6,	4,	new FireControl(new Integer(3), new Integer(3), new Integer(-5))); // WCR Orieni Benevolent Heavy Scout
+		new ShipWeapon("Tactical Laser",				5,	4,	new FireControl(new Integer(2), new Integer(1), new Integer(-5))); // WCR Centauri Balcirax Attack Destroyer
+		new ShipWeapon("Imperial Laser",				8,	5,	new FireControl(new Integer(3), new Integer(2), new Integer(-5))); // WCR Centauri Celerian Warcruiser
+//		new ShipWeapon("Strike Laser",					7,	4,	new FireControl(new Integer(2), new Integer(2), null)); // V6 Raider Ruffian Cruiser
+		new ShipWeapon("Medium Power Laser",			9,	5,	new FireControl(new Integer(5), new Integer(4), new Integer(3))); // Torvalus Veiled Scimitar
+		
+		// Molecular Weapons
+//		new ShipWeapon("Super Heavy Molecular Disruptor",	12,	10,	new FireControl(new Integer(3), new Integer(1), null)); // Yolu Early Defence Satellites
+//		new ShipWeapon("Light Molecular Disruptor",		6,	4,	new FireControl(new Integer(3), new Integer(0), new Integer(-4))); // Yolu Early Defence Satellites
+//		new ShipWeapon("Heavy Fusion Cannon",			10,	4,	new FireControl(new Integer(3), new Integer(3), new Integer(3))); // Yolu Hastan Escort Frigate
+//		new ShipWeapon("Fusion Cutter",					7,	4,	new FireControl(new Integer(3), new Integer(2), null)); // Yolu Early Defence Satellites
+//		new ShipWeapon("Molecular Penetrator",			10,	6,	new FireControl(new Integer(4), new Integer(-1), null)); // Yolu Defence Satellites
+//		new ShipWeapon("Early Fusion Agitator",			9,	4,	new FireControl(new Integer(4), new Integer(2), null)); // Yolu Defence Satellites
+		
+		// Electromagnetic Weapons
+		new ShipWeapon("Lightning Cannon",				15,	1,	new FireControl(new Integer(5), new Integer(5), new Integer(8)));
+		new ShipWeapon("Sensor Spear",					6,	3,	new FireControl(new Integer(1), new Integer(1), new Integer(-1))); // S8 Abbai Nota Deep Scout
+//		new ShipWeapon("Sensor Spike",					6,	3,	new FireControl(new Integer(2), new Integer(1), new Integer(-1))); // V6 Abbai Kirva Jammer Satellites
+		new ShipWeapon("Comm Jammer",					4,	3,	new FireControl(new Integer(2), new Integer(2), new Integer(0))); // S8 Abbai Nota Deep Scout, Com Jammer
+//		new ShipWeapon("Improved Comm Jammer",			4,	3,	new FireControl(new Integer(2), new Integer(2), new Integer(0))); // V6 Abbai Kirva Jammer Satellites, Imp. Com Jammer
+		new ShipWeapon("Surge Cannon",					6,	3,	new FireControl(new Integer(2), new Integer(2), new Integer(2))); // Ipsha Battleglobe
+		new ShipWeapon("Surge Blaster",					6,	6,	new FireControl(new Integer(3), new Integer(2), new Integer(1))); // Ipsha Tetraship
+		new ShipWeapon("Spark Field",					8,	2,	new FireControl()); // Ipsha Battleglobe
+		new ShipWeapon("Resonance Generator",			8,	6,	new FireControl(new Integer(2), new Integer(2), null)); // Ipsha Battlehex
+		new ShipWeapon("EM Bolter",						10,	9,	new FireControl(new Integer(3), new Integer(3), new Integer(0))); // Ipsha Boltglobe
+		new ShipWeapon("EM Pulsar",						6,	3,	new FireControl(new Integer(3), new Integer(2), new Integer(1))); // Ipsha Carrier Cube
+		new ShipWeapon("Energy Draining Field",			40,	8,	new FireControl()); // The Traveler
+		
+		// Matter Weapons
+		new ShipWeapon("Gatling Railgun",				4,	1,	new FireControl(new Integer(0), new Integer(2), new Integer(4))); // WCR - Orieni Benevolent Heavy Scout
+		new ShipWeapon("Rapid Gatling Railgun",			4,	1,	new FireControl(new Integer(0), new Integer(2), new Integer(4))); // WCR - Orieni Benevolent Heavy Scout
+		new ShipWeapon("Gauss Cannon",					10,	4,	new FireControl(new Integer(2), new Integer(1), new Integer(-3))); // WCR - Orieni Obedient Patrol Frigate
+		new ShipWeapon("Heavy Gauss Cannon",			10,	4,	new FireControl(new Integer(3), new Integer(2), new Integer(-2))); // WCR - Orieni Paragon Strike Force Command Ship
+		new ShipWeapon("Matter Accelerator",			13,	7,	new FireControl(new Integer(5), new Integer(5), new Integer(0))); // Kirishiac Conqueror
+		
+		// Gravitic Weapons
+		new ShipWeapon("Hypergraviton Beam",			20,	12,	new FireControl(new Integer(5), new Integer(4), new Integer(3))); // Kirishiac Conqueror
+		new ShipWeapon("Medium Antigravity Beam",		6,	2,	new FireControl(new Integer(1), new Integer(3), new Integer(4))); // Kirishiac Conqueror
+		new ShipWeapon("Gravitic Augmenter",			12,	7,	new FireControl(new Integer(6), new Integer(5), new Integer(0))); // Kirishiac Mastership
+		
+		// Ballistic Weapons
+//		new ShipWeapon("Mine Launcher",					6,	3,	new FireControl()); // V6 Abbai Motenai Heavy Mine Layer
+		new ShipWeapon("Phased Gravitic Torpedo",		16,	6,	new FireControl(new Integer(5), new Integer(4), new Integer(3))); // Kirishiac Knightship

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unit-definition xmlns="http://www.b5gamer.net/B5Wars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+    <unit author="AOG" hull="Warbird" name="Drazi Warbird Cruiser" source="SF" version="2">
+        <specs pointValue="480" rammingFactor="110" type="Heavy Combat Vessel"/>
+        <maneuvering accelDecelCost="2" pivotCost="2+2" rollCost="2+2" turnCost="1/2" turnDelay="1/3"/>
+        <combat-stats fwdAftDefense="13" initiativeModifier="8" stbPortDefense="12"/>
+        <service-history>
+            <period-of-service availability="Base" deployment="Unlimited" faction="Drazi" inService="2234"/>
+        </service-history>
+        <ship-definition>
+            <hit-location-charts>
+                <hit-location-chart name="SIDE HITS">
+                    <hit-location class="SystemHitLocation" from="1" to="3">
+                        <property name="systemType" value="Thruster"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="4" to="7">
+                        <property name="systemType" value="Particle Cannon"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="8" to="9">
+                        <property name="systemType" value="Standard Particle Beam"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="10" to="18">
+                        <property name="systemType" value="Structure"/>
+                    </hit-location>
+                    <hit-location class="SectionHitLocation" from="19" to="20">
+                        <property name="sectionName" value="PRIMARY"/>
+                    </hit-location>
+                </hit-location-chart>
+                <hit-location-chart name="PRIMARY HITS">
+                    <hit-location class="SystemHitLocation" from="1" to="8">
+                        <property name="systemType" value="Structure"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="9" to="11">
+                        <property name="systemType" value="Thruster"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="12" to="12">
+                        <property name="systemType" value="Particle Repeater"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="13" to="14">
+                        <property name="systemType" value="Sensors"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="15" to="16">
+                        <property name="systemType" value="Engine"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="17" to="17">
+                        <property name="systemType" value="Hangar"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="18" to="19">
+                        <property name="systemType" value="Reactor"/>
+                    </hit-location>
+                    <hit-location class="SystemHitLocation" from="20" to="20">
+                        <property name="systemType" value="C &amp; C"/>
+                    </hit-location>
+                </hit-location-chart>
+            </hit-location-charts>
+            <sections>
+                <section class="ChildSection" name="FORWARD">
+                    <property name="parentSections" value="PRIMARY"/>
+                    <systems>
+                        <system arc="F120" armor="4" class="Thruster" damageBoxes="13">
+                            <property name="thrustRating" value="4"/>
+                            <system-icons>
+                                <system-icon x="287" y="221"/>
+                                <armor-icon x="302" y="266"/>
+                            </system-icons>
+                        </system>
+                        <weapon arc="F240" armor="4" number="1" type="Particle Repeater">
+                            <weapon-icons>
+                                <weapon-icon x="292" y="167"/>
+                                <armor-icon x="301" y="203"/>
+                                <arc-icon x="330" y="168"/>
+                                <number-icon x="328" y="204"/>
+                            </weapon-icons>
+                        </weapon>
+                    </systems>
+                </section>
+                <section arc="P180" class="StructureSection" hitLocationChart="SIDE HITS" name="PORT">
+                    <systems>
+                        <system armor="4" class="Structure" damageBoxes="40">
+                            <system-icons>
+                                <structure-icon definition="1:1:4,1:2:4,1:3:4,1:4:4,1:5:4,1:6:4,1:7:4,1:8:4,1:9:4,1:10:4" x="180" y="368"/>
+                                <armor-icon x="187" y="439"/>
+                            </system-icons>
+                        </system>
+                        <system arc="P120" armor="4" class="Thruster" damageBoxes="13">
+                            <property name="thrustRating" value="4"/>
+                            <system-icons>
+                                <system-icon x="130" y="475"/>
+                                <armor-icon x="147" y="523"/>
+                            </system-icons>
+                        </system>
+                        <weapon arc="FP120" armor="4" number="2" type="Particle Cannon">
+                            <weapon-icons>
+                                <weapon-icon x="136" y="299"/>
+                                <armor-icon x="141" y="352"/>
+                                <arc-icon x="140" y="283"/>
+                                <number-icon x="123" y="298"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="FP120" armor="4" number="3" type="Particle Cannon">
+                            <weapon-icons>
+                                <weapon-icon x="136" y="390"/>
+                                <armor-icon x="141" y="444"/>
+                                <arc-icon x="140" y="374"/>
+                                <number-icon x="119" y="390"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="FP180" armor="3" number="6" type="Standard Particle Beam">
+                            <weapon-icons>
+                                <weapon-icon x="197" y="284"/>
+                                <armor-icon x="198" y="336"/>
+                                <arc-icon x="197" y="267"/>
+                                <number-icon x="225" y="314"/>
+                            </weapon-icons>
+                        </weapon>
+                    </systems>
+                </section>
+                <section class="StructureSection" hitLocationChart="PRIMARY HITS" name="PRIMARY">
+                    <systems>
+                        <system armor="5" class="Structure" damageBoxes="32">
+                            <system-icons>
+                                <structure-icon definition="1:1:4,1:2:4,1:3:4,1:4:4,1:5:4,1:6:4,1:7:4,1:8:4" x="294" y="472"/>
+                                <armor-icon x="301" y="530"/>
+                            </system-icons>
+                        </system>
+                        <system armor="5" class="CommandAndControl" damageBoxes="8">
+                            <system-icons>
+                                <system-icon index="2" x="289" y="312"/>
+                                <armor-icon x="272" y="319"/>
+                            </system-icons>
+                        </system>
+                        <system armor="4" class="Sensors" damageBoxes="13" power="4">
+                            <property name="sensorRating" value="8"/>
+                            <system-icons>
+                                <system-icon x="288" y="568"/>
+                                <armor-icon x="271" y="596"/>
+                                <power-icon x="332" y="596"/>
+                            </system-icons>
+                        </system>
+                        <system armor="5" class="Engine" damageBoxes="11">
+                            <property name="freeThrust" value="8"/>
+                            <property name="efficiency" value="2/1"/>
+                            <system-icons>
+                                <system-icon index="2" x="282" y="417"/>
+                                <armor-icon x="264" y="429"/>
+                            </system-icons>
+                        </system>
+                        <system armor="5" class="Reactor" damageBoxes="12">
+                            <property name="availablePower" value="40"/>
+                            <system-icons>
+                                <system-icon x="285" y="634"/>
+                                <armor-icon x="302" y="674"/>
+                            </system-icons>
+                        </system>
+                        <system armor="4" class="Hangar" damageBoxes="1">
+                            <property name="launchRate" value="1"/>
+                            <system-icons>
+                                <system-icon x="295" y="364"/>
+                                <armor-icon x="278" y="369"/>
+                            </system-icons>
+                        </system>
+                    </systems>
+                </section>
+                <section arc="S180" class="StructureSection" hitLocationChart="SIDE HITS" name="STARBOARD">
+                    <systems>
+                        <system armor="4" class="Structure" damageBoxes="40">
+                            <system-icons>
+                                <structure-icon definition="1:1:4,1:2:4,1:3:4,1:4:4,1:5:4,1:6:4,1:7:4,1:8:4,1:9:4,1:10:4" x="411" y="367"/>
+                                <armor-icon x="418" y="438"/>
+                            </system-icons>
+                        </system>
+                        <system arc="S120" armor="4" class="Thruster" damageBoxes="13">
+                            <property name="thrustRating" value="4"/>
+                            <system-icons>
+                                <system-icon x="441" y="475"/>
+                                <armor-icon x="457" y="523"/>
+                            </system-icons>
+                        </system>
+                        <weapon arc="FS120" armor="4" number="4" type="Particle Cannon">
+                            <weapon-icons>
+                                <weapon-icon x="458" y="299"/>
+                                <armor-icon x="463" y="352"/>
+                                <arc-icon x="461" y="283"/>
+                                <number-icon x="483" y="294"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="FS120" armor="4" number="5" type="Particle Cannon">
+                            <weapon-icons>
+                                <weapon-icon x="458" y="390"/>
+                                <armor-icon x="463" y="443"/>
+                                <arc-icon x="461" y="374"/>
+                                <number-icon x="485" y="387"/>
+                            </weapon-icons>
+                        </weapon>
+                        <weapon arc="FS180" armor="3" number="7" type="Standard Particle Beam">
+                            <weapon-icons>
+                                <weapon-icon x="404" y="284"/>
+                                <armor-icon x="406" y="336"/>
+                                <arc-icon x="404" y="267"/>
+                                <number-icon x="381" y="312"/>
+                            </weapon-icons>
+                        </weapon>
+                    </systems>
+                </section>
+                <section class="ChildSection" name="AFT">
+                    <property name="parentSections" value="PRIMARY"/>
+                    <systems>
+                        <system arc="A120" armor="5" class="Thruster" damageBoxes="19">
+                            <property name="thrustRating" value="8"/>
+                            <system-icons>
+                                <system-icon x="277" y="712"/>
+                                <armor-icon x="302" y="758"/>
+                            </system-icons>
+                        </system>
+                    </systems>
+                </section>
+            </sections>
+        </ship-definition>
+    </unit>
+</unit-definition>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Multiphased Cutter -->
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 380.36328,374.61328 -4.5,-9 4.5,-13.5 0,22.5 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 393.86328,374.61328 4.5,-9 -4.5,-13.5 0,22.5 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 366.86328,397.11328 0,-33.75 6.75,-15.75 0,15.75 11,-0.25 0.25,-6.5 2.25,-6.75 2.25,6.75 0.25,6.5 11,0.25 0,-15.75 6.75,15.75 0,33.75 -40.5,0 z m 0,0"/>
+
+<!-- Damage Boxes -->
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 387.11328,376.86328 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 393.86328,376.86328 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 380.36328,383.61328 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 387.11328,383.61328 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 393.86328,383.61328 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 400.61328,383.61328 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 380.36328,390.36328 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 387.11328,390.36328 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 393.86328,390.36328 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+<path style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#211e1e;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" d="m 400.61328,390.36328 0,-6.75 -6.75,0 0,6.75 6.75,0 z m 0,0"/>
+
+</svg>

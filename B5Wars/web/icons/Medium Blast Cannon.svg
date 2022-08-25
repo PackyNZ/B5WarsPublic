@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Medium Blast Cannon -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 293.5 468 L 293.5 483.75 L 300.25 483.75 L 300.25 497.25 L 302.5 497.25 L 302.5 501.75 L 307 506.25 L 307 497.25 L 309.25 497.25 L 309.25 506.25 L 313.75 501.75 L 313.75 497.25 L 316 497.25 L 316 483.75 L 322.75 483.75 L 322.75 468 L 293.5 468 Z M 293.5 468 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 311.5 492.75 L 311.5 486 L 304.75 486 L 304.75 492.75 L 311.5 492.75 Z M 311.5 492.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 311.5 486 L 311.5 479.25 L 304.75 479.25 L 304.75 486 L 311.5 486 Z M 311.5 486 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 304.75 479.25 L 304.75 472.5 L 298 472.5 L 298 479.25 L 304.75 479.25 Z M 304.75 479.25 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 311.5 479.25 L 311.5 472.5 L 304.75 472.5 L 304.75 479.25 L 311.5 479.25 Z M 311.5 479.25 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 318.25 479.25 L 318.25 472.5 L 311.5 472.5 L 311.5 479.25 L 318.25 479.25 Z M 318.25 479.25 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>B5Wars Fleet Viewer</title>
+        <vendor>B5Gamer.net</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.5+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="b5wars.jar" main="true" />
+        <jar href="./jar/b5gamer.jar" main="false" />
+        <jar href="./jar/batik-anim.jar" main="false" />
+        <jar href="./jar/batik-awt-util.jar" main="false" />
+        <jar href="./jar/batik-bridge.jar" main="false" />
+        <jar href="./jar/batik-css.jar" main="false" />
+        <jar href="./jar/batik-dom.jar" main="false" />
+        <jar href="./jar/batik-ext.jar" main="false" />
+        <jar href="./jar/batik-gvt.jar" main="false" />
+        <jar href="./jar/batik-parser.jar" main="false" />
+        <jar href="./jar/batik-script.jar" main="false" />
+        <jar href="./jar/batik-svg-dom.jar" main="false" />
+        <jar href="./jar/batik-util.jar" main="false" />
+        <jar href="./jar/batik-xml.jar" main="false" />
+        <jar href="./jar/commons-beanutils-1.8.3.jar" main="false" />
+        <jar href="./jar/commons-digester-2.0.jar" main="false" />
+        <jar href="./jar/commons-logging-1.1.1.jar" main="false" />
+        <jar href="./jar/xml-apis-ext.jar" main="false" />
+    </resources>
+    <applet-desc 
+         name="FleetApplet"
+         main-class="net.b5gamer.b5wars.ui.fleet.FleetApplet"
+         width="1024"
+         height="768">
+     </applet-desc>
+     <update check="background"/>
+</jnlp>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+	
+	<unit name="Cascor Traqintor Waystation" hull="Traqintor" version="2" author="AOG" source="S7">			
+		<specs type="Enormous Base" pointValue="2500" rammingFactor="600" />
+		<combat-stats fwdAftDefense="20" stbPortDefense="20" initiativeModifier="0" />
+		<service-history>
+			<period-of-service faction="Cascor" inService="2219" availability="Base" deployment="Unlimited" />
+		</service-history>
+				
+		<ship-definition>	
+			<hit-location-charts>		
+				<hit-location-chart name="SECTION HITS">	 
+					<hit-location class="SystemHitLocation" from="1" to="2">
+						<property name="systemType" value="Ion Torpedo" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="3" to="4">
+						<property name="systemType" value="Ion Cannon" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="5" to="6">
+						<property name="systemType" value="Dual Ion Bolter" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="7" to="8">
+						<property name="systemType" value="Cargo" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="9" to="9">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="10">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+						
+				<hit-location-chart name="PRIMARY HITS">			
+					<hit-location class="SystemHitLocation" from="1" to="11">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="12" to="13">
+						<property name="systemType" value="Ion Torpedo" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="14" to="14">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="15" to="16">
+						<property name="systemType" value="Sensors" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="17" to="18">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="19" to="20">
+						<property name="systemType" value="C &amp; C" />
+					</hit-location>
+				</hit-location-chart>
+			</hit-location-charts>
+			
+			<sections>
+				<section name="FORWARD" class="StructureSection" arc="F120" hitLocationChart="SECTION HITS">
+					<systems>
+						<system class="Structure" damageBoxes="120" armor="4" />
+						<system class="Reactor" damageBoxes="20" armor="4">
+							<property name="availablePower" value="20" />
+						</system>					
+						<system class="Hangar" damageBoxes="6" armor="4">
+							<property name="launchRate" value="6" />
+						</system>					
+						<system class="Cargo" damageBoxes="25" armor="4" name="A">
+							<property name="transferRate" value="5" />
+						</system>					
+						<weapon type="Ion Torpedo" armor="4" arc="F120" number="1" />						
+						<weapon type="Ion Torpedo" armor="4" arc="F120" number="2" />						
+						<weapon type="Ion Cannon" armor="4" arc="F120" number="11" />						
+						<weapon type="Ion Cannon" armor="4" arc="F120" number="12" />						
+						<weapon type="Dual Ion Bolter" armor="4" arc="F120" number="19" />					
+					</systems>
+				</section>
+							
+				<section name="FWD PORT" class="ChildSection">
+					<property name="parentSections" value="FORWARD,PORT" />
+					<systems>
+						<system class="Reactor" damageBoxes="11" armor="5">
+							<property name="availablePower" value="8" />
+						</system>					
+						<system class="Hangar" damageBoxes="6" armor="5">
+							<property name="launchRate" value="6" />
+						</system>		
+						<weapon type="Dual Ion Bolter" armor="5" arc="FP90" number="20" />					
+						<weapon type="Dual Ion Bolter" armor="5" arc="FP90" number="21" />
+					</systems>
+				</section>
+											
+				<section name="PORT" class="StructureSection" arc="P120" hitLocationChart="SECTION HITS">
+					<systems>
+						<system class="Structure" damageBoxes="120" armor="4" />
+						<system class="Reactor" damageBoxes="20" armor="4">
+							<property name="availablePower" value="20" />
+						</system>					
+						<system class="Hangar" damageBoxes="6" armor="4">
+							<property name="launchRate" value="6" />
+						</system>					
+						<system class="Cargo" damageBoxes="25" armor="4" name="B">
+							<property name="transferRate" value="5" />
+						</system>					
+						<weapon type="Ion Torpedo" armor="4" arc="P120" number="3" />						
+						<weapon type="Ion Torpedo" armor="4" arc="P120" number="4" />						
+						<weapon type="Ion Cannon" armor="4" arc="P120" number="13" />						
+						<weapon type="Ion Cannon" armor="4" arc="P120" number="14" />						
+						<weapon type="Dual Ion Bolter" armor="4" arc="P120" number="24" />					
+					</systems>
+				</section>
+					
+				<section name="AFT PORT" class="ChildSection">
+					<property name="parentSections" value="AFT,PORT" />
+					<systems>
+						<system class="Reactor" damageBoxes="11" armor="5">
+							<property name="availablePower" value="8" />
+						</system>					
+						<system class="Hangar" damageBoxes="6" armor="5">
+							<property name="launchRate" value="6" />
+						</system>		
+						<weapon type="Dual Ion Bolter" armor="5" arc="AP90" number="26" />					
+						<weapon type="Dual Ion Bolter" armor="5" arc="AP90" number="27" />
+					</systems>
+				</section>
+						
+				<section name="PRIMARY" class="StructureSection" hitLocationChart="PRIMARY HITS">
+					<systems>
+						<system class="Structure" damageBoxes="120" armor="5" />
+						<system class="CommandAndControl" damageBoxes="20" armor="5" />
+						<system class="CommandAndControl" damageBoxes="20" armor="5" />
+						<system class="Sensors" damageBoxes="18" armor="5" power="5">
+							<property name="sensorRating" value="7" />
+						</system>					
+						<system class="Sensors" damageBoxes="18" armor="5" power="5">
+							<property name="sensorRating" value="7" />
+						</system>					
+						<system class="Reactor" damageBoxes="26" armor="5">
+							<property name="availablePower" value="18" />
+						</system>					
+						<system class="Hangar" damageBoxes="4" armor="5">
+							<property name="launchRate" value="1" />
+						</system>					
+						<weapon type="Ion Torpedo" armor="5" arc="360" number="9" />						
+						<weapon type="Ion Torpedo" armor="5" arc="360" number="10" />						
+					</systems>
+				</section>					
+															
+				<section name="FWD STBD" class="ChildSection">
+					<property name="parentSections" value="FORWARD,STARBOARD" />
+					<systems>
+						<system class="Reactor" damageBoxes="11" armor="5">
+							<property name="availablePower" value="8" />
+						</system>					
+						<system class="Hangar" damageBoxes="6" armor="5">
+							<property name="launchRate" value="6" />
+						</system>		
+						<weapon type="Dual Ion Bolter" armor="5" arc="FS90" number="22" />					
+						<weapon type="Dual Ion Bolter" armor="5" arc="FS90" number="23" />
+					</systems>
+				</section>
+
+				<section name="STARBOARD" class="StructureSection" arc="S120" hitLocationChart="SECTION HITS">
+					<systems>
+						<system class="Structure" damageBoxes="120" armor="4" />
+						<system class="Reactor" damageBoxes="20" armor="4">
+							<property name="availablePower" value="20" />
+						</system>					
+						<system class="Hangar" damageBoxes="6" armor="4">
+							<property name="launchRate" value="6" />
+						</system>					
+						<system class="Cargo" damageBoxes="25" armor="4" name="C">
+							<property name="transferRate" value="5" />
+						</system>					
+						<weapon type="Ion Torpedo" armor="4" arc="S120" number="5" />						
+						<weapon type="Ion Torpedo" armor="4" arc="S120" number="6" />						
+						<weapon type="Ion Cannon" armor="4" arc="S120" number="15" />						
+						<weapon type="Ion Cannon" armor="4" arc="S120" number="16" />						
+						<weapon type="Dual Ion Bolter" armor="4" arc="S120" number="25" />					
+					</systems>
+				</section>
+	
+				<section name="AFT STBD" class="ChildSection">
+					<property name="parentSections" value="AFT,STARBOARD" />
+					<systems>
+						<system class="Reactor" damageBoxes="11" armor="5">
+							<property name="availablePower" value="8" />
+						</system>					
+						<system class="Hangar" damageBoxes="6" armor="5">
+							<property name="launchRate" value="6" />
+						</system>		
+						<weapon type="Dual Ion Bolter" armor="5" arc="AS90" number="28" />					
+						<weapon type="Dual Ion Bolter" armor="5" arc="AS90" number="29" />
+					</systems>
+				</section>
+			
+				<section name="AFT" class="StructureSection" arc="A120" hitLocationChart="SECTION HITS">
+					<systems>
+						<system class="Structure" damageBoxes="120" armor="4" />
+						<system class="Reactor" damageBoxes="20" armor="4">
+							<property name="availablePower" value="20" />
+						</system>					
+						<system class="Hangar" damageBoxes="6" armor="4">
+							<property name="launchRate" value="6" />
+						</system>					
+						<system class="Cargo" damageBoxes="25" armor="4" name="D">
+							<property name="transferRate" value="5" />
+						</system>					
+						<weapon type="Ion Torpedo" armor="4" arc="A120" number="7" />						
+						<weapon type="Ion Torpedo" armor="4" arc="A120" number="8" />						
+						<weapon type="Ion Cannon" armor="4" arc="A120" number="17" />						
+						<weapon type="Ion Cannon" armor="4" arc="A120" number="18" />						
+						<weapon type="Dual Ion Bolter" armor="4" arc="A120" number="30" />					
+					</systems>
+				</section>				
+			</sections>
+		</ship-definition>						
+	</unit>				
+</unit-definition>

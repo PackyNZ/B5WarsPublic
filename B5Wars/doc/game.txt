@@ -1,0 +1,29 @@
+Implementation
+---------------------------------------------------------------------
+Game        - iOS (iPhone/iTouch/iPad)
+            - Online? (Javascript? Admission included with App? Monthly charge?)
+            - Android (phone, tablet)
+
+Builder     - Online (Javascript? Admission included with App or free usage?)
+            - In-app purchase units or free to distribute?
+
+
+Gameplay
+---------------------------------------------------------------------
+Pass and Play
+PBEM-esque (iOS/Android - notifications, Online - email)
+vs. AI (eventually!)
+
+Skirmish
+Campaign
+
+Arcade
+Classic
+
+
+Rules
+---------------------------------------------------------------------
+Hull            - Solid image
+Systems         - Solid image outline with vector damage boxes
+Sections        - CORE?, FORWARD, AFT, PORT, STARBOARD  
+Hit Locations   - Automated d100, based on system size/damage boxes, and whether structure section

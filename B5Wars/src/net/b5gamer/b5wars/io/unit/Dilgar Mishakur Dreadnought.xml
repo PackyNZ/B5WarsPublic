@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE unit-definition SYSTEM "unit.dtd">
+
+<unit-definition>
+	<unit name="Dilgar Mishakur Dreadnought" hull="Mishakur" version="1" author="AOG" source="DW">			
+		<specs type="Capital Ship" pointValue="975" rammingFactor="310" />
+		<maneuvering turnCost="1" turnDelay="1" accelDecelCost="4" pivotCost="4+4" rollCost="2+2" /> 		
+		<combat-stats fwdAftDefense="16" stbPortDefense="17" initiativeModifier="0" />
+		<service-history>
+			<period-of-service faction="Dilgar" inService="2227" endedService="2232" availability="Base" deployment="Restricted" />
+		</service-history>
+		<!-- <influence modifies="Initiative" modifier="2" appliesTo="Command" /> -->
+		<traits>
+			<trait name="Command Bonus" value="2" />
+		</traits>						
+								
+		<ship-definition>	
+			<hit-location-charts>		
+				<hit-location-chart name="FORWARD HITS">	 	
+					<hit-location class="SystemHitLocation" from="1" to="4">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="5" to="6">
+						<property name="systemType" value="Heavy Bolter" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="7" to="8">
+						<property name="systemType" value="Scatter-Pulsar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="9" to="10">
+						<property name="systemType" value="Medium Laser Cannon" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+				
+				<hit-location-chart name="SIDE HITS">	 	
+					<hit-location class="SystemHitLocation" from="1" to="4">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="5" to="6">
+						<property name="systemType" value="Heavy Bolter" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="7" to="8">
+						<property name="systemType" value="Quad Pulsar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="9" to="9">
+						<property name="systemType" value="Plasma Torch" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="10">
+						<property name="systemType" value="Class-S Missile Rack" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="11">
+						<property name="systemType" value="Scatter-Pulsar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="12" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+		
+				<hit-location-chart name="AFT HITS">	 	
+					<hit-location class="SystemHitLocation" from="1" to="6">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="7" to="8">
+						<property name="systemType" value="Heavy Bolter" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="9" to="10">
+						<property name="systemType" value="Scatter-Pulsar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="11">
+						<property name="systemType" value="Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="12" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+		
+				<hit-location-chart name="PRIMARY HITS">			
+					<hit-location class="SystemHitLocation" from="1" to="10">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="12">
+						<property name="systemType" value="Jump Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="14">
+						<property name="systemType" value="Sensors" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="15" to="16">
+						<property name="systemType" value="Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="17" to="17">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="18" to="19">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="20" to="20">
+						<property name="systemType" value="C &amp; C" />
+					</hit-location>
+				</hit-location-chart>
+			</hit-location-charts>
+			
+			<sections>
+				<section name="FORWARD" class="StructureSection" arc="F60" hitLocationChart="FORWARD HITS">
+					<systems>
+						<system class="Structure" damageBoxes="54" armor="5" />
+						<system class="Thruster" damageBoxes="10" armor="3" arc="F120">
+							<property name="thrustRating" value="3" />
+						</system>					
+						<system class="Thruster" damageBoxes="10" armor="3" arc="F120">
+							<property name="thrustRating" value="3" />
+						</system>					
+						<weapon type="Heavy Bolter" armor="3" arc="FP60" number="2" />					
+						<weapon type="Heavy Bolter" armor="3" arc="FS60" number="3" />					
+						<weapon type="Medium Laser Cannon" armor="2" arc="F120" number="9" />					
+						<weapon type="Medium Laser Cannon" armor="2" arc="F120" number="10" />					
+						<weapon type="Scatter-Pulsar" armor="1" arc="F240" number="13" />						
+						<weapon type="Scatter-Pulsar" armor="1" arc="F240" number="14" />
+					</systems>
+				</section>
+			
+				<section name="PORT" class="StructureSection" arc="P120" hitLocationChart="SIDE HITS">
+					<systems>
+						<system class="Structure" damageBoxes="60" armor="5" />
+						<system class="Thruster" damageBoxes="15" armor="3" arc="P120">
+							<property name="thrustRating" value="5" />
+						</system>					
+						<weapon type="Heavy Bolter" armor="3" arc="FP60" number="1" />					
+						<weapon type="Quad Pulsar" armor="3" arc="FP60" number="7" />					
+						<weapon type="Class-S Missile Rack" armor="2" arc="F240" number="11" />					
+						<weapon type="Plasma Torch" armor="1" arc="FP120" number="13" />
+						<weapon type="Scatter-Pulsar" armor="1" arc="FP240" number="15" />
+					</systems>
+				</section>
+		
+				<section name="PRIMARY" class="StructureSection" hitLocationChart="PRIMARY HITS">
+					<systems>
+						<system class="Structure" damageBoxes="64" armor="6" />
+						<system class="CommandAndControl" damageBoxes="25" armor="6" />
+						<system class="Sensors" damageBoxes="16" armor="5" power="3">
+							<property name="sensorRating" value="9" />
+						</system>					
+						<system class="Engine" damageBoxes="13" armor="5">
+							<property name="freeThrust" value="7" />
+							<property name="efficiency" value="3/1" />
+						</system>					
+						<system class="JumpEngine" damageBoxes="16" armor="4" power="4">
+							<property name="jumpDelay" value="36" />
+						</system>					
+						<system class="Reactor" damageBoxes="25" armor="5">
+							<property name="availablePower" value="77" />
+						</system>					
+						<system class="Hangar" damageBoxes="14" armor="4">
+							<property name="launchRate" value="6" />
+						</system>					
+					</systems>
+				</section>
+		
+				<section name="STARBOARD" class="StructureSection" arc="S120" hitLocationChart="SIDE HITS">
+					<systems>
+						<system class="Structure" damageBoxes="60" armor="5" />
+						<system class="Thruster" damageBoxes="15" armor="3" arc="S120">
+							<property name="thrustRating" value="5" />
+						</system>					
+						<weapon type="Heavy Bolter" armor="3" arc="FS60" number="4" />					
+						<weapon type="Quad Pulsar" armor="3" arc="FS60" number="8" />					
+						<weapon type="Class-S Missile Rack" armor="2" arc="F240" number="12" />					
+						<weapon type="Plasma Torch" armor="1" arc="FS120" number="14" />
+						<weapon type="Scatter-Pulsar" armor="1" arc="FS240" number="16" />
+					</systems>
+				</section>
+			
+				<section name="AFT" class="StructureSection" arc="A60" hitLocationChart="AFT HITS">
+					<systems>
+						<system class="Structure" damageBoxes="54" armor="5" />
+						<system class="Thruster" damageBoxes="6" armor="2" arc="A120">
+							<property name="thrustRating" value="2" />
+						</system>					
+						<system class="Thruster" damageBoxes="10" armor="3" arc="A120">
+							<property name="thrustRating" value="4" />
+						</system>					
+						<system class="Thruster" damageBoxes="10" armor="3" arc="A120">
+							<property name="thrustRating" value="4" />
+						</system>					
+						<system class="Thruster" damageBoxes="6" armor="2" arc="A120">
+							<property name="thrustRating" value="2" />
+						</system>
+						<system class="Engine" damageBoxes="11" armor="3">
+							<property name="freeThrust" value="5" />
+							<property name="efficiency" value="3/1" />
+						</system>					
+						<weapon type="Heavy Bolter" armor="3" arc="AP60" number="5" />					
+						<weapon type="Heavy Bolter" armor="3" arc="AS60" number="6" />					
+						<weapon type="Scatter-Pulsar" armor="1" arc="AP240" number="17" />
+						<weapon type="Scatter-Pulsar" armor="1" arc="AS240" number="18" />
+					</systems>
+				</section>
+			</sections>
+		</ship-definition>						
+	</unit>				
+</unit-definition>				

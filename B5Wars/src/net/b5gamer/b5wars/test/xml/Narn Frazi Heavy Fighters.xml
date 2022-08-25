@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+
+	<unit type="Narn Frazi Heavy Fighters" hull="Frazi" version="3" rules="2E" source="SF" counter="Narn Frazi.png">
+		<specs class="HeavyFighters" pointValue="58" rammingFactor="22" />
+		<maneuvering turnCost="1/3" turnDelay="0" accelDecelCost="1" pivotCost="1" rollCost="1" />
+		<combat-stats fwdAftDefense="6" stbPortDefense="8" initiativeModifier="16" />
+		<service-history>
+			<period-of-service faction="Narn" inService="2249" availability="Base" deployment="Unlimited" />
+		</service-history>
+		<traits>
+			<trait name="Atmospheric Capable" />
+		</traits>
+
+		<fighter-stats>
+			<flight-stats freeThrust="10" offensiveModifier="4" dropoutModifier="0" />
+<!--
+			<construction damageBoxes="12" hangarBoxes="1" >
+				<armor forward="2" port="3" starboard="3" aft="2" />
+			</construction>
+-->
+		</fighter-stats>
+	</unit>
+</unit-definition>

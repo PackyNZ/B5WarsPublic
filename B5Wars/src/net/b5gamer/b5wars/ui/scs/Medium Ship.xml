@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+
+	<unit name="" model="" hull="" version="" author="" source="">			
+		<specs type="Medium Ship" pointValue="" rammingFactor="" />
+		<maneuvering turnCost="" turnDelay="" accelDecelCost="" pivotCost="" rollCost="" /> 		
+		<combat-stats fwdAftDefense="" stbPortDefense="" initiativeModifier="" />
+		<service-history>
+			<period-of-service faction="" inService="" endedService="" availability="" deployment="" />
+		</service-history>
+		<traits>
+			<trait name="" value="" />
+		</traits>
+		
+		<ship-definition>	
+			<hit-location-charts>		
+				<hit-location-chart name="FORWARD HITS">	 	
+					<hit-location class="SystemHitLocation" from="" to="">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="" to="17">
+						<property name="systemType" value="Structure" />
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="18" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+		
+				<hit-location-chart name="AFT HITS">	 	
+					<hit-location class="SystemHitLocation" from="" to="">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="" to="17">
+						<property name="systemType" value="Structure" />
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="18" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+		
+				<hit-location-chart name="PRIMARY HITS">			
+					<hit-location class="SystemHitLocation" from="" to="">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="" to="">
+						<property name="systemType" value="Sensors" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="" to="">
+						<property name="systemType" value="Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="" to="">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="" to="">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="20" to="20">
+						<property name="systemType" value="C &amp; C" />
+					</hit-location>
+				</hit-location-chart>
+			</hit-location-charts>
+			
+			<sections>
+				<section name="FORWARD" class="Section" arc="F180" hitLocationChart="FORWARD HITS">
+					<systems>
+						<system class="Thruster" damageBoxes="" armor="" arc="F120">
+							<property name="thrustRating" value="" />
+						</system>					
+						<weapon type="" armor="" arc="" number="" />
+					</systems>
+				</section>
+
+				<section name="PORT" class="ChildSection">
+					<property name="parentSections" value="PRIMARY" />
+					<systems>
+						<system class="Thruster" damageBoxes="" armor="" arc="P120">
+							<property name="thrustRating" value="" />
+						</system>											
+					</systems>
+				</section>
+
+				<section name="PRIMARY" class="StructureSection" hitLocationChart="PRIMARY HITS">
+					<systems>
+						<system class="Structure" damageBoxes="" armor="" />
+						<system class="CommandAndControl" damageBoxes="" armor="" />
+						<system class="Sensors" damageBoxes="" armor="" power="">
+							<property name="sensorRating" value="" />
+						</system>
+						<system class="Engine" damageBoxes="" armor="">
+							<property name="freeThrust" value="" />
+							<property name="efficiency" value="" />
+						</system>
+						<system class="Reactor" damageBoxes="" armor="">
+							<property name="availablePower" value="" />
+						</system>
+						<system class="Hangar" damageBoxes="" armor="">
+							<property name="launchRate" value="" />
+						</system>
+					</systems>
+				</section>
+
+				<section name="STARBOARD" class="ChildSection">
+					<property name="parentSections" value="PRIMARY" />
+					<systems>
+						<system class="Thruster" damageBoxes="" armor="" arc="S120">
+							<property name="thrustRating" value="" />
+						</system>											
+					</systems>
+				</section>
+
+				<section name="AFT" class="Section" arc="A180" hitLocationChart="AFT HITS">
+					<systems>
+						<system class="Thruster" damageBoxes="" armor="" arc="A120">
+							<property name="thrustRating" value="" />
+						</system>											
+					</systems>
+				</section>
+			</sections>
+		</ship-definition>						
+	</unit>				
+</unit-definition>				

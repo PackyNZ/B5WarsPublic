@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE weapons SYSTEM "weapon.dtd">
+
+<weapons>
+	<weapon type="Heavy Laser Cannon" damageBoxes="8" power="6">
+<!-- 
+		<classes>
+			<class name="Laser"/>
+		<classes>
+		
+		<modes>
+			<mode name="Raking"/>
+			<mode name="Sustained"/>
+		<modes>
+
+		<damage>
+			
+		</damage>		
+-->
+		<fire-control large="3" medium="2" small="-4"/>
+	</weapon>	
+</weapons>
+
+<!-- 
+	*Heavy Laser Cannon
+	*Class: Laser
+	Modes: R, S
+	Damage: 4d10+20
+	Range Penalty: -1 per 3 hexes
+	*Fire Control: +3/+2/-4
+	Intercept Rating: n/a
+	Rate of Fire: 1 per 4 turns
+ -->

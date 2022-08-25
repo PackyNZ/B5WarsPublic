@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Plasma Battery (2) -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 254.25 99 L 254.25 114.75 L 261 114.75 L 261 119.25 C 263.472656 121.144531 268.074219 120.988281 270 119.25 L 270 114.75 L 276.75 114.75 L 276.75 99 L 254.25 99 Z M 254.25 99 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 265.5 103.5 L 265.5 110.25 L 258.75 110.25 L 258.75 103.5 L 265.5 103.5 Z M 265.5 103.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 272.25 103.5 L 272.25 110.25 L 265.5 110.25 L 265.5 103.5 L 272.25 103.5 Z M 272.25 103.5 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Bulkhead (2) -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 257.667969 510.75 L 282.417969 510.75 L 284.667969 508.5 L 282.417969 508.5 L 282.417969 506.25 L 284.667969 506.25 L 284.667969 504 L 282.417969 504 L 282.417969 501.75 L 284.667969 501.75 L 284.667969 499.5 L 282.417969 499.5 L 282.417969 497.25 L 284.667969 497.25 L 282.417969 495 L 257.667969 495 L 255.417969 497.25 L 257.667969 497.25 L 257.667969 499.5 L 255.417969 499.5 L 255.417969 501.75 L 257.667969 501.75 L 257.667969 504 L 255.417969 504 L 255.417969 506.25 L 257.667969 506.25 L 257.667969 508.5 L 255.417969 508.5 L 257.667969 510.75 Z M 257.667969 510.75 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 270 499.5 L 270 506.25 L 263.25 506.25 L 263.25 499.5 L 270 499.5 Z M 270 499.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 276.75 499.5 L 276.75 506.25 L 270 506.25 L 270 499.5 L 276.75 499.5 Z M 276.75 499.5 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

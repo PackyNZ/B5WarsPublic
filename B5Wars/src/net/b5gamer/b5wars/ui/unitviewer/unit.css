@@ -1,0 +1,56 @@
+BODY {margin: 0px; background: #000020;}
+
+TABLE {margin: 2px; border: 0px solid black;}
+TABLE.stats {width: 100%; background: #101020; border: 1px solid #404080; margin-left: auto; margin-right: auto;}
+TABLE.speed {width: 100%; background: #101020; border: 1px solid #404080; margin-left: auto; margin-right: auto;}
+TABLE.hit-location-chart {width: 100%; background: #101020; border: 1px solid #404080; margin-left: auto; margin-right: auto;}
+TABLE.hit-locations {width: 100%; background: #101020; border: 1px solid #404080; margin-left: auto; margin-right: auto;}
+TABLE.section {width: 100%; background: #101020; border: 1px solid #404080; margin-left: auto; margin-right: auto;}
+
+TR.version {background: #000020;}
+TR.name {background: #000020;}
+TR.availability {background: #000020;}
+TR.stat-heading {background: #202040;}
+TR.stat-value {}
+TR.speed-heading {background: #202040;}
+TR.speed-value {}
+TR.hit-location-chart {background: #202040;}
+TR.hit-location {}
+TR.section {background: #202040;}
+TR.system {}
+
+TD.version {text-align: left;}
+TD.name {text-align: left;}
+TD.availability {text-align: left;}
+TD.stat-heading {text-align: center; border-bottom: 1px solid #404080;}
+TD.stat-value {}
+TD.speed-heading-name {text-align: left; border-bottom: 1px solid #404080;}
+TD.speed-heading-value {width: 20px; text-align: right; border-bottom: 1px solid #404080;}
+TD.speed-value-name {text-align: left;}
+TD.speed-value-value {text-align: right;}
+TD.hit-location-chart {text-align: center; border-bottom: 1px solid #404080;}
+TD.hit-location-range {width: 36px; text-align: left;}
+TD.hit-location-value {text-align: left;}
+TD.section {text-align: center; border-bottom: 1px solid #404080;}
+TD.system {text-align: left;}
+
+FONT {font-family: Verdana; font-size: 12pt; font-weight: normal; color: #CCCCCC;}
+FONT.version {font-size: 10pt;}
+FONT.name {font-size: 16pt; font-weight: bold; color: #CCCCCC;}
+FONT.availability {}
+FONT.stat-heading {font-size: 13pt; font-weight: bold;}
+FONT.stat-value-name {}
+FONT.stat-value-value {}
+FONT.speed-heading-name {font-size: 13pt; font-weight: bold; text-align: left;}
+FONT.speed-heading-value {font-size: 13pt; font-weight: bold; text-align: right;}
+FONT.speed-value-name {text-align: left;}
+FONT.speed-value-value {text-align: right;}
+FONT.hit-location-chart {font-size: 13pt; font-weight: bold;}
+FONT.hit-location-range {}
+FONT.hit-location-value {}
+FONT.section {font-size: 13pt; font-weight: bold;}
+FONT.section-damaged {font-size: 13pt; font-weight: bold;}
+FONT.section-destroyed {font-size: 13pt; font-weight: bold; color: #AA0000;}
+FONT.system {}
+FONT.system-damaged {color: #666666;}
+FONT.system-destroyed {color: #AA0000;}

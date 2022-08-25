@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Class-S Missile Rack -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 94.5 308.25 L 94.5 330.75 L 105.75 330.75 L 105.75 337.5 L 103.5 337.5 L 105.75 342 L 105.75 348.75 L 103.5 348.75 L 109.25 357.75 L 114.75 348.75 L 112.5 348.75 L 112.5 342 L 114.75 337.5 L 112.5 337.5 L 112.5 330.75 L 123.75 330.75 L 123.75 308.25 L 94.5 308.25 Z M 94.5 308.25 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 105.75 326.25 L 105.75 319.5 L 99 319.5 L 99 326.25 L 105.75 326.25 Z M 105.75 326.25 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 112.5 326.25 L 112.5 319.5 L 105.75 319.5 L 105.75 326.25 L 112.5 326.25 Z M 112.5 326.25 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 119.25 326.25 L 119.25 319.5 L 112.5 319.5 L 112.5 326.25 L 119.25 326.25 Z M 119.25 326.25 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 105.75 319.5 L 105.75 312.75 L 99 312.75 L 99 319.5 L 105.75 319.5 Z M 105.75 319.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 112.5 319.5 L 112.5 312.75 L 105.75 312.75 L 105.75 319.5 L 112.5 319.5 Z M 112.5 319.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 119.25 319.5 L 119.25 312.75 L 112.5 312.75 L 112.5 319.5 L 119.25 319.5 Z M 119.25 319.5 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

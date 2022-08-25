@@ -1,0 +1,17 @@
+<Context path="/B5Wars" docBase="C:\Projects\B5Wars\web" reloadable="true">          
+<!-- 
+	<Resource name="jdbc/B5Wars" 
+		auth="Container" 
+		type="javax.sql.DataSource"
+		maxActive="50" 
+		maxIdle="25" 
+		maxWait="10000" 
+		username="B5W" 
+		password="4Ever" 
+		removeAbandoned="true"
+		removeAbandonedTimeout="60"
+		validationQuery="Select 1"
+		driverClassName="com.mysql.jdbc.Driver" 
+		url="jdbc:mysql://localhost:3306/b5wars" />
+-->
+</Context>

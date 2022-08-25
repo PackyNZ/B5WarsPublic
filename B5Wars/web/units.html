@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>B5Wars Units</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">    
+    <link rel="stylesheet" type="text/css" href="css/b5wars.css" />
+    <script type="text/javascript" src="js/b5wars.js"></script>
+</head>
+<body>
+	<table class="full">
+	<tr><td>
+<!-- 
+		<table cellpadding="4" align="center">
+		<tr>
+			<td>
+				<font>Faction</font>
+			</td><td align="right">
+				<select name="faction">
+					<option>&lt;Select Faction&gt;</option>
+					<option selected="selected">EA</option>
+				</select>
+			</td><td>
+				<font>In Service</font>
+			</td><td align="right">
+				<input name="inServiceFrom" type="text" size="10" />
+				<font>-</font>
+				<input name="inServiceTo" type="text" size="10" />
+			</td><td>
+				<font>Author</font>
+				<select name="author">
+					<option>&lt;Any&gt;</option>
+					<option>RLB</option>
+				</select>
+			</td><td>
+				<font>Source</font>
+				<select name="source">
+					<option>&lt;Any&gt;</option>
+					<option>EW</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<font>Type</font>
+			</td><td align="right">
+				<select name="type">
+					<option>&lt;Any&gt;</option>
+					<option>Capital Ship</option>
+				</select>
+			</td><td>	
+				<font>Point Value</font>
+			</td><td align="right">
+				<input name="pointsFrom" size="10" />
+				<font>-</font>
+				<input name="pointsTo" size="10" />
+			</td><td colspan="2" align="right">
+				<input type="button" value="Search">
+				<input type="button" value="Reset">
+				<input type="button" value="Create">
+			</td></tr>
+		</tr>
+		</table>
+-->
+		<br><p>
+			Upload and search functionality to come. 
+			<br>
+			In the meantime you can try <a href="scsapplet.jsp?mode=edit" target="_blank">creating</a> your own units, then send them to 
+			<a href="mailto:&#097;&#108;&#101;&#120;&#064;&#098;&#053;&#103;&#097;&#109;&#101;&#114;&#046;&#110;&#101;&#116;?Subject=Units">&#097;&#108;&#101;&#120;&#064;&#098;&#053;&#103;&#097;&#109;&#101;&#114;&#046;&#110;&#101;&#116;</a>
+			to be added to the list below.
+		</p><br>
+	</td></tr>
+	<tr><td class="full">
+		<div id="searchresults" class="full">
+			<table class="wide" cellspacing="0">
+			<tr class="searchresultsheader">
+				<th class="searchresults" align="left">Name</th>
+				<th class="searchresults">Type</th>
+				<th class="searchresults">In Service</th>
+				<th class="searchresults">Availability</th>
+				<th class="searchresults">Deployment</th>
+				<th class="searchresults">Points</th>
+				<th class="searchresults"></th>
+			</tr>
+			<tr class="searchresults" onmouseover="this.className = 'searchresultshighlighted'" onmouseout="this.className = 'searchresults'">
+				<td class="searchresults">Drazi Warbird Cruiser</td>
+				<td class="searchresults" align="center">Heavy Combat Vessel</td>
+				<td class="searchresults" align="center">2234+</td>
+				<td class="searchresults" align="center">Base</td>
+				<td class="searchresults" align="center">Unlimited</td>
+				<td class="searchresults" align="center">480</td>
+				<td class="searchresults" align="center">
+					<a href="scs.jsp?mode=view&name=Drazi Warbird Cruiser" target="_blank">View</a>
+					<a href="Export/Drazi Warbird Cruiser?name=Drazi Warbird Cruiser&format=PDF" target="_blank">SCS</a>
+					<a href="Export/Drazi Warbird Cruiser?name=Drazi Warbird Cruiser&format=XML" target="_blank">XML</a>
+				</td>
+			</tr>
+			<tr class="searchresults" onmouseover="this.className = 'searchresultshighlighted'" onmouseout="this.className = 'searchresults'">
+				<td class="searchresults">EA Nova Dreadnought (Beta Model)</td>
+				<td class="searchresults" align="center">Capital Ship</td>
+				<td class="searchresults" align="center">2242+</td>
+				<td class="searchresults" align="center">Base</td>
+				<td class="searchresults" align="center">Limited</td>
+				<td class="searchresults" align="center">1350</td>
+				<td class="searchresults" align="center">
+					<a href="scs.jsp?mode=view&name=EA Nova Dreadnought&model=Beta Model" target="_blank">View</a>
+					<a href="Export/EA Nova Dreadnought (Beta Model)?name=EA Nova Dreadnought&model=Beta Model&format=PDF" target="_blank">SCS</a>
+					<a href="Export/EA Nova Dreadnought (Beta Model)?name=EA Nova Dreadnought&model=Beta Model&format=XML" target="_blank">XML</a>
+				</td>
+			</tr>
+            <tr class="searchresults" onmouseover="this.className = 'searchresultshighlighted'" onmouseout="this.className = 'searchresults'">
+                <td class="searchresults">EA Warlock Advanced Destroyer (Alpha Model)</td>
+                <td class="searchresults" align="center"></td>
+                <td class="searchresults" align="center"></td>
+                <td class="searchresults" align="center"></td>
+                <td class="searchresults" align="center"></td>
+                <td class="searchresults" align="center"></td>
+                <td class="searchresults" align="center">
+                    <a href="scs.jsp?mode=view&name=EA Warlock Advanced Destroyer&model=Alpha Model" target="_blank">View</a>
+                </td>
+            </tr>
+			</table>
+		</div>
+	</td></tr>
+	</table>
+</body>
+</html>

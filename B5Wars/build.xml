@@ -1,0 +1,85 @@
+<project name="B5Wars" default="war" basedir=".">
+
+    <property name="app.name" value="b5wars"/>
+    <property name="deploy.home" value="deploy"/>
+<!--
+    <property name="app.jar" value="${app.name}.jar"/>
+-->
+	<property name="app.war" value="${app.name}.war"/>
+
+    <target name="clean">
+        <delete dir="${deploy.home}" />
+<!--
+        <delete dir="install/counters" />
+        <delete dir="install/icons" />
+        <delete dir="install/lib" />
+        <delete dir="install/resources" />
+        <delete dir="install/silhouettes" />
+        <delete dir="install/units" />
+        <delete dir="install/weapondata" />
+        <delete file="web/${app.jar}"/>
+-->
+    </target>
+
+    <target name="prepare" depends="clean">
+    	<mkdir dir="${deploy.home}" />
+<!--
+        <mkdir dir="install/counters" />
+        <mkdir dir="install/icons" />
+        <mkdir dir="install/lib" />
+        <mkdir dir="install/resources" />
+        <mkdir dir="install/silhouettes" />
+        <mkdir dir="install/units" />
+        <mkdir dir="install/weapondata" />
+    	-->
+    </target>
+
+<!--        
+    <target name="jar" depends="prepare" description="">       
+    	<jar jarfile="web/${app.jar}" basedir="web/WEB-INF/classes">
+			<exclude name="net/b5gamer/b5wars/admin/**" />
+			<exclude name="net/b5gamer/b5wars/test/**" />
+			<exclude name="net/b5gamer/b5wars/ui/map/*.jpg" />
+			<exclude name="net/b5gamer/b5wars/ui/map/*.png" />
+			<exclude name="net/b5gamer/b5wars/ui/menu/**" />
+    	</jar>
+
+    	<copy file="src/net/b5gamer/b5wars/io/unit/unit.xsd" todir="web" overwrite="true" />
+
+    	<copy file="src/net/b5gamer/b5wars/io/unit/unit.xsd" todir="install" overwrite="true" />
+    	<copy todir="install/counters">
+    		<fileset dir="web/counters" />
+    	</copy>
+    	<copy todir="install/icons">
+    		<fileset dir="web/icons" />
+    	</copy>
+    	<copy file="web/${app.jar}" todir="install/lib" overwrite="true" />
+    	<copy todir="install/lib">
+    		<fileset dir="web/jar" />
+    	</copy>
+    	<copy todir="install/resources">
+    		<fileset dir="web/resources" />
+    	</copy>
+    	<copy todir="install/silhouettes">
+    		<fileset dir="web/silhouettes" />
+    	</copy>
+    	<copy todir="install/units">
+    		<fileset dir="web/units" />
+    	</copy>
+    	<copy todir="install/weapondata">
+    		<fileset dir="web/weapondata" />
+    	</copy>
+	</target>
+-->
+
+    <target name="war" depends="prepare" description="">       
+    	<war warfile="${deploy.home}/${app.war}" basedir="web">
+			<exclude name="WEB-INF/classes/net/b5gamer/b5wars/admin/**" />
+			<exclude name="WEB-INF/classes/net/b5gamer/b5wars/test/**" />
+			<exclude name="WEB-INF/classes/net/b5gamer/b5wars/ui/map/*.jpg" />
+			<exclude name="WEB-INF/classes/net/b5gamer/b5wars/ui/map/*.png" />
+			<exclude name="WEB-INF/classes/net/b5gamer/b5wars/ui/menu/**" />
+    	</war>
+	</target>
+	
+</project>

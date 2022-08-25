@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Bulkhead (4) -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 177.75 333 L 213.75 333 L 216 330.75 L 213.75 330.75 L 213.75 328.5 L 216 328.5 L 216 326.25 L 213.75 326.25 L 213.75 324 L 216 324 L 216 321.75 L 213.75 321.75 L 213.75 319.5 L 216 319.5 L 213.75 317.25 L 177.75 317.25 L 175.5 319.5 L 177.75 319.5 L 177.75 321.75 L 175.5 321.75 L 175.5 324 L 177.75 324 L 177.75 326.25 L 175.5 326.25 L 175.5 328.5 L 177.75 328.5 L 177.75 330.75 L 175.5 330.75 L 177.75 333 Z M 177.75 333 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 189 321.75 L 189 328.5 L 182.25 328.5 L 182.25 321.75 L 189 321.75 Z M 189 321.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 195.75 321.75 L 195.75 328.5 L 189 328.5 L 189 321.75 L 195.75 321.75 Z M 195.75 321.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 202.5 321.75 L 202.5 328.5 L 195.75 328.5 L 195.75 321.75 L 202.5 321.75 Z M 202.5 321.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 209.25 321.75 L 209.25 328.5 L 202.5 328.5 L 202.5 321.75 L 209.25 321.75 Z M 209.25 321.75 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

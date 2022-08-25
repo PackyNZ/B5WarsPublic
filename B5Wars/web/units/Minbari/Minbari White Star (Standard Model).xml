@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+
+	<unit name="Minbari White Star" model="Standard Model" hull="White Star" version="3" author="AOG" source="SF">
+		<specs type="Medium Ship" pointValue="750" rammingFactor="100" />
+		<maneuvering turnCost="1/3" turnDelay="1/3" accelDecelCost="2" pivotCost="1" rollCost="1" />
+		<combat-stats fwdAftDefense="13" stbPortDefense="14" initiativeModifier="13" />
+		<service-history>
+			<period-of-service faction="Minbari" inService="2260" availability="Base" deployment="Limited" />
+			<period-of-service faction="IA" inService="2260" availability="Base" deployment="Unlimited" />
+		</service-history>
+		<traits>
+			<trait name="Agile Ship" />
+			<trait name="Atmospheric Capable" />
+			<trait name="Gravitic Drive System" />
+		</traits>
+		<adaptive-armor adaptiveArmor="3" maxPerWeaponType="1" />
+
+		<ship-definition>
+			<hit-location-charts>
+				<hit-location-chart name="FORWARD HITS">
+					<hit-location class="SystemHitLocation" from="1" to="4">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="5" to="5">
+						<property name="systemType" value="Improved Neutron Laser" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="6" to="9">
+						<property name="systemType" value="Molecular Pulsar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="11">
+						<property name="systemType" value="EM Shield" />
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="12" to="17">
+						<property name="systemType" value="Structure" />
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="18" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+
+				<hit-location-chart name="AFT HITS">
+					<hit-location class="SystemHitLocation" from="1" to="6">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="7" to="9">
+						<property name="systemType" value="Jump Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="11">
+						<property name="systemType" value="EM Shield" />
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="12" to="17">
+						<property name="systemType" value="Structure" />
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="18" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+
+				<hit-location-chart name="PRIMARY HITS">
+					<hit-location class="SystemHitLocation" from="1" to="8">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="9" to="10">
+						<property name="systemType" value="Jammer" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="12">
+						<property name="systemType" value="Tractor Beam" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="14">
+						<property name="systemType" value="Sensors" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="15" to="16">
+						<property name="systemType" value="Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="17" to="17">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="18" to="19">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="20" to="20">
+						<property name="systemType" value="C &amp; C" />
+					</hit-location>
+				</hit-location-chart>
+			</hit-location-charts>
+
+			<sections>
+				<section name="FORWARD" class="Section" arc="F180" hitLocationChart="FORWARD HITS">
+					<systems>
+						<system class="Thruster" damageBoxes="8" armor="4" arc="F120">
+							<property name="thrustRating" value="4" />
+						</system>
+						<system class="Thruster" damageBoxes="8" armor="4" arc="F120">
+							<property name="thrustRating" value="4" />
+						</system>
+						<weapon type="Improved Neutron Laser" armor="4" arc="F60" number="1" />
+						<weapon type="Molecular Pulsar" armor="4" arc="F120" number="2" />
+						<weapon type="Molecular Pulsar" armor="4" arc="F120" number="3" />
+						<weapon type="Molecular Pulsar" armor="4" arc="F120" number="4" />
+						<weapon type="Molecular Pulsar" armor="4" arc="F120" number="5" />
+					</systems>
+				</section>
+
+				<section name="PORT" class="ChildSection">
+					<property name="parentSections" value="PRIMARY" />
+					<systems>
+						<system class="Thruster" damageBoxes="12" armor="4" arc="P120">
+							<property name="thrustRating" value="5" />
+						</system>
+						<weapon type="EM Shield" armor="3" arc="P180" number="6">
+							<property name="shieldFactor" value="2" />
+						</weapon>
+					</systems>
+				</section>
+
+				<section name="PRIMARY" class="StructureSection" hitLocationChart="PRIMARY HITS">
+					<systems>
+						<system class="Structure" damageBoxes="48" armor="5" />
+						<system class="CommandAndControl" damageBoxes="16" armor="5" />
+						<system class="Sensors" damageBoxes="15" armor="5" power="3">
+							<property name="sensorRating" value="10" />
+						</system>
+						<system class="Engine" damageBoxes="15" armor="5">
+							<property name="freeThrust" value="12" />
+							<property name="efficiency" value="2/1" />
+						</system>
+						<system class="Reactor" damageBoxes="20" armor="5">
+							<property name="availablePower" value="22" />
+						</system>
+						<system class="Hangar" damageBoxes="2" armor="4">
+							<property name="launchRate" value="1" />
+						</system>
+						<system class="Jammer" damageBoxes="8" armor="4" power="7" />
+						<weapon type="Tractor Beam" damageBoxes="4" armor="4" arc="360" />
+					</systems>
+				</section>
+
+				<section name="STARBOARD" class="ChildSection">
+					<property name="parentSections" value="PRIMARY" />
+					<systems>
+						<system class="Thruster" damageBoxes="12" armor="4" arc="S120">
+							<property name="thrustRating" value="5" />
+						</system>
+						<weapon type="EM Shield" armor="3" arc="S180" number="7">
+							<property name="shieldFactor" value="2" />
+						</weapon>
+					</systems>
+				</section>
+
+				<section name="AFT" class="Section" arc="A180" hitLocationChart="AFT HITS">
+					<systems>
+						<system class="Thruster" damageBoxes="10" armor="4" arc="A120">
+							<property name="thrustRating" value="4" />
+						</system>
+						<system class="Thruster" damageBoxes="12" armor="4" arc="A120">
+							<property name="thrustRating" value="4" />
+						</system>
+						<system class="Thruster" damageBoxes="10" armor="4" arc="A120">
+							<property name="thrustRating" value="4" />
+						</system>
+						<system class="JumpEngine" damageBoxes="20" armor="5" power="4">
+							<property name="jumpDelay" value="24" />
+						</system>
+					</systems>
+				</section>
+			</sections>
+		</ship-definition>
+	</unit>
+</unit-definition>

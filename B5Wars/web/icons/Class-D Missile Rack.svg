@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<defs>
+<g>
+<symbol overflow="visible" id="glyph17-2">
+<path style="stroke:none;" d="M 0.984375 -3.890625 L 0.984375 -0.484375 L 1.578125 -0.484375 C 2.078125 -0.484375 2.441406 -0.617188 2.671875 -0.890625 C 2.910156 -1.171875 3.03125 -1.601562 3.03125 -2.1875 C 3.03125 -2.78125 2.910156 -3.210938 2.671875 -3.484375 C 2.441406 -3.753906 2.078125 -3.890625 1.578125 -3.890625 L 0.984375 -3.890625 Z M 0.484375 -4.375 L 1.5 -4.375 C 2.207031 -4.375 2.726562 -4.195312 3.0625 -3.84375 C 3.394531 -3.488281 3.5625 -2.9375 3.5625 -2.1875 C 3.5625 -1.4375 3.394531 -0.882812 3.0625 -0.53125 C 2.726562 -0.175781 2.207031 0 1.5 0 L 0.484375 0 L 0.484375 -4.375 Z M 0.484375 -4.375 "/>
+</symbol>
+</g>
+</defs>
+
+<!-- Class-D Missile Rack -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 119.667969 393.417969 L 119.667969 415.917969 L 130.917969 415.917969 L 130.917969 418.417969 L 128.667969 418.417969 L 130.917969 422.917969 L 130.917969 424.167969 L 128.667969 424.167969 L 134.417969 433.167969 L 139.917969 424.167969 L 137.667969 424.167969 L 137.667969 422.917969 L 139.917969 418.417969 L 137.667969 418.417969 L 137.667969 415.917969 L 148.917969 415.917969 L 148.917969 393.417969 L 119.667969 393.417969 Z M 119.667969 393.417969 " transform="matrix(1,0,0,-1,0,810)"/>
+<g style="fill:rgb(13.730068%,12.159915%,12.54902%);fill-opacity:1;">
+  <use xlink:href="#glyph17-2" x="132.5832" y="387.75"/>
+</g>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 130.917969 411.417969 L 130.917969 404.667969 L 124.167969 404.667969 L 124.167969 411.417969 L 130.917969 411.417969 Z M 130.917969 411.417969 " transform="matrix(1,0,0,-1,0,810)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 137.667969 411.417969 L 137.667969 404.667969 L 130.917969 404.667969 L 130.917969 411.417969 L 137.667969 411.417969 Z M 137.667969 411.417969 " transform="matrix(1,0,0,-1,0,810)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 144.417969 411.417969 L 144.417969 404.667969 L 137.667969 404.667969 L 137.667969 411.417969 L 144.417969 411.417969 Z M 144.417969 411.417969 " transform="matrix(1,0,0,-1,0,810)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 130.917969 404.667969 L 130.917969 397.917969 L 124.167969 397.917969 L 124.167969 404.667969 L 130.917969 404.667969 Z M 130.917969 404.667969 " transform="matrix(1,0,0,-1,0,810)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 137.667969 404.667969 L 137.667969 397.917969 L 130.917969 397.917969 L 130.917969 404.667969 L 137.667969 404.667969 Z M 137.667969 404.667969 " transform="matrix(1,0,0,-1,0,810)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 144.417969 404.667969 L 144.417969 397.917969 L 137.667969 397.917969 L 137.667969 404.667969 L 144.417969 404.667969 Z M 144.417969 404.667969 " transform="matrix(1,0,0,-1,0,810)"/>
+
+</svg>

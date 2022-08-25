@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+
+	<unit name="Minbari Tinashi War Frigate" hull="Tinashi" version="3" author="AOG" source="SF">
+		<specs type="Heavy Combat Vessel" pointValue="850" rammingFactor="190" />
+		<maneuvering turnCost="1" turnDelay="2/3" accelDecelCost="3" pivotCost="3+3" rollCost="3+3" />
+		<combat-stats fwdAftDefense="14" stbPortDefense="17" initiativeModifier="7" />
+		<service-history>
+			<period-of-service faction="Minbari" inService="2052" availability="Base" deployment="Unlimited" />
+		</service-history>
+		<traits>
+			<trait name="Gravitic Drive System" />
+		</traits>
+		
+		<ship-definition>
+			<hit-location-charts>
+				<hit-location-chart name="FORWARD HITS">
+					<hit-location class="SystemHitLocation" from="1" to="3">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="4" to="5">
+						<property name="systemType" value="Neutron Laser" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="6" to="8">
+						<property name="systemType" value="Fusion Cannon" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="9" to="10">
+						<property name="systemType" value="Electro-Pulse Gun" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+
+				<hit-location-chart name="AFT HITS">
+					<hit-location class="SystemHitLocation" from="1" to="6">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="7" to="9">
+						<property name="systemType" value="Neutron Laser" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="12">
+						<property name="systemType" value="Fusion Cannon" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="18">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SectionHitLocation" from="19" to="20">
+						<property name="sectionName" value="PRIMARY" />
+					</hit-location>
+				</hit-location-chart>
+
+				<hit-location-chart name="PRIMARY HITS">
+					<hit-location class="SystemHitLocation" from="1" to="7">
+						<property name="systemType" value="Structure" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="8" to="9">
+						<property name="systemType" value="Thruster" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="10" to="10">
+						<property name="systemType" value="Jump Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="11" to="12">
+						<property name="systemType" value="Jammer" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="13" to="14">
+						<property name="systemType" value="Sensors" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="15" to="16">
+						<property name="systemType" value="Engine" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="17" to="17">
+						<property name="systemType" value="Hangar" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="18" to="19">
+						<property name="systemType" value="Reactor" />
+					</hit-location>
+					<hit-location class="SystemHitLocation" from="20" to="20">
+						<property name="systemType" value="C &amp; C" />
+					</hit-location>
+				</hit-location-chart>
+			</hit-location-charts>
+
+			<sections>
+				<section name="FORWARD" class="StructureSection" arc="F180" hitLocationChart="FORWARD HITS">
+					<systems>
+						<system class="Structure" damageBoxes="60" armor="6" />											
+						<system class="Thruster" damageBoxes="8" armor="4" arc="F120">
+							<property name="thrustRating" value="4" />
+						</system>
+						<system class="Thruster" damageBoxes="8" armor="4" arc="F120">
+							<property name="thrustRating" value="4" />
+						</system>
+						<weapon type="Neutron Laser" armor="4" arc="F120" number="1" />
+						<weapon type="Fusion Cannon" armor="3" arc="FP120" number="4" />
+						<weapon type="Fusion Cannon" armor="3" arc="FS120" number="5" />
+						<weapon type="Electro-Pulse Gun" armor="2" arc="FP120" number="10" />						
+						<weapon type="Electro-Pulse Gun" armor="2" arc="FS120" number="11" />						
+					</systems>
+				</section>
+
+				<section name="PORT" class="ChildSection">
+					<property name="parentSections" value="PRIMARY" />
+					<systems>
+						<system class="Thruster" damageBoxes="13" armor="4" arc="P120">
+							<property name="thrustRating" value="4" />
+						</system>
+					</systems>
+				</section>
+				
+				<section name="PRIMARY" class="StructureSection" hitLocationChart="PRIMARY HITS">
+					<systems>
+						<system class="Structure" damageBoxes="60" armor="6" />
+						<system class="CommandAndControl" damageBoxes="24" armor="6" />
+						<system class="Sensors" damageBoxes="22" armor="5" power="4">
+							<property name="sensorRating" value="12" />
+						</system>						
+						<system class="Engine" damageBoxes="20" armor="6">
+							<property name="freeThrust" value="10" />
+							<property name="efficiency" value="3/1" />
+						</system>
+						<system class="JumpEngine" damageBoxes="20" armor="5" power="3">
+							<property name="jumpDelay" value="12" />
+						</system>
+						<system class="Reactor" damageBoxes="25" armor="5">
+							<property name="availablePower" value="46" />
+						</system>
+						<system class="Hangar" damageBoxes="2" armor="4">
+							<property name="launchRate" value="2" />
+						</system>
+						<system class="Jammer" damageBoxes="8" armor="4" power="5" />
+					</systems>
+				</section>
+
+				<section name="STARBOARD" class="ChildSection">
+					<property name="parentSections" value="PRIMARY" />
+					<systems>
+						<system class="Thruster" damageBoxes="13" armor="4" arc="S120">
+							<property name="thrustRating" value="4" />
+						</system>
+					</systems>
+				</section>
+				
+				<section name="AFT" class="StructureSection" arc="A180" hitLocationChart="AFT HITS">
+					<systems>
+						<system class="Structure" damageBoxes="56" armor="4" />
+						<system class="Thruster" damageBoxes="35" armor="4" arc="A120">
+							<property name="thrustRating" value="10" />
+						</system>
+						<weapon type="Neutron Laser" armor="4" arc="FP120" number="2" />
+						<weapon type="Neutron Laser" armor="4" arc="FS120" number="3" />
+						<weapon type="Fusion Cannon" armor="3" arc="FP120" number="6" />
+						<weapon type="Fusion Cannon" armor="3" arc="FS120" number="7" />
+						<weapon type="Fusion Cannon" armor="3" arc="A120" number="8" />
+						<weapon type="Fusion Cannon" armor="3" arc="A120" number="9" />
+					</systems>
+				</section>
+			</sections>
+		</ship-definition>
+	</unit>
+</unit-definition>

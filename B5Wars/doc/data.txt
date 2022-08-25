@@ -1,0 +1,94 @@
+User
+	Fleets
+	Fleet Restrictions
+
+Games
+	Fleet Restrictions
+	Players/Sides
+	Map
+	
+Units (xml/object?)
+	Counters (image)
+	Silhouettes (svg?)
+	SCS
+	Official y/n
+	Author
+	
+Systems (class/object?)
+	Icons (svg?)
+
+Weapons (xml/class/object?)
+	Icons (svg?)
+
+Maps
+	Rendered map? (image)
+	Terrain (+images)
+	
+Scenarios
+
+Factions? - derived from units
+
+
+Mutable data:
+-----------------------------
+Unit
+	name
+	init
+	current period of service
+	location
+	facing
+	isDestroyed()
+	handleEndOfTurnActions()
+	
+Structural
+	HitLocationChart
+		determineLocationHit()
+	Section
+		getSystemsOfClass()
+		getTargetSystemsOfClass()
+		getSystemsOfType()
+		getWeaponsOfClass()
+		getTargetWeaponsOfClass()
+		getWeaponsOfType()
+		isStructurallySound()
+		isDestroyed()
+		destroy()
+		handleEndOfTurnActions()
+		Turret
+			arc
+			system arc
+			arc fired
+	System
+		parent
+		damage
+		armor
+		arc (turret)
+		isValidTarget()
+		isDestroyed()
+		handleEndOfTurnActions()
+		critical hits
+		activated
+		system specific attributes
+		
+FighterFlight
+	jinking
+	determineAndResolveDropOut()
+	launched/landed
+	Fighter
+		damage
+		dropped out
+		armor
+		missiles
+		navigator
+		isValidTarget()
+		isDestroyed()
+			
+Mobile Units
+	direction of motion
+	speed
+	extended turn thrust
+	pending turn delay
+	pivot/rolled/rolling/skin dancing
+	
+
+	

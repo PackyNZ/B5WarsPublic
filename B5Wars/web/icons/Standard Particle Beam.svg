@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Standard Particle Beam -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 207 445.5 L 207 481.5 L 201.5 481.5 L 203.75 481.5 L 203.75 486 L 201.5 486 L 201.5 492.75 L 197 492.75 L 197 486 L 194.75 486 L 194.75 481.5 L 197 481.5 L 191.25 481.5 L 191.25 445.5 L 207 445.5 Z M 207 445.5 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 202.5 470.25 L 195.75 470.25 L 195.75 477 L 202.5 477 L 202.5 470.25 Z M 202.5 470.25 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 202.5 463.5 L 195.75 463.5 L 195.75 470.25 L 202.5 470.25 L 202.5 463.5 Z M 202.5 463.5 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 202.5 456.75 L 195.75 456.75 L 195.75 463.5 L 202.5 463.5 L 202.5 456.75 Z M 202.5 456.75 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 202.5 450 L 195.75 450 L 195.75 456.75 L 202.5 456.75 L 202.5 450 Z M 202.5 450 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Maser -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 99 352 L 99 381.25 L 108 381.25 L 108 385.75 L 101.25 385.75 L 101.25 390.25 L 103.5 390.25 L 103.5 388 L 108 388 L 108 392.5 L 101.25 392.5 L 101.25 397 L 103.5 397 L 103.5 394.75 L 108 394.75 L 110.25 399.25 L 112.5 394.75 L 117 394.75 L 117 397 L 119.25 397 L 119.25 394.75 L 119.25 392.5 L 112.5 392.5 L 112.5 388 L 117 388 L 117 390.25 L 119.25 390.25 L 119.25 385.75 L 112.5 385.75 L 112.5 381.25 L 121.5 381.25 L 121.5 352 L 99 352 Z M 99 352 " transform="matrix(1,0,0,-1,0,792)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 110.25 370 L 110.25 376.75 L 103.5 376.75 L 103.5 370 L 110.25 370 Z M 110.25 370 " transform="matrix(1,0,0,-1,0,792)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 117 370 L 117 376.75 L 110.25 376.75 L 110.25 370 L 117 370 Z M 117 370 " transform="matrix(1,0,0,-1,0,792)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 110.25 363.25 L 110.25 370 L 103.5 370 L 103.5 363.25 L 110.25 363.25 Z M 110.25 363.25 " transform="matrix(1,0,0,-1,0,792)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 117 363.25 L 117 370 L 110.25 370 L 110.25 363.25 L 117 363.25 Z M 117 363.25 " transform="matrix(1,0,0,-1,0,792)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 110.25 356.5 L 110.25 363.25 L 103.5 363.25 L 103.5 356.5 L 110.25 356.5 Z M 110.25 356.5 " transform="matrix(1,0,0,-1,0,792)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 117 356.5 L 117 363.25 L 110.25 363.25 L 110.25 356.5 L 117 356.5 Z M 117 356.5 " transform="matrix(1,0,0,-1,0,792)"/>
+
+</svg>

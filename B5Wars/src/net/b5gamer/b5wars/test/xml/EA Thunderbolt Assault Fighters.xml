@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<unit-definition 
+    xmlns="http://www.b5gamer.net/B5Wars" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.b5gamer.net/B5Wars unit.xsd">
+    
+	<unit type="EA Thunderbolt Assault Fighters" hull="Thunderbolt" version="3" rules="2E" source="SF" counter="EA Thunderbolt.png">			
+		<specs class="HeavyFighters" pointValue="80" rammingFactor="24" />
+		<maneuvering turnCost="1/3" turnDelay="0" accelDecelCost="1" pivotCost="1" rollCost="1" /> 		
+		<combat-stats fwdAftDefense="8" stbPortDefense="7" initiativeModifier="16" />
+		<service-history>
+			<period-of-service faction="EA" inService="2259" availability="Base" deployment="Unlimited" />
+		</service-history>
+		<traits>
+			<trait name="Atmospheric Capable" />
+		</traits>
+						
+		<fighter-stats>
+			<flight-stats freeThrust="13" offensiveModifier="5" dropoutModifier="0" />
+<!-- 
+			<construction damageBoxes="12" hangarBoxes="1" >
+				<armor forward="3" port="2" starboard="2" aft="2" />
+			</construction>
+-->			
+		</fighter-stats>							
+	</unit>				
+</unit-definition>				

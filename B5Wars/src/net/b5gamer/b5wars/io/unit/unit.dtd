@@ -1,0 +1,129 @@
+<!ELEMENT unit-definition (unit)>
+
+<!-- common unit elements -->
+<!ELEMENT unit (specs,maneuvering?,combat-stats,service-history,traits?,adaptive-armor?,(ship-definition|fighter-definition))>
+<!ATTLIST unit name CDATA #REQUIRED> <!-- unit name e.g. EA Hyperion Heavy Cruiser -->
+<!ATTLIST unit model CDATA #IMPLIED> <!-- unit model e.g. Theta Model -->
+<!ATTLIST unit hull CDATA #REQUIRED> <!-- base hull the unit is built on e.g. Hyperion -->
+<!ATTLIST unit version CDATA #REQUIRED> <!-- version number e.g. 3 -->
+<!ATTLIST unit author CDATA #IMPLIED> <!-- author of the unit e.g. AOG -->
+<!ATTLIST unit source CDATA #IMPLIED> <!-- source of the unit e.g. SF -->
+
+<!ELEMENT specs EMPTY>
+<!ATTLIST specs type CDATA #REQUIRED> <!-- unit type e.g. Capital Ship -->
+<!ATTLIST specs pointValue CDATA #REQUIRED> <!-- combat point cost of the unit e.g. 705 -->
+<!ATTLIST specs rammingFactor CDATA #REQUIRED>	<!-- factor for ramming other units e.g. 290 -->
+
+<!ELEMENT maneuvering EMPTY>
+<!ATTLIST maneuvering turnCost CDATA #REQUIRED> <!-- speed based thrust cost to make a turn e.g. 2/3 or 1 -->
+<!ATTLIST maneuvering turnDelay CDATA #REQUIRED> <!-- speed based mandatory movement delay between making turns e.g. 1/3 or 1 -->
+<!ATTLIST maneuvering accelDecelCost CDATA #REQUIRED> <!-- thrust required to alter speed e.g. 3 -->
+<!ATTLIST maneuvering pivotCost CDATA #IMPLIED> <!-- thrust required to perform a pivot e.g. 3+3 or 1 -->
+<!ATTLIST maneuvering rollCost CDATA #IMPLIED> <!-- thrust required to perform a roll e.g. 2+2 or 1 -->
+
+<!ELEMENT combat-stats EMPTY>
+<!ATTLIST combat-stats fwdAftDefense CDATA #REQUIRED> <!-- defense when attacked from fore or aft e.g. 14 -->
+<!ATTLIST combat-stats stbPortDefense CDATA #REQUIRED> <!-- defense when attacked from starboard or port e.g. 16 -->
+<!ATTLIST combat-stats initiativeModifier CDATA #REQUIRED> <!-- modifier to initiative e.g. 0 -->
+
+<!ELEMENT service-history (period-of-service+)>
+<!ELEMENT period-of-service (#PCDATA)> <!-- may contain text relating to any special notes for this period -->
+<!ATTLIST period-of-service faction CDATA #REQUIRED> <!-- name of the faction employing the unit e.g. EA -->
+<!ATTLIST period-of-service inService CDATA #IMPLIED> <!-- start date for this period of service e.g. 2246 -->
+<!ATTLIST period-of-service endedService CDATA #IMPLIED> <!-- end date for this period of service e.g. 2265 -->
+<!ATTLIST period-of-service datePrefix CDATA #IMPLIED> <!-- prefix for service dates e.g. Y -->
+<!ATTLIST period-of-service dateSuffix CDATA #IMPLIED> <!-- suffix for service dates e.g. ANH -->
+<!ATTLIST period-of-service availability (Base|Common|Uncommon|Rare|Specialty|Unique) #REQUIRED> <!-- availability of the base hull or variant during this period -->
+<!ATTLIST period-of-service maxAvailable CDATA #IMPLIED> <!-- maximum number of this unit that were available during this period e.g. 2 -->
+<!ATTLIST period-of-service deployment (Unlimited|Limited|Restricted|Special) #IMPLIED> <!-- deployment limitation during this period -->
+<!ATTLIST period-of-service deploymentPercentage CDATA #IMPLIED> <!-- only use for non-standard deployment percentages (e.g. not 10% or 33%), maximum percentage of combat points that can be spent on this unit e.g. 50% -->
+<!ATTLIST period-of-service onlyOnePer CDATA #IMPLIED> <!-- limitation of only one unit per the specified amount of combat points available e.g. 5000 -->
+<!ATTLIST period-of-service economicCost CDATA #IMPLIED> <!-- modifier to units economic cost during this period e.g. 4 or 25% -->
+
+<!ELEMENT traits (trait*)>
+<!ELEMENT trait EMPTY>
+<!ATTLIST trait name CDATA #REQUIRED> <!-- name of the trait e.g. Command Bonus -->
+<!ATTLIST trait value CDATA #IMPLIED> <!-- value of the trait (if any) e.g. 2 -->
+
+<!ELEMENT adaptive-armor EMPTY>
+<!ATTLIST adaptive-armor adaptiveArmor CDATA #REQUIRED> <!-- amount of adaptive armor points available e.g. 6 -->
+<!ATTLIST adaptive-armor maxPerWeaponType CDATA #IMPLIED> <!-- maximum points that can be allocated per weapon type e.g. 3 -->
+<!ATTLIST adaptive-armor pointsPreAssigned CDATA #IMPLIED> <!-- number of points that can be pre-assigned e.g. 3 -->
+
+<!ELEMENT property EMPTY>
+<!ATTLIST property name CDATA #REQUIRED> <!-- name of the property e.g. systemType -->
+<!ATTLIST property value CDATA #REQUIRED> <!-- value of the property e.g. Thruster -->
+
+<!-- ship specific elements -->
+<!ELEMENT ship-definition (hit-location-charts,sections)>
+
+<!ELEMENT hit-location-charts (hit-location-chart+)>
+<!ELEMENT hit-location-chart (hit-location+)>
+<!ATTLIST hit-location-chart name CDATA #REQUIRED> <!-- name of the hit location chart e.g. FORWARD HITS -->
+<!ELEMENT hit-location (property*,hit-location*)>
+<!ATTLIST hit-location class CDATA #REQUIRED> <!-- name of the Java class to use for the hit location e.g SystemHitLocation (see HitLocation class in javadocs) -->
+<!ATTLIST hit-location from (1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20) #REQUIRED> <!-- from value for range e.g. 1 -->
+<!ATTLIST hit-location to (1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20) #REQUIRED> <!-- to value for range e.g. 4 -->
+
+<!ELEMENT sections (section+)>
+<!ATTLIST sections generalHitLocationChart CDATA #IMPLIED> <!-- name of the hit location chart to use for general hits e.g. GENERAL HITS (see Trait.SAUCER in javadocs) -->
+<!ELEMENT section (property*,systems?,section*)>
+<!ATTLIST section name CDATA #REQUIRED> <!-- name of the section e.g. PRIMARY -->
+<!ATTLIST section class CDATA #REQUIRED> <!-- name of the Java class to use for the section e.g StructureSection (see Section class in javadocs) -->
+<!ATTLIST section arc CDATA #IMPLIED> <!-- arc this section covers for incoming fire purposes e.g. F60 or Arc(330, 60) -->
+<!ATTLIST section hitLocationChart CDATA #IMPLIED> <!-- name of the hit location chart to use for the section e.g. PRIMARY HITS -->
+
+<!ELEMENT systems (system*,weapon*)>
+<!ELEMENT system (property*,system-icons?)>
+<!ATTLIST system class CDATA #REQUIRED> <!-- name of the Java class to use for the system e.g Structure (see System class in javadocs) -->
+<!ATTLIST system damageBoxes CDATA #IMPLIED> <!-- amount of damage the system can sustain before being destroyed e.g. 54 -->
+<!ATTLIST system armor CDATA #IMPLIED> <!-- amount of armor protecting the system e.g. 5 -->
+<!ATTLIST system arc CDATA #IMPLIED> <!-- arc for incoming fire and/or outgoing effects e.g. F60 or Arc(330, 60) -->
+<!ATTLIST system name CDATA #IMPLIED> <!-- optional name of the system e.g. A -->
+<!ATTLIST system power CDATA #IMPLIED> <!-- amount of power required for the system to function e.g. 3 -->
+<!ELEMENT weapon (property*,weapon-icons?)>
+<!ATTLIST weapon type CDATA #REQUIRED> <!-- the weapon type e.g Heavy Laser Cannon -->
+<!ATTLIST weapon damageBoxes CDATA #IMPLIED> <!-- amount of damage the weapon can sustain before being destroyed e.g. 54 -->
+<!ATTLIST weapon armor CDATA #REQUIRED> <!-- amount of armor protecting the weapon e.g. 4 -->
+<!ATTLIST weapon arc CDATA #REQUIRED> <!-- arc for incoming fire and field of fire for the weapon e.g. FP60 or Arc(300, 60) -->
+<!ATTLIST weapon number CDATA #IMPLIED> <!-- the weapon number e.g. 1 -->
+
+<!ELEMENT system-icons ((system-icon|structure-icon)?,armor-icon?,power-icon?,arc-icon?)>
+<!ELEMENT system-icon EMPTY>
+<!ATTLIST system-icon x CDATA #REQUIRED> <!-- x position e.g. 100 -->
+<!ATTLIST system-icon y CDATA #REQUIRED> <!-- y position e.g. 100 -->
+<!ATTLIST system-icon mirror (true|false) #IMPLIED> <!-- whether to mirror the icon -->
+<!ATTLIST system-icon rotation CDATA #IMPLIED> <!-- number of degrees to rotate the icon e.g. 90 -->
+<!ATTLIST system-icon index CDATA #IMPLIED> <!-- icon number e.g. 2 -->
+<!ELEMENT structure-icon EMPTY>
+<!ATTLIST structure-icon x CDATA #REQUIRED> <!-- x position e.g. 100 -->
+<!ATTLIST structure-icon y CDATA #REQUIRED> <!-- y position e.g. 100 -->
+<!ATTLIST structure-icon mirror (true|false) #IMPLIED> <!-- whether to mirror the icon -->
+<!ATTLIST structure-icon rotation CDATA #IMPLIED> <!-- number of degrees to rotate the icon e.g. 90 -->
+<!ATTLIST structure-icon definition CDATA #IMPLIED> <!-- custom icon definition for specific systems such as structure e.g -->
+<!ELEMENT weapon-icons (weapon-icon?,armor-icon?,power-icon?,arc-icon?,number-icon?)>
+<!ELEMENT weapon-icon EMPTY>
+<!ATTLIST weapon-icon x CDATA #REQUIRED> <!-- x position e.g. 100 -->
+<!ATTLIST weapon-icon y CDATA #REQUIRED> <!-- y position e.g. 100 -->
+<!ATTLIST weapon-icon mirror (true|false) #IMPLIED> <!-- whether to mirror the icon -->
+<!ATTLIST weapon-icon rotation CDATA #IMPLIED> <!-- number of degrees to rotate the icon e.g. 90 -->
+<!ELEMENT armor-icon EMPTY>
+<!ATTLIST armor-icon x CDATA #REQUIRED> <!-- x position e.g. 100 -->
+<!ATTLIST armor-icon y CDATA #REQUIRED> <!-- y position e.g. 100 -->
+<!ELEMENT power-icon EMPTY>
+<!ATTLIST power-icon x CDATA #REQUIRED> <!-- x position e.g. 100 -->
+<!ATTLIST power-icon y CDATA #REQUIRED> <!-- y position e.g. 100 -->
+<!ELEMENT arc-icon EMPTY>
+<!ATTLIST arc-icon x CDATA #REQUIRED> <!-- x position e.g. 100 -->
+<!ATTLIST arc-icon y CDATA #REQUIRED> <!-- y position e.g. 100 -->
+<!ELEMENT number-icon EMPTY>
+<!ATTLIST number-icon x CDATA #REQUIRED> <!-- x position e.g. 100 -->
+<!ATTLIST number-icon y CDATA #REQUIRED> <!-- y position e.g. 100 -->
+
+<!-- fighter specific elements -->
+<!ELEMENT fighter-definition (fighter-combat-stats)>
+
+<!ELEMENT fighter-combat-stats EMPTY>
+<!ATTLIST fighter-combat-stats freeThrust CDATA #REQUIRED> <!-- available thrust per turn e.g. 12 -->
+<!ATTLIST fighter-combat-stats offensiveModifier CDATA #REQUIRED> <!-- attack modifier e.g. 5 -->
+<!ATTLIST fighter-combat-stats dropoutModifier CDATA #IMPLIED> <!-- modifier to dropout rolls e.g. 0 -->

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt" viewBox="0 0 612 792" version="1.1">
+
+<!-- Pulsar Mine -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 287.5 429.75 L 287.5 445.5 L 298.75 445.5 L 305.5 456.75 L 298.75 452.25 L 303.25 459 L 294.25 456.75 L 303.25 463.5 L 294.25 463.5 L 305.5 468 L 309 481.5 L 312.25 468 L 323.5 463.5 L 314.5 463.5 L 323.5 456.75 L 314.5 459 L 319 452.25 L 312.25 456.75 L 319 445.5 L 330.25 445.5 L 330.25 429.75 L 287.5 429.75 Z M 287.5 429.75 " transform="matrix(1,0,0,-1,0,793)"/>
+
+<!-- Damage Boxes -->
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 312.25 441 L 312.25 447.75 L 305.5 447.75 L 305.5 441 L 312.25 441 Z M 312.25 441 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 298.75 434.25 L 298.75 441 L 292 441 L 292 434.25 L 298.75 434.25 Z M 298.75 434.25 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 305.5 434.25 L 305.5 441 L 298.75 441 L 298.75 434.25 L 305.5 434.25 Z M 305.5 434.25 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 312.25 434.25 L 312.25 441 L 305.5 441 L 305.5 434.25 L 312.25 434.25 Z M 312.25 434.25 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 319 434.25 L 319 441 L 312.25 441 L 312.25 434.25 L 319 434.25 Z M 319 434.25 " transform="matrix(1,0,0,-1,0,793)"/>
+<path style="fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(13.730068%,12.159915%,12.54902%);stroke-opacity:1;stroke-miterlimit:4;" d="M 325.75 434.25 L 325.75 441 L 319 441 L 319 434.25 L 325.75 434.25 Z M 325.75 434.25 " transform="matrix(1,0,0,-1,0,793)"/>
+
+</svg>
