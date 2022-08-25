@@ -1,3 +1,5 @@
+***PLEASE BE AWARE THIS IS OLD CODE AND (THE UI IN PARTICULAR) REQUIRES UPDATING***
+
 ![Babylon 5 Logo](/B5Wars/web/images/B5WLogo.png)
 
 An ***IN PROGRESS*** *Java* implementation of the [Babylon 5 Wars](https://en.wikipedia.org/wiki/Babylon_5_Wars) tabletop game by [Agents of Gaming](https://en.wikipedia.org/wiki/Agents_of_Gaming).
