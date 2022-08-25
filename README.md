@@ -34,7 +34,7 @@ I am once again getting the itch, and are not currently using Java in my normal 
 For the time being I plan to:
 
 - ~~Upload the code to GitHub~~
-- Get the existing project running with a current Java version
+- ~~Get the existing project running with a current Java version~~
 - Implement [Spring](https://spring.io/) server-side to support a new UI
 - Implement a new [React](https://reactjs.org/) UI for displaying SCSs
 - Revisit and refactor some coding choices (e.g. separation of concerns)
