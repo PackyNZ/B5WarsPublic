@@ -28,7 +28,7 @@ Java is my first love as a programming language, and this was an opportunity to 
 
 The current partial implementation mainly focuses around a digital representation of the Ship Control Sheets; defining and persisting SCSs as XML, reconstituting these into the appropriate classes, bringing together with SVG snippets to create a graphical SCS, and finally exporting as PDF if desired. Also implemented is the logic for applying damage to ship sections and systems, based on a given angle for incoming fire.
 
-Once a SCS is manually [defined as XML](https://github.com/PackyNZ/B5Wars/edit/main/Drazi_Sunhawk_Battlecruiser.xml), it can be opened to graphically register the x/y location of every system and associated annotations...
+Once a SCS is manually [defined as XML](https://github.com/PackyNZ/B5WarsPublic/edit/main/Drazi_Sunhawk_Battlecruiser.xml), it can be opened to graphically register the x/y location of every system and associated annotations...
 
 ![scs_editor.jpg](scs_editor.jpg)
 
