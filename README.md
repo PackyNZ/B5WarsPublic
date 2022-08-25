@@ -1,3 +1,5 @@
+***PLEASE BE AWARE THIS IS OLD CODE AND (UI IN PARTICULAR) REQUIRES UPDATING***
+
 ![Babylon 5 Logo](/B5Wars/web/images/B5WLogo.png)
 
 An ***IN PROGRESS*** *Java* implementation of the [Babylon 5 Wars](https://en.wikipedia.org/wiki/Babylon_5_Wars) tabletop game by [Agents of Gaming](https://en.wikipedia.org/wiki/Agents_of_Gaming).
@@ -20,7 +22,7 @@ In the late 2000's, finding myself with too much time on my hands, and wanting a
 ## Implementation
 Java is my first love as a programming language, and this was an opportunity to engage with it in a few different aspects than I typically would in my day job.
 
-The current implementation mainly focuses around a digital representation of the Ship Control Sheets; defining and persisting SCSs as XML, reconstituting these into the appropriate classes, bringing together with SVG snippets to create a graphical SCS, and finally exporting as PDF if desired. Also implemented is the logic for applying damage to ship sections and systems, based on a given angle for incoming fire.
+The current partial implementation mainly focuses around a digital representation of the Ship Control Sheets; defining and persisting SCSs as XML, reconstituting these into the appropriate classes, bringing together with SVG snippets to create a graphical SCS, and finally exporting as PDF if desired. Also implemented is the logic for applying damage to ship sections and systems, based on a given angle for incoming fire.
  
 Eventually though, after many (mostly fun) hours, I started thinking about the longer term, and decided the project would be better implemented in the likes of C++ and OpenGL, with an agnostic setting. 
 
@@ -32,7 +34,7 @@ I am once again getting the itch, and are not currently using Java in my normal 
 For the time being I plan to:
 
 - ~~Upload the code to GitHub~~
-- Get the existing project running with a current Java version
+- ~~Get the existing project running with a current Java version~~
 - Implement [Spring](https://spring.io/) server-side to support a new UI
 - Implement a new [React](https://reactjs.org/) UI for displaying SCSs
 - Revisit and refactor some coding choices (e.g. separation of concerns)
