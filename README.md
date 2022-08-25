@@ -1,4 +1,4 @@
-***PLEASE BE AWARE THIS IS OLD CODE AND (UI IN PARTICULAR) REQUIRES UPDATING***
+***PLEASE BE AWARE THAT THIS IS OLD INCOMPLETE CODE AND (THE UI IN PARTICULAR) REQUIRES UPDATING***
 
 ![Babylon 5 Logo](/B5Wars/web/images/B5WLogo.png)
 
@@ -9,9 +9,13 @@ An ***IN PROGRESS*** *Java* implementation of the [Babylon 5 Wars](https://en.wi
 
 As an avid tabletop gamer, [Babylon 5 Wars](https://en.wikipedia.org/wiki/Babylon_5_Wars) by [Agents of Gaming](https://en.wikipedia.org/wiki/Agents_of_Gaming), now long out of print, also found its way into my heart. This detailed system focuses on small scale space combat between ships, fighters, and fixed installations, played out on a (typically 42x30) hex grid, in order to recreate battles from the show.
 
+The Babylon 5 Wars (Second Edition) Box Set...
+
 ![b5w_box.jpg](b5w_box.jpg)
 
-At the core of the game is the *Ship Control Sheet* (SCS). A SCS contains all statistics and information for using a given ship in-game, including a graphical representation of the different ships sections (e.g. FORWARD, PORT), along with all ships systems (e.g Thruster, C & C) contained within each section.
+At the core of the game is the *Ship Control Sheet* (SCS). A SCS contains all statistics and information for using a given ship in-game, including a graphical representation of the different ship sections (e.g. FORWARD, PORT), along with all ship systems (e.g Thruster, C & C) contained within each section.
+
+An example SCS from the game...
 
 ![scs.jpg](scs.jpg)
 
@@ -23,7 +27,19 @@ In the late 2000's, finding myself with too much time on my hands, and wanting a
 Java is my first love as a programming language, and this was an opportunity to engage with it in a few different aspects than I typically would in my day job.
 
 The current partial implementation mainly focuses around a digital representation of the Ship Control Sheets; defining and persisting SCSs as XML, reconstituting these into the appropriate classes, bringing together with SVG snippets to create a graphical SCS, and finally exporting as PDF if desired. Also implemented is the logic for applying damage to ship sections and systems, based on a given angle for incoming fire.
- 
+
+Once a SCS is manually [defined as XML](https://github.com/PackyNZ/B5Wars/edit/main/Drazi_Sunhawk_Battlecruiser.xml), it can be opened to graphically register the x/y location of every system and associated annotations...
+
+![scs_editor.jpg](scs_editor.jpg)
+
+Then a simple fleet viewer is implemented where damage can be manually marked off (automation is still TODO)...
+
+![fleet.jpg](fleet.jpg)
+
+Also started is displaying the hexgrid map...
+
+![map.jpg](map.jpg)
+
 Eventually though, after many (mostly fun) hours, I started thinking about the longer term, and decided the project would be better implemented in the likes of C++ and OpenGL, with an agnostic setting. 
 
 Shortly afterwards however, life, as it tends to do, got in the way, and the project was left to gather dust... 
